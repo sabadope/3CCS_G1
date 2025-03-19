@@ -1,9 +1,8 @@
-# 3CCS_G1
-Project for C#  
+# 3CCS_G1 Project for C#  
+  
 
-# Title:  
-
-App for Teacher-Parent Update Student Performance.  
+# Title: App for Teacher-Parent Update Student Performance.  
+  
 
 # Members:  
 
@@ -11,6 +10,7 @@ Sabado, Fertony Jr.
 Torres, Kyla Marie
 Olaso, Kieran Jays
 Custodio, Andrei  
+Emman Ascano
 
 # Features:  
 
