@@ -6,11 +6,11 @@
 
 # Members:  
 
-Sabado, Fertony Jr.
-Torres, Kyla Marie
-Olaso, Kieran Jays
+Sabado, Fertony Jr.  
+Torres, Kyla Marie  
+Olaso, Kieran Jays  
 Custodio, Andrei  
-Emman Ascano
+Ascano Emman  
 
 # Features:  
 
