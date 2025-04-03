@@ -1,4 +1,29 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿// Function to toggle the visibility of the password field
+function togglePassword() {
+    var passwordField = document.getElementById('password');
+    var confirmPasswordField = document.getElementById('confirmPassword');
+    var passwordToggle = document.getElementById('passwordToggle');
 
-// Write your JavaScript code.
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        confirmPasswordField.type = "text";
+        passwordToggle.innerHTML = "Hide Password";
+    } else {
+        passwordField.type = "password";
+        confirmPasswordField.type = "password";
+        passwordToggle.innerHTML = "Show Password";
+    }
+}
+
+// Form validation
+function validateForm() {
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return false;
+    }
+    return true;
+}
+

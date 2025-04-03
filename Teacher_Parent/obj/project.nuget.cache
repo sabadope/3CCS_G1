@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sx/BRN+KZ2E=",
+  "dgSpecHash": "h05PAOM5Pwg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\TONY\\source\\repos\\Teacher_Parent\\Teacher_Parent\\Teacher_Parent.csproj",
+  "projectFilePath": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Teacher_Parent\\Teacher_Parent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TONY\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TONY\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
