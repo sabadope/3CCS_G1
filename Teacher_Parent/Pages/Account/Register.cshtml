@@ -1,0 +1,15 @@
+﻿@page
+@model Teacher_Parent.Pages.Account.RegisterModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+<form method="post">
+    <input type="text" asp-for="Username" placeholder="Username" required />
+    <input type="email" asp-for="Email" placeholder="Email" required />
+    <input type="password" asp-for="Password" placeholder="Password" required />
+    <input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" required />
+    <button type="submit">Register</button>
+</form>
