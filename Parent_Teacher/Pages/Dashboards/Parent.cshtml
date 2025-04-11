@@ -1,0 +1,15 @@
+﻿@page
+@model Parent_Teacher.Pages.Dashboards.ParentModel
+@{
+    ViewData["Title"] = "Parent Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-body">
+            <h3>Welcome, @Context.Session.GetString("UserEmail")!</h3>
+            <p>This is your @Context.Session.GetString("UserRole") dashboard.</p>
+        </div>
+    </div>
+</div>
+
