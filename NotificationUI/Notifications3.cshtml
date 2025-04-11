@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Notifications - Taguig City University</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #000;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .sidebar {
+            background-color: #f5f5f5;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+            .sidebar img {
+                width: 150px;
+                margin-bottom: 30px;
+            }
+
+            .sidebar a {
+                display: block;
+                margin-bottom: 15px;
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #7c0a02;
+                color: #7c0a02;
+            }
+
+                .sidebar a.active, .sidebar a:hover {
+                    background-color: #7c0a02;
+                    color: white;
+                }
+
+        .content {
+            background-color: #fff;
+            padding: 30px;
+        }
+
+        .notif-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .notif-tabs button {
+            margin-right: 10px;
+        }
+
+        .notif-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .notif-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar text-center">
+            <img src="~/images/TCU icon.png" alt="TCU Logo" />
+            <a href="~/Home">HOME</a>
+            <a href="Dashboard">DASHBOARD</a>
+            <a class="active" href="#">NOTIFICATION</a>
+            <a href="Messages">MESSAGES</a>
+            <a href="Assignment">ASSIGNMENT</a>
+            <a href="Parentfeedback">PARENT-FEEDBACK</a>
+            <a href="#">LOGOUT</a>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-fill content">
+            <h2>Notifications</h2>
+
+            <div class="notif-tabs mb-4">
+                <a href="Notification1">
+                    <button class="btn btn-outline-dark">All</button>
+                </a>
+                <a href="Notifications2">
+                    <button class="btn btn-outline-dark">Inbox</button>
+                </a>
+                <button class="btn btn-dark">Spam</button>
+            </div>
+
+            <h5>Today</h5>
+            <div class="notif-card">
+                <div class="notif-header">
+                    <span class="notif-title">Appointment Request</span>
+                    <small>15 minutes ago</small>
+                </div>
+                <p>A student wants to talk about you.... he wants to set an appointment.</p>
+            </div>
+
+            <div class="notif-card">
+                <div class="notif-header">
+                    <span class="notif-title">Appointment Request</span>
+                    <small>19 minutes ago</small>
+                </div>
+                <p>A student wants to talk about you.... he wants to set an appointment.</p>
+            </div>
+
+            <h5>Yesterday</h5>
+            <div class="notif-card">
+                <div class="notif-header">
+                    <span class="notif-title">Appointment Request</span>
+                    <small>36 minutes ago</small>
+                </div>
+                <p>Many students want to use comp.... has been published on 2 platforms.</p>
+            </div>
+
+            <h5>Announcements</h5>
+            <div class="notif-card">
+                <div class="notif-header">
+                    <span class="notif-title">Upcoming Christmas Event</span>
+                    <small>36 minutes ago</small>
+                </div>
+                <p>Many students want to use comp.... <br> has been published on 2 platforms.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
