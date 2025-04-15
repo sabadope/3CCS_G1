@@ -1,5 +1,8 @@
 ﻿@page
 @model Parent_Teacher.Pages.Dashboards.AdminModel
+@using System.Text.Json
+<p>@JsonSerializer.Serialize(Model.RoleCounts)</p>
+
 @{
     ViewData["Title"] = "Admin Dashboard";
 }
@@ -650,7 +653,7 @@
                 border-radius: 20px;
                 background: var(--light);
                 padding: 24px;
-                overflow-x: auto;
+                overflow-x: hidden;
             }
 
             #content main .table-data .head {
@@ -991,7 +994,7 @@
                                     {
                                         <tr>
                                             <td>
-                                                <img src="~/img/people.png" alt="Profile" />
+                                                
                                                 <p>@user.Name</p>
                                             </td>
                                             <td>@user.Role</td>
@@ -1011,15 +1014,19 @@
 
                 <div class="todo">
                     <div class="head">
-                        <h3>Todos</h3>
+                        <h3>Total Users</h3>
                         <i class='bx bx-plus'></i>
                         <i class='bx bx-filter'></i>
                     </div>
-                    <ul class="todo-list">
-                        <li class="completed"><p>Todo List</p><i class='bx bx-dots-vertical-rounded'></i></li>
-                        <li class="not-completed"><p>Todo List</p><i class='bx bx-dots-vertical-rounded'></i></li>
+                    <ul class="users-graph">
+                        <li style="height: 250px; position: relative;">
+                            <canvas id="userPieChart" style="width: 100%; height: 100%;"></canvas>
+                        </li>
                     </ul>
+
                 </div>
+
+
             </div>
 
 
@@ -1109,18 +1116,41 @@
 
     <!-- PIECHART -->
     <script>
-        const ctx = document.getElementById('userChart').getContext('2d');
-        const userChart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Teacher', 'Parent'],
-                datasets: [{
-                    data: [@Model.TeacherCount, @Model.ParentCount],
-                    backgroundColor: ['#4e73df', '#1cc88a'],
-                }]
-            },
+        document.addEventListener("DOMContentLoaded", function () {
+            const roleData = @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts));
+
+            const ctx = document.getElementById('userPieChart')?.getContext('2d');
+            if (ctx && roleData) {
+                const labels = Object.keys(roleData);
+                const data = Object.values(roleData);
+
+                new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Total',
+                            data: data,
+                            backgroundColor: [
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            } else {
+                console.warn("Chart context or roleData not available.");
+            }
         });
     </script>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->

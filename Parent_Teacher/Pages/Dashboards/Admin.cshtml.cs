@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Parent_Teacher.Data;
@@ -24,6 +24,9 @@ namespace Parent_Teacher.Pages.Dashboards
         public int TeacherCount { get; set; }
         public int ParentCount { get; set; }
 
+        // Add this to pass role counts to Chart.js
+        public Dictionary<string, int> RoleCounts { get; set; } = new();
+
         public IActionResult OnGet()
         {
             var role = HttpContext.Session.GetString("UserRole");
@@ -32,7 +35,7 @@ namespace Parent_Teacher.Pages.Dashboards
                 return RedirectToPage("/Account/Login");
             }
 
-            // Get all Teachers and Parents
+            // Get Teachers and Parents
             TeachersAndParents = _context.Users
                 .Where(u => u.Role == "Teacher" || u.Role == "Parent")
                 .ToList();
@@ -40,12 +43,15 @@ namespace Parent_Teacher.Pages.Dashboards
             TeacherCount = TeachersAndParents.Count(u => u.Role == "Teacher");
             ParentCount = TeachersAndParents.Count(u => u.Role == "Parent");
 
-            // Get the 5 most recent accounts (Teacher or Parent)
-            RecentUsers = _context.Users
-                .Where(u => u.Role == "Teacher" || u.Role == "Parent")
+            RecentUsers = TeachersAndParents
                 .OrderByDescending(u => u.CreatedAt)
                 .Take(5)
                 .ToList();
+
+            // Pie chart data: only Teacher and Parent
+            RoleCounts = TeachersAndParents
+                .GroupBy(u => u.Role)
+                .ToDictionary(g => g.Key, g => g.Count());
 
             return Page();
         }

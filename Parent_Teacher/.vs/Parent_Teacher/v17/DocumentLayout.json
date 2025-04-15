@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\migrations\\20250415162912_addcreatedattousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:migrations\\20250415162912_addcreatedattousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "20250415162912_AddCreatedAtToUsers.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Migrations\\20250415162912_AddCreatedAtToUsers.cs",
               "RelativeDocumentMoniker": "Migrations\\20250415162912_AddCreatedAtToUsers.cs",
@@ -151,15 +151,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml.cs",
               "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
               "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCoAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwBQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:33:42.742Z"
+              "WhenOpened": "2025-04-11T06:33:42.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -169,14 +170,14 @@
               "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml",
               "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml",
               "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml",
-              "ViewState": "AgIAADICAAAAAAAAAAAAAEACAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAALQDAAAAAAAAAAAowGsEAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-11T06:31:53.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
