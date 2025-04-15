@@ -73,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,8 +82,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -98,8 +114,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-11T06:42:40.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:42:40.964Z"
             },
             {
               "$type": "Document",
@@ -111,8 +126,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:39:54.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:39:54.232Z"
             },
             {
               "$type": "Document",
@@ -124,8 +138,7 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:44:03.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:44:03.526Z"
             },
             {
               "$type": "Document",
@@ -137,20 +150,18 @@
               "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:33:42.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:33:42.742Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ParentTeacherDB.sql ",
+              "Title": "ParentTeacherDB.sql",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
               "RelativeDocumentMoniker": "Databases\\ParentTeacherDB.sql",
               "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
               "RelativeToolTip": "Databases\\ParentTeacherDB.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-11T06:52:00.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:52:00.002Z"
             },
             {
               "$type": "Document",
@@ -175,8 +186,7 @@
               "RelativeToolTip": "Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAQwBIAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:26:58.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:26:58.971Z"
             },
             {
               "$type": "Document",
@@ -188,8 +198,7 @@
               "RelativeToolTip": "Pages\\Account\\Login.cshtml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwDIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:27:23.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:27:23.931Z"
             },
             {
               "$type": "Document",
@@ -201,8 +210,7 @@
               "RelativeToolTip": "Pages\\Dashboards\\Teacher.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:38:30.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:38:30.169Z"
             },
             {
               "$type": "Document",
@@ -214,8 +222,7 @@
               "RelativeToolTip": "Pages\\Dashboards\\Teacher.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:32:28.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:32:28.53Z"
             },
             {
               "$type": "Document",
@@ -227,8 +234,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:20:22.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:20:22.857Z"
             },
             {
               "$type": "Document",
@@ -240,8 +246,7 @@
               "RelativeToolTip": "Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAQwEAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:30:47.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:30:47.273Z"
             },
             {
               "$type": "Document",
@@ -253,8 +258,7 @@
               "RelativeToolTip": "Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:30:10.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:30:10.771Z"
             },
             {
               "$type": "Document",
@@ -266,8 +270,7 @@
               "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:31:53.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:31:53.736Z"
             },
             {
               "$type": "Document",
@@ -279,8 +282,7 @@
               "RelativeToolTip": "Pages\\Dashboards\\Parent.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:37:06.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:37:06.552Z"
             },
             {
               "$type": "Document",
@@ -292,8 +294,7 @@
               "RelativeToolTip": "Pages\\Dashboards\\Parent.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:32:10.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:32:10.638Z"
             },
             {
               "$type": "Document",
@@ -305,8 +306,7 @@
               "RelativeToolTip": "Pages\\Account\\Logout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:29:24.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T06:29:24.886Z"
             },
             {
               "$type": "Document",
@@ -318,28 +318,7 @@
               "RelativeToolTip": "Pages\\Account\\Logout.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:29:49.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2025-04-11T06:29:49.927Z"
             }
           ]
         }
