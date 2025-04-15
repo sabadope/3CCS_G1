@@ -17,6 +17,7 @@ namespace Parent_Teacher.Pages.Account
         [BindProperty]
         public InputModel Input { get; set; } = new();
 
+
         public string Message { get; set; } = "";
 
         public class InputModel

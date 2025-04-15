@@ -28,6 +28,12 @@ app.UseRouting();
 app.UseSession(); //  Correct position
 app.UseAuthorization();
 
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/Account/Login");
+    return Task.CompletedTask;
+});
+
 app.MapRazorPages(); // Should come after UseSession
 
 app.Run();

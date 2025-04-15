@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\Parent_Teacher.9rglwoiq8v.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\css\\admindashboard.css",
+      "PackagePath": "staticwebassets\\css\\admindashboard.css"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\parent.svg",
+      "PackagePath": "staticwebassets\\icons\\parent.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\teacher.svg",
+      "PackagePath": "staticwebassets\\icons\\teacher.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\js\\site.js",

@@ -20,5 +20,8 @@ namespace Parent_Teacher.Models
 
         [Required]
         public string Role { get; set; } = string.Empty;
+
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
     }
 }
