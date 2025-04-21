@@ -1,10 +1,9 @@
 ﻿@page
-@model Parent_Teacher.Pages.Dashboards.AdminModel
+@model Parent_Teacher.Pages.Parent.ParentModel
 @using System.Text.Json
-<p>@JsonSerializer.Serialize(Model.RoleCounts)</p>
 
 @{
-    ViewData["Title"] = "Admin Dashboard";
+    ViewData["Title"] = "Parent Dashboard";
 }
 
 <!-- CSS STYLE FOR ADMIN DASHBOARD -->
@@ -95,7 +94,7 @@
         scrollbar-width: none;
     }
 
-       
+
 
         #sidebar.hide {
             width: 60px;
@@ -518,7 +517,6 @@
         padding: 36px 0px;
         font-family: var(--poppins);
         max-height: calc(100vh - 56px);
-        
     }
 
         #content main .head-title {
@@ -626,15 +624,15 @@
                     justify-content: center;
                 }
 
-                #content main .box-info li .text h3 {
-                    font-size: 24px;
-                    font-weight: 600;
-                    color: var(--dark);
-                }
+                    #content main .box-info li .text h3 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: var(--dark);
+                    }
 
-                #content main .box-info li .text p {
-                    color: var(--dark);
-                }
+                    #content main .box-info li .text p {
+                        color: var(--dark);
+                    }
 
 
 
@@ -785,7 +783,7 @@
 
 
 
-    
+
 
     #content nav form .form-input button {
         width: auto;
@@ -868,8 +866,8 @@
     <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="#" class="brand">
-            <i class="bx bxs-graduation"></i>
-            <span class="text">Admin Panel</span>
+            <i class="bx bxs-user"></i>
+            <span class="text">Parent Panel</span>
         </a>
 
         <!-- NEW FLEX WRAPPER -->
@@ -889,7 +887,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="student-messages.php">
+                    <a href="/Parent/Chat">
                         <i class='bx bxs-message-dots'></i>
                         <span class="text">Message</span>
                     </a>
@@ -916,7 +914,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="student-logout.php" class="logout">
+                    <a href="/Account/Logout" class="logout">
                         <i class='bx bxs-log-out-circle'></i>
                         <span class="text">Logout</span>
                     </a>
@@ -930,7 +928,7 @@
 
     <!-- CONTENT -->
     <section id="content">
-        
+
         <!-- MAIN -->
         <main>
             <div class="head-title">
@@ -952,79 +950,12 @@
                 </a>
             </div>
 
-            <ul class="box-info">
-                <li>
-                    <img src="~/icons/teacher.svg" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
-                    <span class="text">
-                        <h3>@Model.TeacherCount</h3>
-                        <p>Teacher</p>
-                    </span>
-                </li>
-                <li>
-                    <img src="~/icons/parent.svg" class="svg-blue" alt="Parent Icon" width="36" height="36" />
-                    <span class="text">
-                        <h3>@Model.ParentCount</h3>
-                        <p>Parent</p>
-                    </span>
-                </li>
-            </ul>
-
 
             <div class="table-data">
                 <div class="order">
-                    <div class="head">
-                        <h3 id="section-title">Recent Accounts</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bxs-pie-chart-alt-2 chart-toggle'></i>
-                    </div>
-
-                    <div class="recent-accounts">
-                        <!-- Table View -->
-                        <div class="table-view">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>User Name</th>
-                                        <th>Role</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var user in Model.RecentUsers)
-                                    {
-                                        <tr>
-                                            <td>
-                                                
-                                                <p>@user.Name</p>
-                                            </td>
-                                            <td>@user.Role</td>
-                                            <td class="registered-time" data-time="@user.CreatedAt"></td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- Chart View (hidden by default) -->
-                        <div class="chart-container" style="display: none;">
-                            <canvas id="userChart"></canvas>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="todo">
-                    <div class="head">
-                        <h3>Total Users</h3>
-                        <i class='bx bx-plus'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <ul class="users-graph">
-                        <li style="height: 250px; position: relative;">
-                            <canvas id="userPieChart" style="width: 100%; height: 100%;"></canvas>
-                        </li>
-                    </ul>
-
-                </div>
+                <!-- HERE INSIDE OF IT -->
 
 
             </div>
@@ -1034,9 +965,6 @@
         <!-- MAIN -->
     </section>
     <!-- CONTENT -->
-    
-
-
     <!-- SIDE BAR SCRIPT -->
     <script>
         // ========== DEFAULT ACTIVATION RULES FOR ACTIVITIES & PERFORMANCE ==========
@@ -1095,61 +1023,9 @@
         });
     </script>
 
-    <!-- TOTAL USERS -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Format registered time
-            document.querySelectorAll(".registered-time").forEach(el => {
-                const time = new Date(el.dataset.time);
-                el.textContent = time.toLocaleString();
-            });
 
-            // Optional: Chart toggle
-            document.querySelector(".chart-toggle").addEventListener("click", () => {
-                const table = document.querySelector(".table-view");
-                const chart = document.querySelector(".chart-container");
-                table.style.display = table.style.display === "none" ? "block" : "none";
-                chart.style.display = chart.style.display === "none" ? "block" : "none";
-            });
-        });
-    </script>
 
-    <!-- PIECHART -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const roleData = @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts));
 
-            const ctx = document.getElementById('userPieChart')?.getContext('2d');
-            if (ctx && roleData) {
-                const labels = Object.keys(roleData);
-                const data = Object.values(roleData);
-
-                new Chart(ctx, {
-                    type: 'pie',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: 'Total',
-                            data: data,
-                            backgroundColor: [
-                                'rgba(54, 162, 235, 0.6)',
-                                'rgba(255, 99, 132, 0.6)',
-                                'rgba(255, 206, 86, 0.6)',
-                                'rgba(75, 192, 192, 0.6)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false
-                    }
-                });
-            } else {
-                console.warn("Chart context or roleData not available.");
-            }
-        });
-    </script>
 
 
 

@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Parent_Teacher.Pages.Dashboards
+namespace Parent_Teacher.Pages.Parent
 {
-    public class TeacherModel : PageModel
+    public class ParentModel : PageModel
     {
         public IActionResult OnGet()
         {
             var role = HttpContext.Session.GetString("UserRole");
 
-            if (role != "Teacher")
+            if (role != "Parent")
             {
                 return RedirectToPage("/Account/Login");
             }

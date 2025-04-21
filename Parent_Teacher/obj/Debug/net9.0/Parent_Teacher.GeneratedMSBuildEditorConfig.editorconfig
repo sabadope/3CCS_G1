@@ -40,16 +40,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Dashboards/Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkc1xBZG1pbi5jc2h0bWw=
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Admin/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Dashboards/Parent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkc1xQYXJlbnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Dashboards/Teacher.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkc1xUZWFjaGVyLmNzaHRtbA==
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Admin/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2hhdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Error.cshtml]
@@ -60,12 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Parent/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50XENoYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Parent/Parent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50XFBhcmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/Teacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxUZWFjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/_ViewImports.cshtml]

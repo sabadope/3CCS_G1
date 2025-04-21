@@ -56,8 +56,8 @@ namespace Parent_Teacher.Pages.Account
 
             return newUser.Role switch
             {
-                "Teacher" => RedirectToPage("/Dashboards/Teacher"),
-                "Parent" => RedirectToPage("/Dashboards/Parent"),
+                "Teacher" => RedirectToPage("/Teacher/Teacher"),
+                "Parent" => RedirectToPage("/Parent/Parent"),
                 _ => RedirectToPage("/Account/Login")
             };
         }

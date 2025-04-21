@@ -11,5 +11,7 @@ namespace Parent_Teacher.Data
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Message> Messages { get; set; } // Add this line
     }
 }

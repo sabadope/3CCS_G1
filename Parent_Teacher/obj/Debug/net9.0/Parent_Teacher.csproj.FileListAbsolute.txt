@@ -157,7 +157,6 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teache
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\scopedcss\bundle\Parent_Teacher.styles.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\scopedcss\projectbundle\Parent_Teacher.bundle.scp.css
-C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\4p8t3lj7vl-ewyhhyymg0.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\nvnkf8kxv0-b9sayid5wm.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\d7bcidek8h-61n19gt1b8.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\j5m431j31u-wyt0mn2kht.gz
@@ -233,10 +232,12 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebasse
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Parent_Teacher.props
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Parent_Teacher.props
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_T.D7C22077.Up2Date
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teacher.dll
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\refint\Parent_Teacher.dll
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teacher.pdb
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teacher.genruntimeconfig.cache
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\ref\Parent_Teacher.dll
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\1zqlydmfky-dyjx89twm7.gz
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\4p8t3lj7vl-zcwjtmchnz.gz
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

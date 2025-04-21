@@ -1,19 +1,28 @@
 ﻿using Parent_Teacher.Data;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services
 builder.Services.AddRazorPages();
 builder.Services.AddSession();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//  Add Cookie Authentication
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+    });
+
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -25,8 +34,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession(); //  Correct position
+//  Order matters: Use Authentication first
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapGet("/", context =>
 {
@@ -34,6 +46,6 @@ app.MapGet("/", context =>
     return Task.CompletedTask;
 });
 
-app.MapRazorPages(); // Should come after UseSession
+app.MapRazorPages();
 
 app.Run();

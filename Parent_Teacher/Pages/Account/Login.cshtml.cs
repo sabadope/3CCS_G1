@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Parent_Teacher.Data;
 using Parent_Teacher.Models;
@@ -40,7 +40,7 @@ namespace Parent_Teacher.Pages.Account
                 HttpContext.Session.SetString("UserRole", "Admin");
                 HttpContext.Session.SetString("UserEmail", Input.Email);
 
-                return RedirectToPage("/Dashboards/Admin");
+                return RedirectToPage("/Admin/Admin");
             }
 
             // Check user from DB
@@ -59,8 +59,8 @@ namespace Parent_Teacher.Pages.Account
             // Redirect based on role
             return user.Role switch
             {
-                "Teacher" => RedirectToPage("/Dashboards/Teacher"),
-                "Parent" => RedirectToPage("/Dashboards/Parent"),
+                "Teacher" => RedirectToPage("/Teacher/Teacher"),
+                "Parent" => RedirectToPage("/Parent/Parent"),
                 _ => RedirectToPage("/Account/Login")
             };
         }

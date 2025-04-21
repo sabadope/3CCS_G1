@@ -3,6 +3,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\js\site.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\css\chat.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\css\admindashboard.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.slim.js
@@ -64,6 +65,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\css\admindashboard.css
+wwwroot\css\chat.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\icons\parent.svg

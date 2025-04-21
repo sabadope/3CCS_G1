@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Parent_Teacher.Pages.Dashboards
+namespace Parent_Teacher.Pages.Admin
 {
     public class AdminModel : PageModel
     {
