@@ -1,0 +1,42 @@
+﻿@page
+@model Parent_Teacher.Pages.Account.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+    <h2>Register</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="Input.Name" class="form-label">Full Name</label>
+            <input asp-for="Input.Name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Input.Email" class="form-label">Email address</label>
+            <input asp-for="Input.Email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Input.Password" class="form-label">Password</label>
+            <input asp-for="Input.Password" class="form-control" type="password" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Input.Role" class="form-label">Role</label>
+            <select asp-for="Input.Role" class="form-select">
+                <option value="Teacher">Teacher</option>
+                <option value="Parent">Parent</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <a href="/Account/Login" class="btn btn-success">Login</a>
+
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-info mt-3">@Model.Message</div>
+    }
+</div>
