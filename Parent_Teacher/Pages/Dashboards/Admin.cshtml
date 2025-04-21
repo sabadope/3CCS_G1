@@ -955,19 +955,20 @@
             <ul class="box-info">
                 <li>
                     <img src="~/icons/teacher.svg" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
-                    <span class="text">
+                    <div class="text">
                         <h3>@Model.TeacherCount</h3>
                         <p>Teacher</p>
-                    </span>
+                    </div>
                 </li>
                 <li>
                     <img src="~/icons/parent.svg" class="svg-blue" alt="Parent Icon" width="36" height="36" />
-                    <span class="text">
+                    <div class="text">
                         <h3>@Model.ParentCount</h3>
                         <p>Parent</p>
-                    </span>
+                    </div>
                 </li>
             </ul>
+
 
 
             <div class="table-data">
@@ -1117,7 +1118,7 @@
     <!-- PIECHART -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const roleData = @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts));
+            const roleData = JSON.parse(document.getElementById('roleDataJson').textContent);
 
             const ctx = document.getElementById('userPieChart')?.getContext('2d');
             if (ctx && roleData) {
@@ -1151,6 +1152,10 @@
         });
     </script>
 
+
+    <script id="roleDataJson" type="application/json">
+        @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts))
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->

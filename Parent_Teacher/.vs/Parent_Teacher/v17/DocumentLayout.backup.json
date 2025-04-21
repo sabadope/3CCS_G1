@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\migrations\\20250415162912_addcreatedattousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:migrations\\20250415162912_addcreatedattousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:wwwroot\\css\\admindashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\teacher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\dashboards\\teacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\dashboards\\teacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,6 +77,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|c:\\users\\tony\\source\\repos\\3ccs_g1\\parent_teacher\\databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{B286439F-CC67-4C07-B0B6-EADF2FFB416E}|Parent_Teacher.csproj|solutionrelative:databases\\parentteacherdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,32 +114,122 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250415162912_AddCreatedAtToUsers.cs",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Migrations\\20250415162912_AddCreatedAtToUsers.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250415162912_AddCreatedAtToUsers.cs",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Migrations\\20250415162912_AddCreatedAtToUsers.cs",
-              "RelativeToolTip": "Migrations\\20250415162912_AddCreatedAtToUsers.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:29:22.068Z",
+              "DocumentIndex": 5,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml",
+              "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml",
+              "ViewState": "AgIAAH4EAAAAAAAAAAAcwIEEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T06:31:53.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:25:38.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParentTeacherDB.sql ",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
+              "RelativeDocumentMoniker": "Databases\\ParentTeacherDB.sql",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
+              "RelativeToolTip": "Databases\\ParentTeacherDB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-11T06:52:00.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:39:54.232Z"
+              "WhenOpened": "2025-04-11T06:39:54.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T06:26:58.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:27:23.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:20:22.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-11T06:42:40.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml.cs",
+              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
+              "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwBQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:33:42.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -151,57 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Admin.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml.cs",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml.cs",
-              "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAhwBQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:33:42.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Dashboards\\Admin.cshtml",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Admin.cshtml",
-              "RelativeToolTip": "Pages\\Dashboards\\Admin.cshtml",
-              "ViewState": "AgIAAEkEAAAAAAAAAAAAAGsEAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:31:53.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA+wBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:25:38.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:27:23.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "admindashboard.css",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\css\\admindashboard.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\admindashboard.css",
@@ -210,41 +250,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-04-15T08:23:45.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ParentTeacherDB.sql",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
-              "RelativeDocumentMoniker": "Databases\\ParentTeacherDB.sql",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Databases\\ParentTeacherDB.sql",
-              "RelativeToolTip": "Databases\\ParentTeacherDB.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-11T06:52:00.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-11T06:42:40.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBIAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T06:26:58.971Z"
             },
             {
               "$type": "Document",
@@ -273,18 +278,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T06:20:22.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml.cs",
@@ -296,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Pages\\Account\\Register.cshtml",
@@ -308,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Parent.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Parent.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Dashboards\\Parent.cshtml.cs",
@@ -320,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Parent.cshtml",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Dashboards\\Parent.cshtml",
               "RelativeDocumentMoniker": "Pages\\Dashboards\\Parent.cshtml",
@@ -332,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml",
@@ -344,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Account\\Logout.cshtml.cs",
