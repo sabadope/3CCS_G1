@@ -1118,7 +1118,7 @@
     <!-- PIECHART -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const roleData = @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts));
+            const roleData = JSON.parse(document.getElementById('roleDataJson').textContent);
 
             const ctx = document.getElementById('userPieChart')?.getContext('2d');
             if (ctx && roleData) {
@@ -1152,6 +1152,10 @@
         });
     </script>
 
+
+    <script id="roleDataJson" type="application/json">
+        @Html.Raw(JsonSerializer.Serialize(Model.RoleCounts))
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->

@@ -12,12 +12,8 @@ using Parent_Teacher.Data;
 namespace Parent_Teacher.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-<<<<<<<< HEAD:Parent_Teacher/Migrations/20250421124714_InitialCreate.Designer.cs
-    [Migration("20250421124714_InitialCreate")]
-========
-    [Migration("20250421081050_InitialCreate")]
->>>>>>>> ba4b171a2866bc259ab1ce1d0a7a67aa8e7c6245:Parent_Teacher/Migrations/20250421081050_InitialCreate.Designer.cs
-    partial class InitialCreate
+    [Migration("20250421081006_AddCreatedAtToAspNetUsers")]
+    partial class AddCreatedAtToAspNetUsers
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,34 +24,6 @@ namespace Parent_Teacher.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Parent_Teacher.Models.Message", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Receiver")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Sender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Timestamp")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Messages");
-                });
 
             modelBuilder.Entity("Parent_Teacher.Models.User", b =>
                 {
