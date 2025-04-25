@@ -1,16 +1,17 @@
 using System.Text;
 
-public class HomePageBuilder
+public class HomePageView
 {
-    public string BuildHomePage()
+    public string Render()
     {
-        StringBuilder html = new StringBuilder();
+        var title = "Welcome to Taguig City University";
+        var html = new StringBuilder();
 
         html.AppendLine("<!DOCTYPE html>");
         html.AppendLine("<html>");
         html.AppendLine("<head>");
         html.AppendLine("    <meta charset=\"utf-8\" />");
-        html.AppendLine("    <title>Welcome to Taguig City University</title>");
+        html.AppendLine($"    <title>{title}</title>");
         html.AppendLine("    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" />");
         html.AppendLine("    <style>");
         html.AppendLine("        body { font-family: 'Segoe UI', sans-serif; background-color: #f9f9f9; color: #333; }");
@@ -52,7 +53,7 @@ public class HomePageBuilder
         html.AppendLine("        </div>");
         html.AppendLine("    </nav>");
 
-        // Hero section
+        // Hero
         html.AppendLine("    <div class=\"hero\">");
         html.AppendLine("        <div class=\"hero-content\">");
         html.AppendLine("            <h1>Welcome to Guardian Insight</h1>");
@@ -61,7 +62,7 @@ public class HomePageBuilder
         html.AppendLine("        </div>");
         html.AppendLine("    </div>");
 
-        // Features section
+        // Features
         html.AppendLine("    <div class=\"features container\">");
         html.AppendLine("        <h2>What You Can Do</h2>");
         html.AppendLine("        <div class=\"row\">");
