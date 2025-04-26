@@ -4213,6 +4213,88 @@
       ]
     },
     {
+      "Route": "images/faq.png",
+      "AssetFile": "images/faq.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w4IWAAiPBzASkUy67r/0oUPprqoamLM+e0wmeH9eUGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 06:22:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w4IWAAiPBzASkUy67r/0oUPprqoamLM+e0wmeH9eUGw="
+        }
+      ]
+    },
+    {
+      "Route": "images/faq.vd1f6a2eul.png",
+      "AssetFile": "images/faq.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w4IWAAiPBzASkUy67r/0oUPprqoamLM+e0wmeH9eUGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 06:22:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vd1f6a2eul"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w4IWAAiPBzASkUy67r/0oUPprqoamLM+e0wmeH9eUGw="
+        },
+        {
+          "Name": "label",
+          "Value": "images/faq.png"
+        }
+      ]
+    },
+    {
       "Route": "images/faq_graphic.jpg",
       "AssetFile": "images/faq_graphic.jpg",
       "Selectors": [],

@@ -97,6 +97,7 @@ wwwroot\images\admin-messages-2.jpeg
 wwwroot\images\businesswoman-using-tablet-analysis.jpg
 wwwroot\images\colleagues-working-cozy-office-medium-shot.jpg
 wwwroot\images\default_image.jpg
+wwwroot\images\faq.png
 wwwroot\images\faq_graphic.jpg
 wwwroot\images\features.jpeg
 wwwroot\images\haha.jpg

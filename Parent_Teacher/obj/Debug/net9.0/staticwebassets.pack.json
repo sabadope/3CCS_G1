@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\images\\default_image.jpg"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\faq.png",
+      "PackagePath": "staticwebassets\\images\\faq.png"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\faq_graphic.jpg",
       "PackagePath": "staticwebassets\\images\\faq_graphic.jpg"
     },
