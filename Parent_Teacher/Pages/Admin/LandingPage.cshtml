@@ -1,0 +1,791 @@
+﻿@page
+@model Parent_Teacher.Pages.Admin.LandingPageModel
+
+@{
+    ViewData["Title"] = "Landing Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- CSS Files (from wwwroot) -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/bootstrap-icons.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/templatemo-topic-listing.css" rel="stylesheet" asp-append-version="true" />
+    
+
+</head>
+
+<body id="top">
+
+    <div class="loader-container">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/Admin/LandingPage">
+                    <img src="~/css/family.png" alt="Logo" style="height: 35px; width: auto;">
+
+                        
+                    <span>&nbsp;PARENT-TEACHER</span>
+                        
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="/Account/Login" class="navbar-icon bi-person smoothscroll" style="height: 35px; width: auto;"></a>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 5%;">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Features</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">How it works</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+
+                            
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="/Account/Login" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
+                        <p class="text-white text-center" style="font-weight: 1000; font-size: 36px; width: 100%; max-width: 100%; margin: 0 auto; padding: 0 5px;">
+                            Connecting Parents and Teachers Like Never Before!
+                        </p>
+
+                        <h6 class="text-center mt-3" style="max-width: 1100px; margin: 0 auto; font-weight: 600;">
+                            Stay Informed and Connected in Every Step of Your Child’s Academic Journey.
+                        </h6>
+
+                        <!-- SEARCH BAR (TEMPORARY HIDE)
+                        <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bi-search" id="basic-addon1">
+                                        
+                                </span>
+
+                                <input name="keyword" type="search" class="form-control" id="keyword" placeholder="Design, Code, Marketing, Finance ..." aria-label="Search">
+
+                                <button type="submit" class="form-control">Search</button>
+                            </div>
+                        </form>
+                        -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="featured-section">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block bg-white shadow-lg">
+                            <a href="topics-detail.html">
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="mb-2">Data Driven</h5>
+
+                                        <p class="mb-0">Get real-time insights, track your child acedemic performance, and make informed choices with precision.</p>
+                                    </div>
+
+                                    <span class="badge bg-design rounded-pill ms-auto">
+                                        <img src="~/icons/driven-data.png" alt="Icon" width="22" height="22">
+                                    </span>
+                                </div>
+
+                                <img src="~/images/topics/data-driven.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-block custom-block-overlay">
+                            <div class="d-flex flex-column h-100">
+                                <img src="~/images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
+
+                                <div class="custom-block-overlay-text d-flex">
+                                    <div>
+                                        <h5 class="text-white mb-2">Admin Dashboard</h5>
+
+                                        <p class="text-white">Effortlessly track your child academic performance, analyze behavioral metrics, and optimize evaluations in real-time. Stay ahead, stay informed, and make data-driven decisions <br><br> —all in one powerful dashboard! </p>
+
+                                        <a href="#section_2" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                    </div>
+
+                                    <span class="badge bg-finance rounded-pill ms-auto">
+                                        <img src="~/icons/dashboard.png" alt="Icon" width="22" height="22">
+                                    </span>
+                                </div>
+
+                                <div class="social-share d-flex">
+                                    <p class="text-white me-4">Share:</p>
+
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="section-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="explore-section section-padding" id="section_2">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Features</h2>
+                </div>
+            </div>
+
+            <!-- Text-based Toggle Options -->
+            <div class="toggle-selection">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12"> <!-- Adjust width as needed -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-outline-primary flex-fill" onclick="setToggleText('Admin')">Admin</button>
+                                <button class="btn btn-outline-primary flex-fill" onclick="setToggleText('Company')">Teacher</button>
+                                <button class="btn btn-outline-primary flex-fill" onclick="setToggleText('Student')">Parent</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <!-- ADMIN -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true">Dashboard</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">Announcement Posting</button>
+                        </li>
+                        <!-- TEACHER -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="extra-tab" data-bs-toggle="tab" data-bs-target="#extra-tab-pane" type="button" role="tab" aria-controls="extra-tab-pane" aria-selected="false">Dashboard</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Manage Student</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">Chat Message</button>
+                        </li>
+                        <!-- PARENT -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Dashboard</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="eextra-tab" data-bs-toggle="tab" data-bs-target="#eextra-tab-pane" type="button" role="tab" aria-controls="eextra-tab-pane" aria-selected="false">Chat Message</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="eeextra-tab" data-bs-toggle="tab" data-bs-target="#eeextra-tab-pane" type="button" role="tab" aria-controls="eeextra-tab-pane" aria-selected="false">Monitor Student</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Admin Tab -->
+                            <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Total User</h5>
+                                                        <p class="mb-0">The total count of parents and teachers using the app.</p>
+                                                    </div>
+                                                    <span class="badge bg-design rounded-pill ms-auto">1</span>
+                                                </div>
+                                                <img src="~/images/admin-dashboard.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Data Graph</h5>
+                                                        <p class="mb-0">A visual chart showing info-treads over period of time.</p>
+                                                    </div>
+                                                    <span class="badge bg-design rounded-pill ms-auto">2</span>
+                                                </div>
+                                                <img src="~/images/admin-dashboard-2.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Performance</h5>
+                                                        <p class="mb-0">Student’s academic progress and achievement.</p>
+                                                    </div>
+                                                    <span class="badge bg-design rounded-pill ms-auto">3</span>
+                                                </div>
+                                                <img src="~/images/homepage.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">School Activities</h5>
+                                                        <p class="mb-0">Upcoming activities and important notice.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">4</span>
+                                                </div>
+                                                <img src="~/images/admin-messages.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Grade Submission</h5>
+                                                        <p class="mb-0">Submit grades and notify parents in real-time.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">5</span>
+                                                </div>
+                                                <img src="~/images/admin-messages-2.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Class Schedule</h5>
+                                                        <p class="mb-0">View daily subjects, times, and teacher assignments.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">6</span>
+                                                </div>
+                                                <img src="~/images/homepage.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teacher Tab -->
+                            <div class="tab-pane fade show active" id="extra-tab-pane" role="tabpanel" aria-labelledby="extra-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 4</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">4</span>
+                                                </div>
+                                                <img src="images/admin-messages.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 5</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">5</span>
+                                                </div>
+                                                <img src="images/admin-messages-2.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 6</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">6</span>
+                                                </div>
+                                                <img src="images/homepage.jpeg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Parent Tab -->
+                            <div class="tab-pane fade show active" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 7</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">7</span>
+                                                </div>
+                                                <img src="images/default_image.jpg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 8</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">8</span>
+                                                </div>
+                                                <img src="images/default_image.jpg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Features 9</h5>
+                                                        <p class="mb-0">Example descriptions type here.</p>
+                                                    </div>
+                                                    <span class="badge bg-advertising rounded-pill ms-auto">9</span>
+                                                </div>
+                                                <img src="images/default_image.jpg" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add other tab panes here -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="timeline-section section-padding" id="section_3">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">How does it work?</h2>
+                    </div>
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="timeline-container">
+                            <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                <li class="list-progress-wrapper">
+                                    <div class="list-progress">
+                                        <div class="inner"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Real-Time Academic Performance Tracking</h4>
+
+                                    <p class="text-white">The app monitors student progress in real-time. Teachers update grades instantly, and parents receive timely notifications for active support and early intervention.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-search"></i>
+                                    </div>
+                                </li>
+                                    
+                                <li>
+                                    <h4 class="text-white mb-3">Behavioral Assessment with Data-Driven Insights</h4>
+
+                                    <p class="text-white">The app tracks behavioral traits like discipline, punctuality, and participation using set criteria. This ensures fair, consistent, and data-driven assessments for better parent-teacher understanding.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-bookmark"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Adaptive Academic Evaluation for Student Growth</h4>
+
+                                    <p class="text-white">As students progress, the app adjusts evaluation focus based on individual performance. This personalized approach supports continuous improvement and helps parents and teachers guide students more effectively.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-book"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Automated Reports for Informed Decision Making</h4>
+
+                                    <p class="text-white">Parents and teachers receive detailed reports on student progress, highlighting strengths and areas for improvement. These reports simplify evaluations and support data-driven decisions for academic growth.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-laptop"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-5">
+                        <p class="text-white">
+                            Want to learn more?
+                            <a href="#section_5" class="btn custom-btn custom-border-btn ms-3">Send Inquiries</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-5 col-12">
+                        <img src="~/images/faq.png" class="img-fluid" alt="FAQs">
+                    </div>
+
+                    <div class="col-lg-6 col-12 m-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is the Parent-Teacher Update App?
+                                    </button>
+                                </h2>
+
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The app is a digital platform designed to help parents and teachers stay connected by sharing real-time updates on a student’s academic performance, behavior, and school activities.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do parents receive updates?
+                                </button>
+                                </h2>
+
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Parents get instant notifications whenever a teacher posts grades, behavioral notes, or announcements, ensuring they stay informed and involved in their child’s education.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Can teachers monitor student progress?
+                                </button>
+                                </h2>
+
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, the app allows teachers to monitor each student’s academic and behavioral data, making it easier to identify areas for improvement and provide timely feedback.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-bg" id="section_5" style="margin-top: -50px; overflow-x: hidden;">
+            <div class="container-fluid" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); padding: 40px 0; max-width: 100vw; overflow-x: hidden;">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10 col-md-10 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
+                        <form method="post" asp-page-handler="Subscribe" class="custom-form subscribe-form text-center" style="width: 100%; max-width: 1000px; padding: 20px;">
+
+                            <h2 class="text-white mb-4" style="white-space: nowrap; width: 100%; padding-bottom: 10px;">
+                                Get in Touch
+                            </h2>
+
+                            <p class="text-white" style="text-align: justify; font-size: 18px; line-height: 1.7; margin-bottom: 25px; padding: 0 20px;">
+                                Although the system is custom-built and still under development, your feedback is always welcome! While we’re not handling general inquiries at this time, feel free to submit a ticket if you encounter any issues or have suggestions.
+                                <br><br>
+                                Your input helps us improve—thank you for your support!
+                            </p>
+                            
+
+                            <!-- Aligned input group with paragraph -->
+                            <div class="input-group mt-3" style="display: flex; align-items: stretch; width: 100%; padding: 0 20px;">
+                                <input asp-for="Email" class="form-control"
+                                       type="email"
+                                       id="subscribe-email"
+                                       placeholder="Email Address"
+                                       required
+                                       style="border-radius: 25px 0 0 25px;
+                          border: 2px solid #80d0c7;
+                          padding: 0 20px;
+                          height: 50px;
+                          flex: 1;
+                          box-sizing: border-box;
+                          font-size: 16px;" />
+
+                                <button type="submit"
+                                        style="border-radius: 0 25px 25px 0;
+                           border: 2px solid #80d0c7;
+                           background: transparent;
+                           color: #80d0c7;
+                           font-weight: bold;
+                           padding: 0 30px;
+                           height: 50px;
+                           font-size: 16px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           transition: 0.3s ease;
+                           cursor: pointer;"
+                                        onmouseover="this.style.backgroundColor='#13547a'; this.style.color='white'; this.style.borderColor='#13547a';"
+                                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#80d0c7'; this.style.borderColor='#80d0c7';">
+                                    Submit
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright-text mt-lg-5 mt-4">
+                        Built and Design by <strong>BSCS - C2022</strong>. Copyright © 2025. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        // 🔧 This function handles tab and button logic
+        function setToggleText(role) {
+            const allTabs = [
+                "design-tab", "marketing-tab", "finance-tab", "music-tab",
+                "education-tab", "extra-tab", "eextra-tab", "eeextra-tab"
+            ];
+            const allTabPanes = [
+                "design-tab-pane", "marketing-tab-pane", "finance-tab-pane", "music-tab-pane",
+                "education-tab-pane", "extra-tab-pane", "eextra-tab-pane", "eeextra-tab-pane"
+            ];
+
+            const tabRules = {
+                "Admin": ["design-tab", "marketing-tab"],
+                "Company": ["extra-tab", "finance-tab", "music-tab"],
+                "Student": ["education-tab", "eextra-tab", "eeextra-tab"]
+            };
+
+            // Match visible role to the button label
+            const textToRole = {
+                "Admin": "Admin",
+                "Teacher": "Company",
+                "Parent": "Student"
+            };
+
+            // 🔥 Highlight the active button
+            document.querySelectorAll(".toggle-selection .btn").forEach(button => {
+                const btnRole = textToRole[button.innerText.trim()];
+                const isActive = btnRole === role;
+
+                button.classList.toggle("btn-primary", isActive);       // Filled look
+                button.classList.toggle("btn-outline-primary", !isActive); // Outline look
+            });
+
+            // 🔁 Control tab visibility
+            const visibleTabs = tabRules[role] || [];
+
+            allTabs.forEach(tab => {
+                const tabElement = document.getElementById(tab);
+                if (tabElement) {
+                    tabElement.style.display = visibleTabs.includes(tab) ? "block" : "none";
+                    tabElement.classList.remove("active");
+                }
+            });
+
+            allTabPanes.forEach(pane => {
+                const paneElement = document.getElementById(pane);
+                if (paneElement) {
+                    paneElement.classList.remove("active", "show");
+                }
+            });
+
+            // ✅ Activate first tab for selected role
+            if (visibleTabs.length > 0) {
+                const firstTab = document.getElementById(visibleTabs[0]);
+                const firstPane = document.getElementById(`${visibleTabs[0]}-pane`);
+
+                if (firstTab) {
+                    firstTab.classList.add("active");
+                    firstTab.click();
+                }
+
+                if (firstPane) {
+                    firstPane.classList.add("active", "show");
+                }
+            }
+        }
+
+        // ✅ Set default on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            setToggleText("Admin");
+        });
+    </script>
+
+
+    <script>
+        setTimeout(function () {
+            let loader = document.querySelector(".loader-container");
+            if (loader) {
+                loader.style.opacity = "0";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500); // Allow fade-out effect
+            }
+        }, 3000);
+    </script>
+
+</body>
+
+
+</html>
