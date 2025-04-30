@@ -12,6 +12,11 @@ namespace Parent_Teacher.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Message> Messages { get; set; }
-        // Add other DbSets here
+
+        public DbSet<Student> Students { get; set; }
+
+        public DbSet<CourseSection> CourseSections { get; set; }
+
+
     }
 }

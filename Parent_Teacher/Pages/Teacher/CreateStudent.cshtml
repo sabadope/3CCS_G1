@@ -1,7 +1,7 @@
 ﻿@page
-@model Parent_Teacher.Pages.Teacher.ChatModel
+@model Parent_Teacher.Pages.Teacher.CreateStudentModel
 @{
-    ViewData["Title"] = "Chat";
+    ViewData["Title"] = "Create New Student";
 }
 
 
@@ -28,6 +28,7 @@
         --light: #F9F9F9;
         --blue: #3C91E6;
         --light-blue: #CFE8FF;
+        --red: #dc3545;
         --grey: #eee;
         --dark-grey: #AAAAAA;
         --dark: #342E37;
@@ -531,6 +532,7 @@
                 font-weight: 600;
                 margin-bottom: 10px;
                 color: var(--dark);
+                text-align: left;
             }
 
             #content main .head-title .left .breadcrumb {
@@ -683,7 +685,7 @@
                     #content main .table-data .order table th {
                         padding-bottom: 12px;
                         font-size: 13px;
-                        text-align: left;
+                        text-align: center;
                         border-bottom: 1px solid var(--grey);
                     }
 
@@ -691,23 +693,16 @@
                         padding: 16px 0;
                     }
 
-                    #content main .table-data .order table tr td:first-child {
-                        display: flex;
-                        align-items: center;
-                        grid-gap: 12px;
-                        padding-left: 6px;
-                    }
 
-                    #content main .table-data .order table td img {
-                        width: 36px;
-                        height: 36px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                    }
 
-                    #content main .table-data .order table tbody tr:hover {
-                        background: var(--grey);
-                    }
+                        #content main .table-data .order table td img {
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+
 
                     #content main .table-data .order table tr td .status {
                         font-size: 10px;
@@ -857,6 +852,116 @@
         max-width: 100% !important;
         max-height: 100% !important;
     }
+
+
+
+
+    h1 {
+        color: #343a40;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        .table th, .table td {
+            padding: 12px;
+            border: 1px solid #dee2e6;
+            text-align: center;
+        }
+
+        .table th {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+
+    .btn {
+        padding: 6px 12px;
+        margin: 0 5px;
+        font-weight: bold;
+        border-radius: 4px;
+        text-decoration: none;
+        
+        
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+
+</style>
+
+<style>
+
+    h1 {
+        color: #343a40;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: bold;
+        
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        align-content: center;
+        justify-content: center;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        align-content: center;
+        justify-content: center;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
 </style>
 
 
@@ -880,13 +985,13 @@
                         <span class="text">Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/Teacher/StudentLayout">
                         <i class='bx bxs-calendar-check'></i>
                         <span class="text">Student</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="/Teacher/Chat">
                         <i class='bx bxs-message-dots'></i>
                         <span class="text">Message</span>
@@ -933,168 +1038,88 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Message</h1>
+                    <h1>Student</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/Teacher/Teacher">Home</a>
+                            <a href="/Teacher/StudentLayout">Home</a>
                         </li>
-                        <li><i class='bx bx-chevron-right'></i></li>
+                        <img src="~/images/arrow.svg" style="height: 22px; width: 22px;" />
                         <li>
-                            <a class="active">Message</a>
+                            <a class="active">Student List</a>
                         </li>
                     </ul>
                 </div>
-                
+                <a href="/Teacher/Students" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Student List</span>
+                </a>
             </div>
 
 
             <div class="table-data">
                 <div class="order">
+
+
                     
-                    @if (Model.CurrentUser == null)
-                    {
-                        <p>Please log in to use the chat.</p>
-                    }
-                    else
-                    {
-                        <div style="display: flex; gap: 20px;">
-                            <!-- User List -->
-                            <div style="width: 25%; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
-                                <h4>Chat with:</h4>
-                                @foreach (var user in Model.UsersList)
-                                {
-                                    <div style="margin-bottom: 10px;">
-                                        <a asp-page="./Chat" asp-route-SelectedUserId="@user.Id"
-                                           style="text-decoration: none; color: @(Model.SelectedUserId == user.Id ? "#007bff" : "#333"); font-weight: @(Model.SelectedUserId == user.Id ? "bold" : "normal")">
-                                            @user.Name
-                                        </a>
-                                    </div>
-                                }
-                            </div>
+                    <h1>Create New Student</h1>
 
-                            <!-- Chat Box -->
-                            <div style="flex: 1; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
-                                @if (Model.SelectedUserId == 0)
-                                {
-                                    <p>Select a user to start chatting.</p>
-                                }
-                                else
-                                {
-                                    <div id="chat-box" style="height: 400px; overflow-y: auto; border: 1px solid #aaa; padding: 10px; margin-bottom: 10px; background-color: #fff; border-radius: 6px;">
-                                        @foreach (var message in Model.MessageList)
-                                        {
-                                            var isCurrentUser = message.SenderId == Model.CurrentUser?.Id;
-                                            <div class="chat-message" style="text-align: @(isCurrentUser ? "right" : "left"); margin-bottom: 10px;">
-                                                <span style="display: inline-block; background: @(isCurrentUser ? "#d1e7dd" : "#e2e3e5"); padding: 8px 12px; border-radius: 10px; max-width: 75%; word-wrap: break-word;">
-                                                    <strong>@(isCurrentUser ? "You" : Model.UsersList.FirstOrDefault(u => u.Id == message.SenderId)?.Name):</strong>
-                                                    <br />
-                                                    @message.Content
-                                                    <br />
-                                                    <small>@message.Timestamp.ToString("g")</small>
-                                                </span>
-                                            </div>
-                                        }
-                                    </div>
-
-                                    <!-- Send Message Form -->
-                                    <form method="post" id="sendMessageForm">
-                                        <input type="hidden" name="SelectedUserId" value="@Model.SelectedUserId" />
-                                        <textarea name="MessageContent" id="MessageContent" rows="3" style="width: 100%; border-radius: 5px;" placeholder="Type your message..."></textarea>
-                                        <button id="sendBtn" type="submit" style="margin-top: 10px;" disabled>Send</button>
-                                    </form>
-                                }
-                            </div>
+                    <form method="post">
+                        <div class="form-group">
+                            <label asp-for="Student.StudentID"></label>
+                            <input asp-for="Student.StudentID" class="form-control" />
                         </div>
-                    }
+                        <div class="form-group">
+                            <label asp-for="Student.FirstName"></label>
+                            <input asp-for="Student.FirstName" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Student.LastName"></label>
+                            <input asp-for="Student.LastName" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Student.Course"></label>
+                            <select asp-for="Student.Course" asp-items="Model.CourseList" class="form-control" id="CourseDropdown">
+                                <option value="">-- Select Course --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Student.Section"></label>
+                            <select asp-for="Student.Section" class="form-control" id="SectionDropdown">
+                                <option value="">-- Select Section --</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">Create</button>
+                        <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
+                    </form>
+
+
+                    
 
                     @section Scripts {
                         <script>
-                            const chatBox = document.getElementById("chat-box");
-                            const sendMessageForm = document.getElementById("sendMessageForm");
-                            const messageInput = document.getElementById("MessageContent");
-                            const sendBtn = document.getElementById("sendBtn");
-                            let lastMessageId = '@(Model.MessageList.LastOrDefault()?.Id ?? 0)';
-                            const selectedUserId = '@Model.SelectedUserId';
+                            document.getElementById("CourseDropdown").addEventListener("change", function () {
+                                var selectedCourse = this.value;
+                                var sectionDropdown = document.getElementById("SectionDropdown");
 
-                            // Enable/disable send button
-                            messageInput.addEventListener("input", () => {
-                                sendBtn.disabled = messageInput.value.trim().length === 0;
-                            });
-
-                            // Handle Enter key
-                            messageInput.addEventListener("keydown", (e) => {
-                                if (e.key === "Enter" && !e.shiftKey) {
-                                    e.preventDefault();
-                                    if (!sendBtn.disabled) sendBtn.click();
-                                }
-                            });
-
-                            // Submit message instantly
-                            sendMessageForm.addEventListener("submit", function (e) {
-                                e.preventDefault();
-
-                                const content = messageInput.value.trim();
-                                if (!content) return;
-
-                                const formData = new FormData(sendMessageForm);
-
-                                // Add immediately
-                                const msgDiv = document.createElement("div");
-                                msgDiv.style.textAlign = "right";
-                                msgDiv.className = "chat-message";
-                                msgDiv.innerHTML = `
-                                    <span style="display: inline-block; background: #d1e7dd; padding: 8px 12px; border-radius: 10px;">
-                                        <strong>You:</strong><br />
-                                        ${content}<br />
-                                        <small>Sending...</small>
-                                    </span>`;
-                                chatBox.appendChild(msgDiv);
-                                chatBox.scrollTop = chatBox.scrollHeight;
-                                messageInput.value = "";
-                                sendBtn.disabled = true;
-
-                                fetch("?handler=SendMessage", {
-                                    method: "POST",
-                                    body: formData
-                                })
-                                .then(res => res.json())
-                                .then(data => {
-                                    if (data.success) {
-                                        msgDiv.querySelector("small").innerText = data.timestamp;
-                                        lastMessageId++; // incrementally trust new one
-                                    }
-                                });
-                            });
-
-                            function fetchNewMessages() {
-                                if (!selectedUserId) return;
-
-                                fetch(`?handler=NewMessages&selectedUserId=${selectedUserId}&lastMessageId=${lastMessageId}`)
-                                    .then(res => res.json())
+                                fetch(`?handler=Sections&course=${selectedCourse}`)
+                                    .then(response => response.json())
                                     .then(data => {
-                                        if (data.success && data.messages.length > 0) {
-                                            data.messages.forEach(msg => {
-                                                const isCurrentUser = msg.senderId === @Model.CurrentUser?.Id;
-                                                const msgDiv = document.createElement("div");
-                                                msgDiv.className = "chat-message";
-                                                msgDiv.style.textAlign = isCurrentUser ? "right" : "left";
-                                                msgDiv.innerHTML = `
-                                                    <span style="display: inline-block; background: ${isCurrentUser ? '#d1e7dd' : '#e2e3e5'}; padding: 8px 12px; border-radius: 10px;">
-                                                        <strong>${isCurrentUser ? 'You' : 'Them'}:</strong><br />
-                                                        ${msg.content}<br />
-                                                        <small>${new Date(msg.timestamp).toLocaleString()}</small>
-                                                    </span>`;
-                                                chatBox.appendChild(msgDiv);
-                                                lastMessageId = msg.id;
-                                            });
-                                            chatBox.scrollTop = chatBox.scrollHeight;
-                                        }
-                                    });
-                            }
+                                        // Clear old options
+                                        sectionDropdown.innerHTML = '<option value="">-- Select Section --</option>';
 
-                            setInterval(fetchNewMessages, 3000); // Only fetch new ones now
+                                        // Populate new options
+                                        data.forEach(section => {
+                                            var option = document.createElement("option");
+                                            option.value = section;
+                                            option.text = section;
+                                            sectionDropdown.appendChild(option);
+                                        });
+                                    });
+                            });
                         </script>
                     }
+
+
                 </div>
 
 
@@ -1105,8 +1130,6 @@
         <!-- MAIN -->
     </section>
     <!-- CONTENT -->
-
-
     <!-- SIDE BAR SCRIPT -->
     <script>
         // ========== DEFAULT ACTIVATION RULES FOR ACTIVITIES & PERFORMANCE ==========
@@ -1169,3 +1192,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
 </body>
+
+

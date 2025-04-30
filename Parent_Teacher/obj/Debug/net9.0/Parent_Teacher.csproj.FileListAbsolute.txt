@@ -240,7 +240,6 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\refint\Parent
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teacher.pdb
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\Parent_Teacher.genruntimeconfig.cache
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\ref\Parent_Teacher.dll
-C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\2qkmbrgooo-omq8vickmr.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\0192xluolm-f9thepfd5f.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\aoxr7jc7ay-1ej71wpc0i.gz
@@ -250,3 +249,5 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\x2
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\yrjsbf7jn3-p5ojthfa9x.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\1prfslyz0g-5vcl9vd4fi.gz
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\4daj3wsxvy-m8rl6vumt4.gz
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\obj\Debug\net9.0\compressed\0i3lkz8e2h-qh6kx2yk8h.gz

@@ -1,7 +1,6 @@
 ﻿@page
-@model Parent_Teacher.Pages.Teacher.ChatModel
+@model Parent_Teacher.Pages.Teacher.IndexModel
 @{
-    ViewData["Title"] = "Chat";
 }
 
 
@@ -577,6 +576,22 @@
             padding-left: 0px;
         }
 
+        
+
+        .full-link {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-decoration: none; /* optional: remove underline */
+            align-items: center;
+            justify-content: space-between; /* spread icon & text */
+            min-width: 200px;
+            max-width: 100%;
+        }
+
+       
+
+
             #content main .box-info li {
                 flex: 1 1 200px;
                 padding: 24px;
@@ -589,6 +604,19 @@
                 min-width: 200px;
                 max-width: 100%;
             }
+
+            #content main .box-info li:hover {
+               
+                outline: 3px solid var(--dark);
+                
+                cursor: pointer; /* Pointer cursor on hover */
+                /* Prevent any movement */
+                box-shadow: none; /* No shadow to prevent layout change */
+                transform: none; /* Ensure no transformation or movement */
+                /* Change text color on hover */
+                
+            }
+
 
 
                 #content main .box-info li .bx {
@@ -621,6 +649,8 @@
                     flex-direction: column;
                     align-items: flex-end; /* aligns text to the right */
                     justify-content: center;
+                    padding-top: 10px;
+                    
                 }
 
                     #content main .box-info li .text h3 {
@@ -631,6 +661,9 @@
 
                     #content main .box-info li .text p {
                         color: var(--dark);
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-top: 10px;
                     }
 
 
@@ -859,7 +892,6 @@
     }
 </style>
 
-
 <body>
 
 
@@ -880,13 +912,13 @@
                         <span class="text">Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/Teacher/StudentLayout">
                         <i class='bx bxs-calendar-check'></i>
                         <span class="text">Student</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="/Teacher/Chat">
                         <i class='bx bxs-message-dots'></i>
                         <span class="text">Message</span>
@@ -933,180 +965,42 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Message</h1>
+                    <h1>Student</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/Teacher/Teacher">Home</a>
+                            <a href="/Teacher/StudentLayout">Home</a>
                         </li>
-                        <li><i class='bx bx-chevron-right'></i></li>
-                        <li>
-                            <a class="active">Message</a>
-                        </li>
+                        <img src="~/images/arrow.svg" style="height: 22px; width: 22px;"/>
+                        
                     </ul>
                 </div>
                 
             </div>
 
-
-            <div class="table-data">
-                <div class="order">
-                    
-                    @if (Model.CurrentUser == null)
-                    {
-                        <p>Please log in to use the chat.</p>
-                    }
-                    else
-                    {
-                        <div style="display: flex; gap: 20px;">
-                            <!-- User List -->
-                            <div style="width: 25%; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
-                                <h4>Chat with:</h4>
-                                @foreach (var user in Model.UsersList)
-                                {
-                                    <div style="margin-bottom: 10px;">
-                                        <a asp-page="./Chat" asp-route-SelectedUserId="@user.Id"
-                                           style="text-decoration: none; color: @(Model.SelectedUserId == user.Id ? "#007bff" : "#333"); font-weight: @(Model.SelectedUserId == user.Id ? "bold" : "normal")">
-                                            @user.Name
-                                        </a>
-                                    </div>
-                                }
-                            </div>
-
-                            <!-- Chat Box -->
-                            <div style="flex: 1; border: 1px solid #ccc; padding: 10px; border-radius: 8px;">
-                                @if (Model.SelectedUserId == 0)
-                                {
-                                    <p>Select a user to start chatting.</p>
-                                }
-                                else
-                                {
-                                    <div id="chat-box" style="height: 400px; overflow-y: auto; border: 1px solid #aaa; padding: 10px; margin-bottom: 10px; background-color: #fff; border-radius: 6px;">
-                                        @foreach (var message in Model.MessageList)
-                                        {
-                                            var isCurrentUser = message.SenderId == Model.CurrentUser?.Id;
-                                            <div class="chat-message" style="text-align: @(isCurrentUser ? "right" : "left"); margin-bottom: 10px;">
-                                                <span style="display: inline-block; background: @(isCurrentUser ? "#d1e7dd" : "#e2e3e5"); padding: 8px 12px; border-radius: 10px; max-width: 75%; word-wrap: break-word;">
-                                                    <strong>@(isCurrentUser ? "You" : Model.UsersList.FirstOrDefault(u => u.Id == message.SenderId)?.Name):</strong>
-                                                    <br />
-                                                    @message.Content
-                                                    <br />
-                                                    <small>@message.Timestamp.ToString("g")</small>
-                                                </span>
-                                            </div>
-                                        }
-                                    </div>
-
-                                    <!-- Send Message Form -->
-                                    <form method="post" id="sendMessageForm">
-                                        <input type="hidden" name="SelectedUserId" value="@Model.SelectedUserId" />
-                                        <textarea name="MessageContent" id="MessageContent" rows="3" style="width: 100%; border-radius: 5px;" placeholder="Type your message..."></textarea>
-                                        <button id="sendBtn" type="submit" style="margin-top: 10px;" disabled>Send</button>
-                                    </form>
-                                }
-                            </div>
+            <ul class="box-info">
+                <li>
+                    <a href="/Teacher/Students" class="full-link">
+                        <img src="@Url.Content("~/icons/teacher.svg")" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
+                        <div class="text">
+                            <p>Add Student</p>
                         </div>
-                    }
-
-                    @section Scripts {
-                        <script>
-                            const chatBox = document.getElementById("chat-box");
-                            const sendMessageForm = document.getElementById("sendMessageForm");
-                            const messageInput = document.getElementById("MessageContent");
-                            const sendBtn = document.getElementById("sendBtn");
-                            let lastMessageId = '@(Model.MessageList.LastOrDefault()?.Id ?? 0)';
-                            const selectedUserId = '@Model.SelectedUserId';
-
-                            // Enable/disable send button
-                            messageInput.addEventListener("input", () => {
-                                sendBtn.disabled = messageInput.value.trim().length === 0;
-                            });
-
-                            // Handle Enter key
-                            messageInput.addEventListener("keydown", (e) => {
-                                if (e.key === "Enter" && !e.shiftKey) {
-                                    e.preventDefault();
-                                    if (!sendBtn.disabled) sendBtn.click();
-                                }
-                            });
-
-                            // Submit message instantly
-                            sendMessageForm.addEventListener("submit", function (e) {
-                                e.preventDefault();
-
-                                const content = messageInput.value.trim();
-                                if (!content) return;
-
-                                const formData = new FormData(sendMessageForm);
-
-                                // Add immediately
-                                const msgDiv = document.createElement("div");
-                                msgDiv.style.textAlign = "right";
-                                msgDiv.className = "chat-message";
-                                msgDiv.innerHTML = `
-                                    <span style="display: inline-block; background: #d1e7dd; padding: 8px 12px; border-radius: 10px;">
-                                        <strong>You:</strong><br />
-                                        ${content}<br />
-                                        <small>Sending...</small>
-                                    </span>`;
-                                chatBox.appendChild(msgDiv);
-                                chatBox.scrollTop = chatBox.scrollHeight;
-                                messageInput.value = "";
-                                sendBtn.disabled = true;
-
-                                fetch("?handler=SendMessage", {
-                                    method: "POST",
-                                    body: formData
-                                })
-                                .then(res => res.json())
-                                .then(data => {
-                                    if (data.success) {
-                                        msgDiv.querySelector("small").innerText = data.timestamp;
-                                        lastMessageId++; // incrementally trust new one
-                                    }
-                                });
-                            });
-
-                            function fetchNewMessages() {
-                                if (!selectedUserId) return;
-
-                                fetch(`?handler=NewMessages&selectedUserId=${selectedUserId}&lastMessageId=${lastMessageId}`)
-                                    .then(res => res.json())
-                                    .then(data => {
-                                        if (data.success && data.messages.length > 0) {
-                                            data.messages.forEach(msg => {
-                                                const isCurrentUser = msg.senderId === @Model.CurrentUser?.Id;
-                                                const msgDiv = document.createElement("div");
-                                                msgDiv.className = "chat-message";
-                                                msgDiv.style.textAlign = isCurrentUser ? "right" : "left";
-                                                msgDiv.innerHTML = `
-                                                    <span style="display: inline-block; background: ${isCurrentUser ? '#d1e7dd' : '#e2e3e5'}; padding: 8px 12px; border-radius: 10px;">
-                                                        <strong>${isCurrentUser ? 'You' : 'Them'}:</strong><br />
-                                                        ${msg.content}<br />
-                                                        <small>${new Date(msg.timestamp).toLocaleString()}</small>
-                                                    </span>`;
-                                                chatBox.appendChild(msgDiv);
-                                                lastMessageId = msg.id;
-                                            });
-                                            chatBox.scrollTop = chatBox.scrollHeight;
-                                        }
-                                    });
-                            }
-
-                            setInterval(fetchNewMessages, 3000); // Only fetch new ones now
-                        </script>
-                    }
-                </div>
-
-
-            </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Teacher/CreateCourseAndSection" class="full-link">
+                        <img src="@Url.Content("~/icons/parent.svg")" class="svg-blue" alt="Parent Icon" width="36" height="36" />
+                        <div class="text">
+                            <p>Add Course and Section</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
 
 
         </main>
         <!-- MAIN -->
     </section>
     <!-- CONTENT -->
-
-
     <!-- SIDE BAR SCRIPT -->
     <script>
         // ========== DEFAULT ACTIVATION RULES FOR ACTIVITIES & PERFORMANCE ==========
@@ -1165,7 +1059,7 @@
         });
     </script>
 
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
 </body>
