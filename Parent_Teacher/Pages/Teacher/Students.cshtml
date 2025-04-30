@@ -36,6 +36,7 @@
         --light-yellow: #FFF2C6;
         --orange: #FD7238;
         --light-orange: #FFE0D3;
+        --hover-black: #6c757d;
     }
 
     /* Target the entire page's scrollbar */
@@ -905,6 +906,16 @@
         .btn-danger:hover {
             background-color: #c82333;
         }
+
+
+    th a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+        th a:hover {
+            text-decoration: underline;
+        }
 </style>
 
 
@@ -1003,18 +1014,82 @@
                 <div class="order">
 
                     
+                    @{
+                        string GetSortUrl(string column)
+                        {
+                            bool isSameColumn = Model.SortBy == column;
+                            bool nextAsc = !isSameColumn ? true : !Model.Ascending;
+                            return $"?SortBy={column}&Ascending={nextAsc.ToString().ToLower()}";
+                        }
+                    }
+
                     <h1>Student List</h1>
 
                     @if (Model.Students != null && Model.Students.Any())
                     {
+                        
+
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Student ID</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Course</th>
-                                    <th>Section</th>
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+
+                                        <!-- Search Form (Left Side, flush elements) -->
+                                        <form method="get" class="form-inline d-flex">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button type="submit" class="input-group-text" style="background: var(--blue); color: #fff;">Search</button>
+                                                </div>
+                                                <input type="text" name="SearchQuery" class="form-control" placeholder="Search here.." value="@Model.SearchQuery" />
+                                            </div>
+                                        </form>
+
+                                        <!-- Sort Form (Right Side, flush elements, with left margin gap) -->
+                                        <form method="get" class="form-inline ms-5">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" style="background: var(--hover-black); color: #fff;">Sort by</span>
+                                                </div>
+                                                <select id="SortBy" name="SortBy" class="form-control" onchange="this.form.submit()">
+                                                    <option value="">-- Default --</option>
+                                                    <option value="CreatedAt" selected="@(Model.SortBy == "CreatedAt" ? "selected" : null)">Date</option>
+                                                    <option value="StudentID" selected="@(Model.SortBy == "StudentID" ? "selected" : null)">Student ID</option>
+                                                    <option value="FirstName" selected="@(Model.SortBy == "FirstName" ? "selected" : null)">First Name</option>
+                                                    <option value="LastName" selected="@(Model.SortBy == "LastName" ? "selected" : null)">Last Name</option>
+                                                    <option value="Course" selected="@(Model.SortBy == "Course" ? "selected" : null)">Course</option>
+                                                    <option value="Section" selected="@(Model.SortBy == "Section" ? "selected" : null)">Section</option>
+                                                </select>
+                                            </div>
+                                            <input type="hidden" name="Ascending" value="@Model.Ascending.ToString().ToLower()" />
+                                        </form>
+
+                                    </div>
+
+                                    <th>
+                                        <a href="@GetSortUrl("StudentID")" style="text-decoration: none;">
+                                            Student ID <img src="~/images/sync_alt.svg" style="height: 14px; width: 14px;" />
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="@GetSortUrl("FirstName")" style="text-decoration: none;">
+                                            First Name <img src="~/images/sync_alt.svg" style="height: 14px; width: 14px;" />
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="@GetSortUrl("LastName")" style="text-decoration: none;">
+                                            Last Name <img src="~/images/sync_alt.svg" style="height: 14px; width: 14px;" />
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="@GetSortUrl("Course")" style="text-decoration: none;">
+                                            Course <img src="~/images/sync_alt.svg" style="height: 14px; width: 14px;" />
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="@GetSortUrl("Section")" style="text-decoration: none;">
+                                            Section <img src="~/images/sync_alt.svg" style="height: 14px; width: 14px;" />
+                                        </a>
+                                    </th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -1035,7 +1110,6 @@
                                 }
                             </tbody>
                         </table>
-
                     }
                     else
                     {
@@ -1043,7 +1117,8 @@
                             No students found.
                         </div>
                     }
-                    
+
+
                 </div>
 
 

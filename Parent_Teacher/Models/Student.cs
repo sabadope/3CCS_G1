@@ -21,5 +21,7 @@ namespace Parent_Teacher.Models
 
         [Required]
         public string Section { get; set; } = string.Empty;
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

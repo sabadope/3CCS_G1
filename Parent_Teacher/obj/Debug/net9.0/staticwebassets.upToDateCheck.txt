@@ -74,6 +74,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\js\jquery.sticky.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\images\sync_alt.svg
 wwwroot\css\admindashboard.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\bootstrap-icons.css
@@ -108,6 +109,7 @@ wwwroot\images\howitworks.jpeg
 wwwroot\images\logo.png
 wwwroot\images\logo.svg
 wwwroot\images\rear-view-young-college-student.jpg
+wwwroot\images\sync_alt.svg
 wwwroot\images\topics\colleagues-working-cozy-office-medium-shot.png
 wwwroot\images\topics\data-driven.jpg
 wwwroot\images\topics\undraw_Compose_music_re_wpiw.png
