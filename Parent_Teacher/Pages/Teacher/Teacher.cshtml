@@ -946,26 +946,81 @@
             </div>
 
 
+            <ul class="box-info">
+                <li>
+                    <img src="~/icons/student.svg" class="svg-blue" alt="Student Icon" width="36" height="36" />
+                    <div class="text">
+                        <h3>@Model.DashboardData.StudentCount</h3>
+                        <p>Students</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="~/icons/course.svg" class="svg-blue" alt="Course Icon" width="36" height="36" />
+                    <div class="text">
+                        <h3>@Model.DashboardData.CourseCount</h3>
+                        <p>Courses</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="~/icons/section.svg" class="svg-blue" alt="Section Icon" width="36" height="36" />
+                    <div class="text">
+                        <h3>@Model.DashboardData.SectionCount</h3>
+                        <p>Sections</p>
+                    </div>
+                </li>
+            </ul>
+
             <div class="table-data">
                 <div class="order">
-                    
+                    <div class="head">
+                        <h3 id="section-title">Recent Students</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bxs-pie-chart-alt-2 chart-toggle'></i>
+                    </div>
+
+                    <div class="recent-accounts">
+
+                        <div class="table-view">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Student ID</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Course</th>
+                                        <th>Section</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var student in Model.RecentStudents)
+                                    {
+                                        <tr>
+                                            <td>@student.StudentID</td>
+                                            <td>@student.FirstName</td>
+                                            <td>@student.LastName</td>
+                                            <td>@student.Course</td>
+                                            <td>@student.Section</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <div class="todo">
                     <div class="head">
-                        <h3>Total Users</h3>
-                        <i class='bx bx-plus'></i>
-                        <i class='bx bx-filter'></i>
+                        <h3>Monthly Added Student</h3>
+                        <i class='bx bx-bar-chart'></i>
                     </div>
                     <ul class="users-graph">
                         <li style="height: 250px; position: relative;">
-                            <canvas id="userPieChart" style="width: 100%; height: 100%;"></canvas>
+                            <canvas id="studentBarChart" style="width: 100%; height: 100%;"></canvas>
                         </li>
                     </ul>
-
                 </div>
-
-
             </div>
 
 
@@ -1039,4 +1094,36 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
+
+    <script>
+        const months = @Html.Raw(Json.Serialize(Model.MonthlyCounts.Select(m => m.Month)));
+        const counts = @Html.Raw(Json.Serialize(Model.MonthlyCounts.Select(m => m.Count)));
+
+        const ctx = document.getElementById('studentBarChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [{
+                    label: 'Students Added',
+                    data: counts,
+                    backgroundColor: '#4e73df',
+                    borderColor: '#4e73df',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>

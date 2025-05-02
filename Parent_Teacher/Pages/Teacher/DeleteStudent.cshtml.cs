@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Parent_Teacher.Data;
 using Parent_Teacher.Models;
+using System.Threading.Tasks;
 
 namespace Parent_Teacher.Pages.Teacher
 {
@@ -23,7 +24,7 @@ namespace Parent_Teacher.Pages.Teacher
 
             if (Student == null)
             {
-                return RedirectToPage("/Teacher/Students");
+                return NotFound();
             }
 
             return Page();
@@ -31,22 +32,15 @@ namespace Parent_Teacher.Pages.Teacher
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid || Student == null || Student.Id == 0)
+            var student = await _context.Students.FindAsync(Student.Id);
+
+            if (student != null)
             {
-                return RedirectToPage("/Teacher/Students");
+                _context.Students.Remove(student);
+                await _context.SaveChangesAsync();
             }
 
-            var studentToDelete = await _context.Students.FindAsync(Student.Id);
-
-            if (studentToDelete == null)
-            {
-                return RedirectToPage("/Teacher/Students");
-            }
-
-            _context.Students.Remove(studentToDelete);
-            await _context.SaveChangesAsync();
-
-            return RedirectToPage("/Teacher/Students");
+            return RedirectToPage("./Students");
         }
     }
 }
