@@ -84,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxDcmVhdGVTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/CreateSubjectAndClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxDcmVhdGVTdWJqZWN0QW5kQ2xhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/DeleteStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxEZWxldGVTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,8 +96,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxFZGl0U3R1ZGVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/StudentLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxTdHVkZW50TGF5b3V0LmNzaHRtbA==
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/ManageLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxNYW5hZ2VMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/Students.cshtml]
@@ -102,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/Teacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxUZWFjaGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/ViewStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxWaWV3U3R1ZGVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/_ViewImports.cshtml]

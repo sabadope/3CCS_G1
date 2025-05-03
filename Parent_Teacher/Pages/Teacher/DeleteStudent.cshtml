@@ -73,7 +73,7 @@
 
     body {
         background: var(--grey);
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -909,7 +909,7 @@
 </style>
 
 <style>
-    
+
 
     h1 {
         color: #343a40;
@@ -1061,7 +1061,7 @@
 
                     <h1>Delete Student</h1>
                     <h5 style="text-align: center;">Are you sure you want to delete this student?</h5>
-                    
+
                     <div class="form-group">
                         <label>Student ID:</label>
                         <p class="form-control" readonly>@Model.Student.StudentID</p>
@@ -1094,8 +1094,8 @@
                         <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
                     </form>
 
-                   
-                    
+
+
 
 
                 </div>

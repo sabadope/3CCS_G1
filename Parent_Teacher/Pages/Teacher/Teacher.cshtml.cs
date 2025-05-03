@@ -1,8 +1,8 @@
+using Parent_Teacher.Data;
+using Parent_Teacher.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Parent_Teacher.Data;
-using Parent_Teacher.Models;
 
 namespace Parent_Teacher.Pages.Teacher
 {

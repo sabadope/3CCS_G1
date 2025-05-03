@@ -17,6 +17,9 @@ namespace Parent_Teacher.Data
 
         public DbSet<CourseSection> CourseSections { get; set; }
 
+        public DbSet<SubjectClass> SubjectClasses { get; set; }
+
+
 
     }
 }

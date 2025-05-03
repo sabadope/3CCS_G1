@@ -74,7 +74,7 @@
 
     body {
         background: var(--grey);
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -696,8 +696,8 @@
                     
 
                     #content main .table-data .order table td img {
-                        width: 36px;
-                        height: 36px;
+                        width: 22px;
+                        height: 22px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
@@ -880,8 +880,8 @@
         }
 
     .btn {
-        padding: 6px 12px;
-        margin: 0 5px;
+        padding: 4px 8px;
+        margin: 0 1.5px;
         font-weight: bold;
         border-radius: 4px;
         text-decoration: none;
@@ -940,9 +940,9 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="/Teacher/StudentLayout">
+                    <a href="/Teacher/ManageLayout">
                         <i class='bx bxs-calendar-check'></i>
-                        <span class="text">Student</span>
+                        <span class="text">Manage</span>
                     </a>
                 </li>
                 <li>
@@ -992,10 +992,10 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Student</h1>
+                    <h1>Manage</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/Teacher/StudentLayout">Home</a>
+                            <a href="/Teacher/ManageLayout">Home</a>
                         </li>
                         <img src="~/images/arrow.svg" style="height: 22px; width: 22px;"/>
                         <li>
@@ -1103,8 +1103,16 @@
                                         <td>@student.Course</td>
                                         <td>@student.Section</td>
                                         <td>
-                                            <a asp-page="./EditStudent" asp-route-id="@student.Id" class="btn btn-success">Edit</a>
-                                            <a asp-page="./DeleteStudent" asp-route-id="@student.Id" class="btn btn-danger">Delete</a>
+                                            <a asp-page="./EditStudent" asp-route-id="@student.Id" class="btn btn-success">
+                                                <img src="~/images/edit_square.svg" width="21" height="21" />
+                                            </a>
+                                            <a asp-page="./DeleteStudent" asp-route-id="@student.Id" class="btn btn-danger">
+                                                <img src="~/images/delete.svg" width="21" height="21" />
+                                            </a>
+                                            <a asp-page="./ViewStudent" asp-route-id="@student.Id" class="btn btn-primary">
+                                                <img src="~/images/description.svg" width="21" height="21" />
+                                            </a>
+
                                         </td>
                                     </tr>
                                 }

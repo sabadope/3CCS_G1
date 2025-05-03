@@ -23,5 +23,11 @@ namespace Parent_Teacher.Models
         public string Section { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+
+        public string? ImagePath { get; set; }
+
+        public string? ParentImagePath { get; set; }
+
     }
 }

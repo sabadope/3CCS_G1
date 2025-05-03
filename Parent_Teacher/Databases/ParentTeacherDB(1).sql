@@ -27,8 +27,16 @@ CREATE TABLE Students (
     LastName NVARCHAR(100) NOT NULL,
     Course NVARCHAR(50),
     Section NVARCHAR(50),
-    CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+    ImagePath NVARCHAR(255) NULL
+    
 );
+
+ALTER TABLE Students
+ADD CreatedAt DATETIME NOT NULL DEFAULT GETDATE();
+
+ALTER TABLE Students
+ADD ParentImagePath NVARCHAR(255) NULL;
+
 
 -- Create Messages table (after Users is created)
 CREATE TABLE Messages (
@@ -43,3 +51,12 @@ CREATE TABLE Messages (
     FOREIGN KEY (SenderId) REFERENCES Users(Id),
     FOREIGN KEY (ReceiverId) REFERENCES Users(Id)
 );
+
+-- Create SubjectClasses table 
+CREATE TABLE SubjectClasses (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    SubjectCode NVARCHAR(50) NOT NULL,
+    SubjectName NVARCHAR(255) NOT NULL
+);
+
+-- updated as of 05/4/25 - 1:00am

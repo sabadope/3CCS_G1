@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2FVSMZYXHh9P0lXiu+N9IDvg9DooUqKQCl6gYNKKgiU=",
+  "Hash": "0QUIFR7LerwnFSODFOyingLHtZSzOJtbv0tBi9+Jy0I=",
   "Source": "Parent_Teacher",
   "BasePath": "_content/Parent_Teacher",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\css\\chat.css"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\22b5nalowc-3ss3melo3q.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/description#[.{fingerprint=3ss3melo3q}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5w3rd4j3aq",
+      "Integrity": "iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\2qkmbrgooo-omq8vickmr.gz",
@@ -542,6 +563,27 @@
       "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\8vlobwjvo6-7mmq1e4v2v.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/delete#[.{fingerprint=7mmq1e4v2v}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rtekl2pgo8",
+      "Integrity": "8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg"
+    },
+    {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\9myst51hcb-b7pk76d08c.gz",
       "SourceId": "Parent_Teacher",
       "SourceType": "Discovered",
@@ -855,6 +897,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fq49fq2t02-qmfhvwufit.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/delete#[.{fingerprint=qmfhvwufit}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "eigounutm8",
+      "Integrity": "liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fsbp5of4fq-v0zj4ognzu.gz",
@@ -1382,6 +1445,69 @@
       "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\repjto1mn1-v8j6xadgwt.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/edit_square#[.{fingerprint=v8j6xadgwt}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vloxqb8ro2",
+      "Integrity": "LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\rilcxk25ni-qaq86zxhla.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/edit_square#[.{fingerprint=qaq86zxhla}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1g07rsqhyb",
+      "Integrity": "/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\strkupk0zx-qejg3txn5u.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/article#[.{fingerprint=qejg3txn5u}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "olnwgp3e46",
+      "Integrity": "hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg"
+    },
+    {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\t5f8wq8084-45ieqgmu8f.gz",
       "SourceId": "Parent_Teacher",
       "SourceType": "Discovered",
@@ -1674,6 +1800,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sync_alt.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zwn5tq0itp-bbeomawp1y.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/edit#[.{fingerprint=bbeomawp1y}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "lgwa8aq4ev",
+      "Integrity": "1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zyctxz4qe0-aotexczpx2.gz",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/article#[.{fingerprint=aotexczpx2}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "mhyprs8nwo",
+      "Integrity": "2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Parent_Teacher.styles.css",
@@ -2180,6 +2348,27 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow.svg"
     },
     {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/article#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qejg3txn5u",
+      "Integrity": "Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article.svg"
+    },
+    {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\businesswoman-using-tablet-analysis.jpg",
       "SourceId": "Parent_Teacher",
       "SourceType": "Discovered",
@@ -2222,6 +2411,27 @@
       "OriginalItemSpec": "wwwroot\\images\\colleagues-working-cozy-office-medium-shot.jpg"
     },
     {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/default#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qv53vm9x3b",
+      "Integrity": "hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default.png"
+    },
+    {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default_image.jpg",
       "SourceId": "Parent_Teacher",
       "SourceType": "Discovered",
@@ -2241,6 +2451,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default_image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/delete#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qmfhvwufit",
+      "Integrity": "nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\delete.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/description#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3ss3melo3q",
+      "Integrity": "jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\description.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/edit#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bbeomawp1y",
+      "Integrity": "iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\edit.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/edit_square#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qaq86zxhla",
+      "Integrity": "3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\edit_square.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\faq.png",
@@ -2432,6 +2726,27 @@
       "OriginalItemSpec": "wwwroot\\images\\rear-view-young-college-student.jpg"
     },
     {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sabado.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/sabado#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0pe2x4p3hp",
+      "Integrity": "HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sabado.png"
+    },
+    {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sync_alt.svg",
       "SourceId": "Parent_Teacher",
       "SourceType": "Discovered",
@@ -2451,6 +2766,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sync_alt.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/article#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aotexczpx2",
+      "Integrity": "RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\topics\\article.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\colleagues-working-cozy-office-medium-shot.png",
@@ -2493,6 +2829,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\topics\\data-driven.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/delete#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7mmq1e4v2v",
+      "Integrity": "/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\topics\\delete.svg"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/topics/edit_square#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v8j6xadgwt",
+      "Integrity": "EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\topics\\edit_square.svg"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\undraw_Compose_music_re_wpiw.png",
@@ -2724,6 +3102,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\topics\\undraw_viral_tweet_gndb.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banaag.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/banaag#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ed33jn2705",
+      "Integrity": "Lj0sayQPO5nPaPB805fD+0hzJXI7rHUJQ45fBzcfb/g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\banaag.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banias.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/banias#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39q6ogtmur",
+      "Integrity": "Z3Ke+jOJ81pvcCPcIwkkB7N0aR4bihsNqGyV1TJ+w3Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\banias.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\default.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/default#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qv53vm9x3b",
+      "Integrity": "hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\default.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\gadudo.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/gadudo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "okznpkxdgl",
+      "Integrity": "KBML2+YEbWyq23PwqJmJav6JMH4G46iT0jvMaIgEpqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\gadudo.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\hotohot.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/hotohot#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mucv66wrky",
+      "Integrity": "zrAe0J8WWsB2LOy1bbETBo8Jtqis74ixc+jo4Eci+HA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\hotohot.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sabado.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/sabado#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0pe2x4p3hp",
+      "Integrity": "HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\sabado.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sudlon.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "images/uploads/sudlon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "532nkkvswf",
+      "Integrity": "r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\uploads\\sudlon.png"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\js\\bootstrap.bundle.min.js",
@@ -4110,6 +4635,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "uploads/4ec908d5-39d0-48e8-97a7-e2b325ac7ee4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "532nkkvswf",
+      "Integrity": "r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "uploads/b43a868f-199c-42a3-b5a2-ca229fc19357#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0pe2x4p3hp",
+      "Integrity": "HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png"
     }
   ],
   "Endpoints": [
@@ -8078,6 +8645,304 @@
       ]
     },
     {
+      "Route": "images/article.qejg3txn5u.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\strkupk0zx-qejg3txn5u.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004347826087"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qejg3txn5u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/article.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/article.qejg3txn5u.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qejg3txn5u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/article.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/article.qejg3txn5u.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\strkupk0zx-qejg3txn5u.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qejg3txn5u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/article.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M="
+        }
+      ]
+    },
+    {
+      "Route": "images/article.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\strkupk0zx-qejg3txn5u.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004347826087"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/article.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qg2DrfPImQUOE3xZCoL6RgF7Wwtj9Rq6RyPxLQpVD1Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/article.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\strkupk0zx-qejg3txn5u.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hPwjCMmHxyWaockdZvtDIeOxzaGCBBDeRjFylVpua2M="
+        }
+      ]
+    },
+    {
       "Route": "images/businesswoman-using-tablet-analysis.csdytwj561.jpg",
       "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\businesswoman-using-tablet-analysis.jpg",
       "Selectors": [],
@@ -8242,6 +9107,88 @@
       ]
     },
     {
+      "Route": "images/default.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78="
+        }
+      ]
+    },
+    {
+      "Route": "images/default.qv53vm9x3b.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qv53vm9x3b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78="
+        }
+      ]
+    },
+    {
       "Route": "images/default_image.jpg",
       "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default_image.jpg",
       "Selectors": [],
@@ -8320,6 +9267,1198 @@
         {
           "Name": "integrity",
           "Value": "sha256-m2xtYQaS/vCFf5eVHLMtZywXiT6WXtPqORQ2SESnIUo="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.qmfhvwufit.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fq49fq2t02-qmfhvwufit.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004385964912"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qmfhvwufit"
+        },
+        {
+          "Name": "label",
+          "Value": "images/delete.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.qmfhvwufit.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qmfhvwufit"
+        },
+        {
+          "Name": "label",
+          "Value": "images/delete.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.qmfhvwufit.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fq49fq2t02-qmfhvwufit.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qmfhvwufit"
+        },
+        {
+          "Name": "label",
+          "Value": "images/delete.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fq49fq2t02-qmfhvwufit.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004385964912"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvekMSwapDeOpqDyeI4uGJpBSdc2ONL02LiIWZXzWdM="
+        }
+      ]
+    },
+    {
+      "Route": "images/delete.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\fq49fq2t02-qmfhvwufit.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-liOukDZy/9cQ7Ni4Hb0eLJW6I8C2/f+kpzLQbJgvqUg="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.3ss3melo3q.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\22b5nalowc-3ss3melo3q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004237288136"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ss3melo3q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/description.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.3ss3melo3q.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ss3melo3q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/description.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.3ss3melo3q.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\22b5nalowc-3ss3melo3q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ss3melo3q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/description.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\22b5nalowc-3ss3melo3q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004237288136"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jS0nKvd3O1+0dQVnrI3bT0dUdZs48gdPt4tbuH1L6Nk="
+        }
+      ]
+    },
+    {
+      "Route": "images/description.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\22b5nalowc-3ss3melo3q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwZ6rvQGez7mLNkhXzqLsMnwielO2UH0Jlkrx5rIgrs="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.bbeomawp1y.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zwn5tq0itp-bbeomawp1y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bbeomawp1y"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.bbeomawp1y.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bbeomawp1y"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.bbeomawp1y.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zwn5tq0itp-bbeomawp1y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bbeomawp1y"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zwn5tq0itp-bbeomawp1y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iSMhDlQh2B/BRZQSVkrEnJ2Dw7Lu6Vve3DIZnfRyj6o="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zwn5tq0itp-bbeomawp1y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dI53RPTNcwV2Y0pqvsjqd/pVCLOP6K8AL3qaGsGm6Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.qaq86zxhla.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\rilcxk25ni-qaq86zxhla.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003105590062"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qaq86zxhla"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit_square.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.qaq86zxhla.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qaq86zxhla"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit_square.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.qaq86zxhla.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\rilcxk25ni-qaq86zxhla.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qaq86zxhla"
+        },
+        {
+          "Name": "label",
+          "Value": "images/edit_square.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\rilcxk25ni-qaq86zxhla.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003105590062"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kZ7eYr+ksDL0x3dKe1sfCZumvM6MEzK5Q3ZrLsOyWg="
+        }
+      ]
+    },
+    {
+      "Route": "images/edit_square.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\rilcxk25ni-qaq86zxhla.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 16:00:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/za1RjenuefjlT8Zw35VRVn7xH/mMKDDSHU97vl6+Bs="
         }
       ]
     },
@@ -9278,6 +11417,88 @@
       ]
     },
     {
+      "Route": "images/sabado.0pe2x4p3hp.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sabado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0pe2x4p3hp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/sabado.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/sabado.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sabado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
       "Route": "images/sync_alt.svg",
       "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zvk8xsqcrx-u4uljiaqaa.gz",
       "Selectors": [
@@ -9576,6 +11797,304 @@
       ]
     },
     {
+      "Route": "images/topics/article.aotexczpx2.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zyctxz4qe0-aotexczpx2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004347826087"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aotexczpx2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/article.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/article.aotexczpx2.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aotexczpx2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/article.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/article.aotexczpx2.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zyctxz4qe0-aotexczpx2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aotexczpx2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/article.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/article.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zyctxz4qe0-aotexczpx2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004347826087"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/article.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RpGb7NSSxtPNm0b/ntd0FNNc1FDdDtCG6AFPjXnbmag="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/article.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\zyctxz4qe0-aotexczpx2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2qVwGNdCbV4Mzyx1a35FpizXGpsVsyvCIVE00I3+bFc="
+        }
+      ]
+    },
+    {
       "Route": "images/topics/colleagues-working-cozy-office-medium-shot.png",
       "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\colleagues-working-cozy-office-medium-shot.png",
       "Selectors": [],
@@ -9736,6 +12255,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-9fz9GnUiMdEia1xwvzj4JKdOMFHzaXSdptxO/GWEZ8k="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.7mmq1e4v2v.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\8vlobwjvo6-7mmq1e4v2v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004366812227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mmq1e4v2v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/delete.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.7mmq1e4v2v.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mmq1e4v2v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/delete.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.7mmq1e4v2v.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\8vlobwjvo6-7mmq1e4v2v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mmq1e4v2v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/delete.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\8vlobwjvo6-7mmq1e4v2v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004366812227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/43VLcIGOAA/J3BmjYJJcrHK0w7/oEicbOOgVrFBal8="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/delete.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\8vlobwjvo6-7mmq1e4v2v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Wp97OP1i9CyVEuh4fr8lWghEe0HGonnIOY0edUS830="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\repjto1mn1-v8j6xadgwt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003105590062"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\repjto1mn1-v8j6xadgwt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.v8j6xadgwt.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\repjto1mn1-v8j6xadgwt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003105590062"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8j6xadgwt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/edit_square.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.v8j6xadgwt.svg",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8j6xadgwt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/edit_square.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWD3+4QKSJzk4T6eYdOlGYwdzdM20Ey43pMNVMvIGG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/topics/edit_square.v8j6xadgwt.svg.gz",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\obj\\Debug\\net9.0\\compressed\\repjto1mn1-v8j6xadgwt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 13:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v8j6xadgwt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/topics/edit_square.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LV+/k9vzuAniL3uf9MxdTQMZ9eWV5Grdeh+nsmnu/iI="
         }
       ]
     },
@@ -10638,6 +13753,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-Cx2kNJDVdavXiTi6cD8mjrEUIH0hr9IYUGCqZprqN9s="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/banaag.ed33jn2705.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banaag.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lj0sayQPO5nPaPB805fD+0hzJXI7rHUJQ45fBzcfb/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ed33jn2705"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/banaag.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lj0sayQPO5nPaPB805fD+0hzJXI7rHUJQ45fBzcfb/g="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/banaag.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banaag.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lj0sayQPO5nPaPB805fD+0hzJXI7rHUJQ45fBzcfb/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lj0sayQPO5nPaPB805fD+0hzJXI7rHUJQ45fBzcfb/g="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/banias.39q6ogtmur.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banias.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z3Ke+jOJ81pvcCPcIwkkB7N0aR4bihsNqGyV1TJ+w3Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39q6ogtmur"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/banias.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z3Ke+jOJ81pvcCPcIwkkB7N0aR4bihsNqGyV1TJ+w3Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/banias.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banias.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z3Ke+jOJ81pvcCPcIwkkB7N0aR4bihsNqGyV1TJ+w3Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z3Ke+jOJ81pvcCPcIwkkB7N0aR4bihsNqGyV1TJ+w3Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/default.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/default.qv53vm9x3b.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qv53vm9x3b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/default.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/gadudo.okznpkxdgl.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\gadudo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KBML2+YEbWyq23PwqJmJav6JMH4G46iT0jvMaIgEpqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "okznpkxdgl"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/gadudo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KBML2+YEbWyq23PwqJmJav6JMH4G46iT0jvMaIgEpqU="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/gadudo.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\gadudo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KBML2+YEbWyq23PwqJmJav6JMH4G46iT0jvMaIgEpqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KBML2+YEbWyq23PwqJmJav6JMH4G46iT0jvMaIgEpqU="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/hotohot.mucv66wrky.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\hotohot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "172612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zrAe0J8WWsB2LOy1bbETBo8Jtqis74ixc+jo4Eci+HA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mucv66wrky"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/hotohot.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zrAe0J8WWsB2LOy1bbETBo8Jtqis74ixc+jo4Eci+HA="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/hotohot.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\hotohot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "172612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zrAe0J8WWsB2LOy1bbETBo8Jtqis74ixc+jo4Eci+HA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zrAe0J8WWsB2LOy1bbETBo8Jtqis74ixc+jo4Eci+HA="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/sabado.0pe2x4p3hp.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sabado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0pe2x4p3hp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/sabado.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/sabado.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sabado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/sudlon.532nkkvswf.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sudlon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "532nkkvswf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uploads/sudlon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
+        }
+      ]
+    },
+    {
+      "Route": "images/uploads/sudlon.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sudlon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 23:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
         }
       ]
     },
@@ -30118,7 +33807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30179,7 +33868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30224,7 +33913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30279,7 +33968,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30340,7 +34029,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30385,7 +34074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30440,7 +34129,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30493,7 +34182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30530,7 +34219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30577,7 +34266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30630,7 +34319,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30667,7 +34356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 03:40:38 GMT"
+          "Value": "Sat, 03 May 2025 16:13:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30686,6 +34375,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-GbV2FU9obfFJ2tPqewHcWpnSef9l/LEyv3g0Ye/5sM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.532nkkvswf.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 16:34:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "532nkkvswf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 16:34:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b43a868f-199c-42a3-b5a2-ca229fc19357.0pe2x4p3hp.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 17:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0pe2x4p3hp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b43a868f-199c-42a3-b5a2-ca229fc19357.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b43a868f-199c-42a3-b5a2-ca229fc19357.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 17:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
         }
       ]
     }

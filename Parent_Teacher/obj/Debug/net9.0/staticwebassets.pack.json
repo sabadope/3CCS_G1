@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets\\images\\arrow.svg"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
+      "PackagePath": "staticwebassets\\images\\article.svg"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\businesswoman-using-tablet-analysis.jpg",
       "PackagePath": "staticwebassets\\images\\businesswoman-using-tablet-analysis.jpg"
     },
@@ -101,8 +105,28 @@
       "PackagePath": "staticwebassets\\images\\colleagues-working-cozy-office-medium-shot.jpg"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\default_image.jpg",
       "PackagePath": "staticwebassets\\images\\default_image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\delete.svg",
+      "PackagePath": "staticwebassets\\images\\delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\description.svg",
+      "PackagePath": "staticwebassets\\images\\description.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit.svg",
+      "PackagePath": "staticwebassets\\images\\edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\edit_square.svg",
+      "PackagePath": "staticwebassets\\images\\edit_square.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\faq.png",
@@ -141,8 +165,16 @@
       "PackagePath": "staticwebassets\\images\\rear-view-young-college-student.jpg"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sabado.png",
+      "PackagePath": "staticwebassets\\images\\sabado.png"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\sync_alt.svg",
       "PackagePath": "staticwebassets\\images\\sync_alt.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\article.svg",
+      "PackagePath": "staticwebassets\\images\\topics\\article.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\colleagues-working-cozy-office-medium-shot.png",
@@ -151,6 +183,14 @@
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\data-driven.jpg",
       "PackagePath": "staticwebassets\\images\\topics\\data-driven.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\delete.svg",
+      "PackagePath": "staticwebassets\\images\\topics\\delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\edit_square.svg",
+      "PackagePath": "staticwebassets\\images\\topics\\edit_square.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\undraw_Compose_music_re_wpiw.png",
@@ -195,6 +235,34 @@
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\topics\\undraw_viral_tweet_gndb.png",
       "PackagePath": "staticwebassets\\images\\topics\\undraw_viral_tweet_gndb.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banaag.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\banaag.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\banias.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\banias.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\default.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\gadudo.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\gadudo.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\hotohot.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\hotohot.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sabado.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\sabado.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\uploads\\sudlon.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\sudlon.png"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\js\\bootstrap.bundle.min.js",
@@ -459,6 +527,14 @@
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
+      "PackagePath": "staticwebassets\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png",
+      "PackagePath": "staticwebassets\\uploads\\b43a868f-199c-42a3-b5a2-ca229fc19357.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Parent_Teacher.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
