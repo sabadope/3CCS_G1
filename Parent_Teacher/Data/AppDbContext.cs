@@ -19,9 +19,7 @@ namespace Parent_Teacher.Data
 
         public DbSet<SubjectClass> SubjectClasses { get; set; }
 
-        
-
-        
+       
         public DbSet<Grade> Grades { get; set; }
 
         

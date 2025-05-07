@@ -1,4 +1,6 @@
--- Create Users table
+-- ------------------------------------------
+-- 1. USERS TABLE
+-- ------------------------------------------
 CREATE TABLE Users (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(100) NOT NULL,
@@ -12,8 +14,29 @@ CREATE TABLE Users (
 INSERT INTO Users (Name, Email, Password, Role)
 VALUES ('Admin', 'admin@gmail.com', 'admin1230', 'Admin');
 
+-- ------------------------------------------
+-- 2. COURSE SECTIONS TABLE
+-- ------------------------------------------
+CREATE TABLE CourseSections (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    CourseName NVARCHAR(100) NOT NULL,
+    SectionName NVARCHAR(50) NOT NULL,
+    CONSTRAINT UQ_Course_Section UNIQUE (CourseName, SectionName)
+);
 
--- Create Students table
+-- ------------------------------------------
+-- 3. SUBJECT CLASSES TABLE
+-- ------------------------------------------
+CREATE TABLE SubjectClasses (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    SubjectCode NVARCHAR(50) NOT NULL,
+    SubjectName NVARCHAR(255) NOT NULL,
+    CONSTRAINT UQ_Subject_Class UNIQUE (SubjectCode, SubjectName)
+);
+
+-- ------------------------------------------
+-- 4. STUDENTS TABLE
+-- ------------------------------------------
 CREATE TABLE Students (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     StudentID NVARCHAR(50),
@@ -21,67 +44,52 @@ CREATE TABLE Students (
     LastName NVARCHAR(100) NOT NULL,
     Course NVARCHAR(50),
     Section NVARCHAR(50),
-    ImagePath NVARCHAR(255) NULL
-    
+    ImagePath NVARCHAR(255) NULL,
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+    Midterm DECIMAL(5,2) NOT NULL DEFAULT 0,
+    Finals DECIMAL(5,2) NOT NULL DEFAULT 0,
+    TotalAverage DECIMAL(5,2) NOT NULL DEFAULT 0,
+    Subject NVARCHAR(100) NOT NULL DEFAULT '',
+    Class NVARCHAR(100) NOT NULL DEFAULT ''
 );
 
+-- Add index to StudentID for fast lookup
+CREATE INDEX IX_Students_StudentID ON Students(StudentID);
 
-ALTER TABLE Students
-ADD CreatedAt DATETIME NOT NULL DEFAULT GETDATE();
+-- ------------------------------------------
+-- 5. GRADES TABLE
+-- ------------------------------------------
+CREATE TABLE Grades (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    SubjectName NVARCHAR(100) NOT NULL,
+    GradeValue FLOAT NOT NULL CHECK (GradeValue >= 0 AND GradeValue <= 100),
+    StudentId INT NOT NULL,
+    CONSTRAINT FK_Grades_Students FOREIGN KEY (StudentId)
+        REFERENCES Students(Id)
+        ON DELETE CASCADE
+);
 
-ALTER TABLE Students
-ADD Midterm DECIMAL(5,2) NOT NULL DEFAULT 0,
-    Finals DECIMAL(5,2) NOT NULL DEFAULT 0,
-    TotalAverage DECIMAL(5,2) NOT NULL DEFAULT 0;
+-- Index for performance
+CREATE INDEX IX_Grades_StudentId ON Grades(StudentId);
 
-
--- Add new columns
-ALTER TABLE Students ADD Subject NVARCHAR(100) NOT NULL DEFAULT '';
-ALTER TABLE Students ADD Class NVARCHAR(100) NOT NULL DEFAULT '';
-
-
-
--- Create Messages table (after Users is created)
+-- ------------------------------------------
+-- 6. MESSAGES TABLE
+-- ------------------------------------------
 CREATE TABLE Messages (
     Id INT PRIMARY KEY IDENTITY(1,1),
-
     SenderId INT NOT NULL,
     ReceiverId INT NOT NULL,
-
     Content NVARCHAR(MAX),
     Timestamp DATETIME NOT NULL DEFAULT GETDATE(),
-
     FOREIGN KEY (SenderId) REFERENCES Users(Id),
     FOREIGN KEY (ReceiverId) REFERENCES Users(Id)
 );
 
-
--- Create CourseSections table
-CREATE TABLE CourseSections (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    CourseName NVARCHAR(100) NOT NULL,
-    SectionName NVARCHAR(50) NOT NULL
-);
+-- Index for performance
+CREATE INDEX IX_Messages_ReceiverId ON Messages(ReceiverId);
+CREATE INDEX IX_Messages_SenderId ON Messages(SenderId);
 
 
--- Create SubjectClasses table 
-CREATE TABLE SubjectClasses (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    SubjectCode NVARCHAR(50) NOT NULL,
-    SubjectName NVARCHAR(255) NOT NULL
-);
-
-
-
-CREATE TABLE Grades (
-    Id INT IDENTITY(1,1) PRIMARY KEY,           
-    SubjectName NVARCHAR(100) NOT NULL,         
-    GradeValue FLOAT NOT NULL CHECK (GradeValue >= 0 AND GradeValue <= 100),  
-    StudentId INT NOT NULL,                      
-    CONSTRAINT FK_Grades_Students FOREIGN KEY (StudentId)  
-        REFERENCES Students(Id)  
-        ON DELETE CASCADE         
-);
 
 
 
@@ -126,5 +134,16 @@ DROP TABLE Users;
 DROP TABLE Students;
 DROP TABLE Messages;
 DROP TABLE CourseSections;
-DROP TABLE SubejectClasses;
+DROP TABLE SubjectClasses;
 DROP TABLE Grades;
+DROP TABLE Classes;
+DROP TABLE Subjects;
+DROP TABLE Sections;
+DROP TABLE Courses;
+
+
+DROP TABLE IF EXISTS Classes;
+DROP TABLE IF EXISTS Subjects;
+DROP TABLE IF EXISTS Sections;
+DROP TABLE IF EXISTS Courses;
+DROP TABLE IF EXISTS Students;

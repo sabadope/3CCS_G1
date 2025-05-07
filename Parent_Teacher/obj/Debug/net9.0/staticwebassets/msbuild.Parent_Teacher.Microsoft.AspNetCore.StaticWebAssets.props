@@ -2376,6 +2376,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Parent_Teacher.9rglwoiq8v.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\12165b63-c930-4a3f-97d0-532f332d3114.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Parent_Teacher</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Parent_Teacher</BasePath>
+      <RelativePath>uploads/12165b63-c930-4a3f-97d0-532f332d3114.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>532nkkvswf</Fingerprint>
+      <Integrity>r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\12165b63-c930-4a3f-97d0-532f332d3114.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Parent_Teacher</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Parent_Teacher</BasePath>
+      <RelativePath>uploads/3300e61a-ae40-4e99-9d33-4a85d6a7c185.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0pe2x4p3hp</Fingerprint>
+      <Integrity>HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Parent_Teacher</SourceId>

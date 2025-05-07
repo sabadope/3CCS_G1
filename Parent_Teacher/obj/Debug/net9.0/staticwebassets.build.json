@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "99tXaAdX6J7JH4BCFQvuD/ufCU1qjwW+Cq6vASOFfmM=",
+  "Hash": "oBWoHIrjYRbFYgp+wbQlM4LCkgyzcoZBjZwIjHNqftY=",
   "Source": "Parent_Teacher",
   "BasePath": "_content/Parent_Teacher",
   "Mode": "Default",
@@ -4635,6 +4635,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\12165b63-c930-4a3f-97d0-532f332d3114.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "uploads/12165b63-c930-4a3f-97d0-532f332d3114#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "532nkkvswf",
+      "Integrity": "r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\12165b63-c930-4a3f-97d0-532f332d3114.png"
+    },
+    {
+      "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png",
+      "SourceId": "Parent_Teacher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\",
+      "BasePath": "_content/Parent_Teacher",
+      "RelativePath": "uploads/3300e61a-ae40-4e99-9d33-4a85d6a7c185#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0pe2x4p3hp",
+      "Integrity": "HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png"
     },
     {
       "Identity": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png",
@@ -33828,7 +33870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -33889,7 +33931,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -33934,7 +33976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -33989,7 +34031,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34050,7 +34092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34095,7 +34137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34150,7 +34192,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34203,7 +34245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34240,7 +34282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34287,7 +34329,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34340,7 +34382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34377,7 +34419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:40:51 GMT"
+          "Value": "Wed, 07 May 2025 03:39:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34396,6 +34438,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-GbV2FU9obfFJ2tPqewHcWpnSef9l/LEyv3g0Ye/5sM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/12165b63-c930-4a3f-97d0-532f332d3114.532nkkvswf.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\12165b63-c930-4a3f-97d0-532f332d3114.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:25:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "532nkkvswf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/12165b63-c930-4a3f-97d0-532f332d3114.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/12165b63-c930-4a3f-97d0-532f332d3114.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\12165b63-c930-4a3f-97d0-532f332d3114.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:25:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r0E8UGUzk2+OWuaHOdut01d41sMllMWBqtbSrX84nL8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3300e61a-ae40-4e99-9d33-4a85d6a7c185.0pe2x4p3hp.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:08:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0pe2x4p3hp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/3300e61a-ae40-4e99-9d33-4a85d6a7c185.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3300e61a-ae40-4e99-9d33-4a85d6a7c185.png",
+      "AssetFile": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\uploads\\3300e61a-ae40-4e99-9d33-4a85d6a7c185.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:08:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0="
         }
       ]
     },
