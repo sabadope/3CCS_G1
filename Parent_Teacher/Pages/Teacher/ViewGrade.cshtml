@@ -1,7 +1,7 @@
-﻿@page "{id:int}"
-@model Parent_Teacher.Pages.Teacher.EditStudentModel
+﻿@page
+@model Parent_Teacher.Pages.Teacher.ViewGradeModel
 @{
-    ViewData["Title"] = "Edit Student";
+    ViewData["Title"] = "View Grade";
 }
 
 <!-- CSS STYLE FOR ADMIN DASHBOARD -->
@@ -62,7 +62,6 @@
         }
 
     html {
-        overflow-x: hidden;
     }
 
     body.dark {
@@ -73,7 +72,7 @@
 
     body {
         background: var(--grey);
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -908,58 +907,29 @@
 
 </style>
 
+<!-- Custom Tab Styling -->
 <style>
-    
-
-    h1 {
-        color: #343a40;
-        margin-bottom: 20px;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        border: 1px solid #ced4da;
-        border-radius: 4px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        border-radius: 4px;
-        margin-right: 10px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .btn-primary {
-        background-color: #007bff;
-        color: white;
+    .tabs-wrapper {
+        background: transparent;
         border: none;
     }
 
-        .btn-primary:hover {
-            background-color: #0069d9;
+        .tabs-wrapper .nav-tabs .nav-link.active {
+            background-color: #0d6efd; /* Bootstrap primary */
+            color: #fff;
+            border-color: #0d6efd #0d6efd #fff;
         }
 
-    .btn-secondary {
-        background-color: #6c757d;
-        color: white;
-        border: none;
-    }
+        .tabs-wrapper .nav-tabs .nav-link {
+            background-color: #e9ecef;
+            color: #495057;
+            /* hover styling removed */
+        }
 
-        .btn-secondary:hover {
-            background-color: #5a6268;
+        .tabs-wrapper .tab-content {
+            background: transparent;
+            border-top: none;
+            padding-top: 1rem;
         }
 </style>
 
@@ -1044,7 +1014,7 @@
                         </li>
                         <img src="~/images/arrow.svg" style="height: 22px; width: 22px;" />
                         <li>
-                            <a class="active">Edit Student</a>
+                            <a class="active">View Student</a>
                         </li>
                     </ul>
                 </div>
@@ -1059,84 +1029,150 @@
                 <div class="order">
 
 
-                    <h1>Edit Student</h1>
+                    <div class="row gy-4">
+                        <!-- IMAGE CARD -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm rounded">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Student Profile</h5>
+                                    <img src="@Model.StudentImageUrl"
+                                         class="img-fluid mb-3 rounded-2"
+                                         style="max-width:150px; height:150px; object-fit:cover;"
+                                         alt="Student Photo" />
 
-                    @if (Model.Student != null)
-                    {
-                        <form method="post">
-                            <input type="hidden" asp-for="Student.Id" />
-                            
-                            <div class="form-group">
-                                <label asp-for="Student.FirstName"></label>
-                                <input asp-for="Student.FirstName" class="form-control" />
+                                    <form method="post"
+                                          enctype="multipart/form-data"
+                                          asp-page-handler="UploadStudentPhoto"
+                                          asp-route-id="@Model.Student.Id">
+                                        <div class="mb-2">
+                                            <input type="file"
+                                                   name="StudentPhoto"
+                                                   accept="image/*"
+                                                   class="form-control form-control-sm" />
+                                        </div>
+                                        <button type="submit"
+                                                class="btn btn-primary btn-sm w-100">
+                                            Change Photo
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label asp-for="Student.LastName"></label>
-                                <input asp-for="Student.LastName" class="form-control" />
+                        <!-- CONTENT CARD with Browser‑Style Tabs -->
+                        <div class="col-md-8">
+                            <div class="tabs-wrapper">
+                                <ul class="nav nav-tabs" id="studentTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active"
+                                                id="profile-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#profile"
+                                                type="button"
+                                                role="tab">
+                                            Profile
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link"
+                                                id="grades-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#grades"
+                                                type="button"
+                                                role="tab">
+                                            Performances
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link"
+                                                id="schedules-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#schedules"
+                                                type="button"
+                                                role="tab">
+                                            Schedules
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="studentTabContent">
+                                    <!-- PROFILE TAB -->
+                                    <div class="tab-pane fade" id="grades" role="tabpanel">
+                                        <a href="/Teacher/ViewStudent?id=@Model.Student.Id" class="btn btn-primary btn-sm">
+                                            Performance
+                                        </a>
+                                    </div>
+
+                                    <!-- GRADES TAB -->
+                                    <div class="tab-pane fade show active" id="grades" role="tabpanel">
+                                        <h2>Student Grades for @Model.Student.FirstName @Model.Student.LastName</h2>
+
+                                        <!-- Add Grade Form -->
+                                        <form id="gradeForm" method="post">
+                                            <div class="row mb-2">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" name="SubjectName" placeholder="Subject" required />
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="number" class="form-control" name="GradeValue" placeholder="Grade" required />
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button type="submit" class="btn btn-success w-100">Add Grade</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <!-- Displaying Grades -->
+                                        <div class="mt-4">
+                                            <h3>Grades List</h3>
+                                            <table class="table table-sm table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th>Grade</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var grade in Model.Grades)
+                                                    {
+                                                        <tr>
+                                                            <td>@grade.SubjectName</td>
+                                                            <td>@grade.GradeValue</td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        @section Scripts {
+                                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                            <script>
+                                                // AJAX submission for the grade form
+                                                $("#gradeForm").on("submit", function (e) {
+                                                    e.preventDefault();
+                                                    var formData = $(this).serialize();
+                                                    $.post("/Teacher/ViewGrade?id=@Model.Student.Id", formData, function () {
+                                                        location.reload(); // Reload to show updated grades
+                                                    });
+                                                });
+                                            </script>
+                                        }
+
+                                    </div>
+
+                                    <!-- SCHEDULES TAB -->
+                                    <div class="tab-pane fade"
+                                         id="schedules"
+                                         role="tabpanel">
+                                        <p class="text-muted mb-0">
+                                            Schedules content will go here…
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="form-group">
-                                <label asp-for="Student.Course"></label>
-                                <select asp-for="Student.Course" asp-items="Model.CourseList" class="form-control" id="CourseDropdown">
-                                    <option value="">-- Select Course --</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label asp-for="Student.Section"></label>
-                                <select asp-for="Student.Section" class="form-control" id="SectionDropdown">
-                                    <option value="">-- Select Section --</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Save Changes</button>
-                            <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
-                        </form>
-                    }
-                    else
-                    {
-                        <div class="alert alert-danger">Student not found.</div>
-                    }
-                    
-
-                    @section Scripts {
-                        <script>
-                            document.addEventListener("DOMContentLoaded", function () {
-                                var courseDropdown = document.getElementById("CourseDropdown");
-                                var sectionDropdown = document.getElementById("SectionDropdown");
-
-                                function loadSections(selectedCourse, selectedSection) {
-                                    fetch(`?handler=Sections&course=${selectedCourse}`)
-                                        .then(response => response.json())
-                                        .then(data => {
-                                            sectionDropdown.innerHTML = '<option value="">-- Select Section --</option>';
-                                            data.forEach(section => {
-                                                var option = document.createElement("option");
-                                                option.value = section;
-                                                option.text = section;
-                                                if (section === selectedSection) {
-                                                    option.selected = true;
-                                                }
-                                                sectionDropdown.appendChild(option);
-                                            });
-                                        });
-                                }
-
-                                // Load sections on page load with preselected values
-                                var initialCourse = courseDropdown.value;
-                                var initialSection = "@Model.Student.Section";
-                                if (initialCourse) {
-                                    loadSections(initialCourse, initialSection);
-                                }
-
-                                // Update sections on course change
-                                courseDropdown.addEventListener("change", function () {
-                                    loadSections(this.value, "");
-                                });
-                            });
-                        </script>
-                    }
+                        </div>
+                    </div>
 
 
                 </div>
@@ -1211,4 +1247,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
 </body>
+
+
 

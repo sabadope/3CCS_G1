@@ -25,7 +25,7 @@ namespace Parent_Teacher.Pages.Teacher
             _context.SubjectClasses.Add(SubjectClass);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("/Teacher/StudentLayout"); // Or wherever you'd like
+            return RedirectToPage("/Teacher/CreateStudent"); // Or wherever you'd like
         }
     }
 }

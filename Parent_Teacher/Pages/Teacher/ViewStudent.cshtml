@@ -62,7 +62,7 @@
         }
 
     html {
-        overflow-x: hidden;
+        
     }
 
     body.dark {
@@ -73,7 +73,7 @@
 
     body {
         background: var(--grey);
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -908,16 +908,15 @@
 
 </style>
 
-<!-- Custom Tab Styling -->
+<!-- Tab Styling -->
 <style>
     .tabs-wrapper {
         background: transparent;
         border: none;
-        
     }
 
         .tabs-wrapper .nav-tabs .nav-link.active {
-            background-color: #0d6efd; /* Bootstrap primary */
+            background-color: #0d6efd;
             color: #fff;
             border-color: #0d6efd #0d6efd #fff;
         }
@@ -925,7 +924,6 @@
         .tabs-wrapper .nav-tabs .nav-link {
             background-color: #e9ecef;
             color: #495057;
-            /* hover styling removed */
         }
 
         .tabs-wrapper .tab-content {
@@ -1032,140 +1030,122 @@
 
 
                     <div class="row gy-4">
-                        <!-- IMAGE CARD -->
+                        <!-- IMAGE PREVIEW PLACEHOLDER -->
                         <div class="col-md-4">
                             <div class="card shadow-sm rounded">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Student Profile</h5>
-                                    <img src="@Model.StudentImageUrl"
+                                    <img src="@(string.IsNullOrEmpty(Model.Student.ImagePath) ? "/images/default.png" : Model.Student.ImagePath)"
                                          class="img-fluid mb-3 rounded-2"
                                          style="max-width:150px; height:150px; object-fit:cover;"
                                          alt="Student Photo" />
-
-                                    <form method="post"
-                                          enctype="multipart/form-data"
-                                          asp-page-handler="UploadStudentPhoto"
-                                          asp-route-id="@Model.Student.Id">
-                                        <div class="mb-2">
-                                            <input type="file"
-                                                   name="StudentPhoto"
-                                                   accept="image/*"
-                                                   class="form-control form-control-sm" />
-                                        </div>
-                                        <button type="submit"
-                                                class="btn btn-primary btn-sm w-100">
-                                            Change Photo
-                                        </button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- CONTENT CARD with Browser‑Style Tabs -->
+                        <!-- FORM FIELDS AS TABS -->
                         <div class="col-md-8">
                             <div class="tabs-wrapper">
+                                <!-- TABS -->
                                 <ul class="nav nav-tabs" id="studentTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active"
-                                                id="profile-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#profile"
-                                                type="button"
-                                                role="tab">
+                                        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">
                                             Profile
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link"
-                                                id="grades-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#grades"
-                                                type="button"
-                                                role="tab">
-                                            Performances
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link"
-                                                id="schedules-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#schedules"
-                                                type="button"
-                                                role="tab">
-                                            Schedules
+                                        <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab">
+                                            Performance
                                         </button>
                                     </li>
                                 </ul>
 
+                                <!-- TAB CONTENT -->
                                 <div class="tab-content" id="studentTabContent">
                                     <!-- PROFILE TAB -->
-                                    <div class="tab-pane fade show active"
-                                         id="profile"
-                                         role="tabpanel"
-                                         aria-labelledby="profile-tab">
+                                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row mb-3">
                                             <label class="col-sm-4 col-form-label">Student ID:</label>
                                             <div class="col-sm-8">
-                                                <input readonly
-                                                       class="form-control-plaintext"
-                                                       value="@Model.Student.StudentID" />
+                                                <p class="form-control" readonly>@Model.Student.StudentID</p>
                                             </div>
                                         </div>
+
                                         <div class="row mb-3">
                                             <label class="col-sm-4 col-form-label">First Name:</label>
                                             <div class="col-sm-8">
-                                                <input readonly
-                                                       class="form-control-plaintext"
-                                                       value="@Model.Student.FirstName" />
+                                                <p class="form-control" readonly>@Model.Student.FirstName</p>
                                             </div>
                                         </div>
+
                                         <div class="row mb-3">
                                             <label class="col-sm-4 col-form-label">Last Name:</label>
                                             <div class="col-sm-8">
-                                                <input readonly
-                                                       class="form-control-plaintext"
-                                                       value="@Model.Student.LastName" />
+                                                <p class="form-control" readonly>@Model.Student.LastName</p>
                                             </div>
                                         </div>
+
                                         <div class="row mb-3">
                                             <label class="col-sm-4 col-form-label">Course:</label>
                                             <div class="col-sm-8">
-                                                <input readonly
-                                                       class="form-control-plaintext"
-                                                       value="@Model.Student.Course" />
+                                                <p class="form-control" readonly>@Model.Student.Course</p>
                                             </div>
                                         </div>
+
                                         <div class="row mb-3">
                                             <label class="col-sm-4 col-form-label">Section:</label>
                                             <div class="col-sm-8">
-                                                <input readonly
-                                                       class="form-control-plaintext"
-                                                       value="@Model.Student.Section" />
+                                                <p class="form-control" readonly>@Model.Student.Section</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- GRADES TAB -->
-                                    <div class="tab-pane fade"
-                                         id="grades"
-                                         role="tabpanel">
-                                        <p class="text-muted mb-0">
-                                            Grades content will go here…
-                                        </p>
-                                    </div>
+                                    <!-- PERFORMANCE TAB -->
+                                    <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Subject:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control" readonly>@Model.Student.Subject</p>
+                                            </div>
+                                        </div>
 
-                                    <!-- SCHEDULES TAB -->
-                                    <div class="tab-pane fade"
-                                         id="schedules"
-                                         role="tabpanel">
-                                        <p class="text-muted mb-0">
-                                            Schedules content will go here…
-                                        </p>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Class:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control" readonly>@Model.Student.Class</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Midterm:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control" readonly>@Model.Student.Midterm</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Finals:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control" readonly>@Model.Student.Finals</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Total Average:</label>
+                                            <div class="col-sm-8">
+                                                <p class="form-control" readonly>@Model.Student.TotalAverage</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end mt-4">
+                                            <a asp-page="/Teacher/Students" class="btn btn-secondary">Back</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
                 </div>

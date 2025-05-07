@@ -1,5 +1,6 @@
 ﻿@page
 @model Parent_Teacher.Pages.Teacher.CreateStudentModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Create New Student";
 }
@@ -63,7 +64,6 @@
         }
 
     html {
-        overflow-x: hidden;
     }
 
     body.dark {
@@ -74,7 +74,7 @@
 
     body {
         background: var(--grey);
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -885,8 +885,6 @@
         font-weight: bold;
         border-radius: 4px;
         text-decoration: none;
-        
-        
     }
 
     .btn-primary {
@@ -909,58 +907,30 @@
             background-color: #c82333;
         }
 
-
 </style>
 
+<!-- Custom Tab Styling -->
 <style>
-
-    h1 {
-        color: #343a40;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        border: 1px solid #ced4da;
-        border-radius: 4px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        border-radius: 4px;
-        font-weight: bold;
-        
-    }
-
-    .btn-success {
-        background-color: #28a745;
-        color: white;
+    .tabs-wrapper {
+        background: transparent;
         border: none;
-        align-content: center;
-        justify-content: center;
     }
 
-        .btn-success:hover {
-            background-color: #218838;
+        .tabs-wrapper .nav-tabs .nav-link.active {
+            background-color: #0d6efd;
+            color: #fff;
+            border-color: #0d6efd #0d6efd #fff;
         }
 
-    .btn-secondary {
-        background-color: #6c757d;
-        color: white;
-        border: none;
-        align-content: center;
-        justify-content: center;
-    }
+        .tabs-wrapper .nav-tabs .nav-link {
+            background-color: #e9ecef;
+            color: #495057;
+        }
 
-        .btn-secondary:hover {
-            background-color: #5a6268;
+        .tabs-wrapper .tab-content {
+            background: transparent;
+            border-top: none;
+            padding-top: 1rem;
         }
 </style>
 
@@ -1058,67 +1028,260 @@
 
             <div class="table-data">
                 <div class="order">
-
-
                     
-                    <h1>Create New Student</h1>
 
-                    <form method="post">
-                        <div class="form-group">
-                            <label asp-for="Student.StudentID"></label>
-                            <input asp-for="Student.StudentID" class="form-control" />
+                    <div class="row gy-4">
+                        <!-- IMAGE PREVIEW PLACEHOLDER -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm rounded">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Student Profile</h5>
+                                    <img src="/images/default.png"
+                                         id="profileImagePreview"
+                                         class="img-fluid mb-3 rounded-2"
+                                         style="max-width:150px; height:150px; object-fit:cover;"
+                                         alt="Student Photo" />
+                                    <input type="file" name="ProfileImage" id="profileImageInput" class="form-control" accept="image/*" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label asp-for="Student.FirstName"></label>
-                            <input asp-for="Student.FirstName" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Student.LastName"></label>
-                            <input asp-for="Student.LastName" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Student.Course"></label>
-                            <select asp-for="Student.Course" asp-items="Model.CourseList" class="form-control" id="CourseDropdown">
-                                <option value="">-- Select Course --</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Student.Section"></label>
-                            <select asp-for="Student.Section" class="form-control" id="SectionDropdown">
-                                <option value="">-- Select Section --</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-success">Create</button>
-                        <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
-                    </form>
 
+                        <!-- FORM FIELDS AS TABS -->
+                        <div class="col-md-8">
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="tabs-wrapper">
+                                    <!-- TABS -->
+                                    <ul class="nav nav-tabs" id="studentTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">
+                                                Profile
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab">
+                                                Performance
+                                            </button>
+                                        </li>
+                                    </ul>
 
-                    
+                                    <!-- TAB CONTENT -->
+                                    <div class="tab-content" id="studentTabContent">
+                                        <!-- PROFILE TAB -->
+                                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.StudentID"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.StudentID" class="form-control" id="Student_StudentID" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.FirstName"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.FirstName" class="form-control" id="Student_FirstName" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.LastName"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.LastName" class="form-control" id="Student_LastName" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.Course"></label>
+                                                <div class="col-sm-8">
+                                                    <select asp-for="Student.Course" asp-items="Model.CourseList" class="form-control" id="CourseDropdown">
+                                                        <option value="">-- Select Course --</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.Section"></label>
+                                                <div class="col-sm-8">
+                                                    <select asp-for="Student.Section" class="form-control" id="SectionDropdown">
+                                                        <option value="">-- Select Section --</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-end mt-4">
+                                                <button type="button" class="btn btn-primary" id="toPerformance">Next</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERFORMANCE TAB -->
+                                        <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+                                            <div class="row mb-3">
+                                                <div class="form-group">
+                                                    <label asp-for="Student.Subject">Subject</label>
+                                                    <select asp-for="Student.Subject" class="form-control" id="subjectDropdown">
+                                                        <option value="">-- Select Subject --</option>
+                                                        @foreach (var subject in Model.SubjectList)
+                                                        {
+                                                            <option value="@subject.Value">@subject.Text</option>
+                                                        }
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="form-group">
+                                                    <label asp-for="Student.Class">Class</label>
+                                                    <select asp-for="Student.Class" class="form-control" id="classDropdown">
+                                                        <option value="">-- Select Class --</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Midterm, Finals, Total Average -->
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.Midterm"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.Midterm" class="form-control" id="Midterm" type="number" step="0.01" min="0" max="100" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.Finals"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.Finals" class="form-control" id="Finals" type="number" step="0.01" min="0" max="100" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" asp-for="Student.TotalAverage"></label>
+                                                <div class="col-sm-8">
+                                                    <input asp-for="Student.TotalAverage" class="form-control" id="TotalAverage" type="text" readonly />
+                                                </div>
+                                            </div>
+
+                                            <div class="text-end mt-4">
+                                                <button type="submit" class="btn btn-success me-2" id="finalSubmit">Create</button>
+                                                <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
                     @section Scripts {
                         <script>
-                            document.getElementById("CourseDropdown").addEventListener("change", function () {
-                                var selectedCourse = this.value;
-                                var sectionDropdown = document.getElementById("SectionDropdown");
+                            // Image preview
+                            document.getElementById("profileImageInput").addEventListener("change", function (event) {
+                                const reader = new FileReader();
+                                reader.onload = function () {
+                                    document.getElementById("profileImagePreview").src = reader.result;
+                                };
+                                reader.readAsDataURL(event.target.files[0]);
+                            });
 
-                                fetch(`?handler=Sections&course=${selectedCourse}`)
+                            // Load sections based on course
+                            document.getElementById("CourseDropdown").addEventListener("change", function () {
+                                const course = this.value;
+                                const sectionDropdown = document.getElementById("SectionDropdown");
+
+                                fetch(`/Teacher/CreateStudent?handler=Sections&course=${encodeURIComponent(course)}`)
                                     .then(response => response.json())
                                     .then(data => {
-                                        // Clear old options
                                         sectionDropdown.innerHTML = '<option value="">-- Select Section --</option>';
-
-                                        // Populate new options
                                         data.forEach(section => {
-                                            var option = document.createElement("option");
-                                            option.value = section;
-                                            option.text = section;
-                                            sectionDropdown.appendChild(option);
+                                            sectionDropdown.innerHTML += `<option value="${section}">${section}</option>`;
+                                        });
+                                    });
+                            });
+
+                            // Move to performance tab with validation
+                            document.getElementById("toPerformance").addEventListener("click", function () {
+                                const requiredIds = ["Student_StudentID", "Student_FirstName", "Student_LastName", "CourseDropdown", "SectionDropdown"];
+                                let isValid = true;
+
+                                requiredIds.forEach(id => {
+                                    const field = document.getElementById(id);
+                                    if (!field.value.trim()) {
+                                        field.classList.add("is-invalid");
+                                        isValid = false;
+                                    } else {
+                                        field.classList.remove("is-invalid");
+                                    }
+                                });
+
+                                if (isValid) {
+                                    const perfTab = new bootstrap.Tab(document.getElementById("performance-tab"));
+                                    perfTab.show();
+                                } else {
+                                    alert("Please complete all required fields first.");
+                                }
+                            });
+
+                            // Enable submit button
+                            function checkPerformanceValid() {
+                                const score = document.getElementById("PerformanceScore").value.trim();
+                                const remarks = document.getElementById("PerformanceRemarks").value.trim();
+                                document.getElementById("finalSubmit").disabled = !(score && remarks);
+                            }
+
+                            document.getElementById("PerformanceScore").addEventListener("input", checkPerformanceValid);
+                            document.getElementById("PerformanceRemarks").addEventListener("input", checkPerformanceValid);
+                        </script>
+
+                        <script>
+                            // Load classes based on subject
+                            document.getElementById("subjectDropdown").addEventListener("change", function () {
+                                const selectedSubject = this.value;
+
+                                fetch(`/Teacher/CreateStudent?handler=Classes&subject=${encodeURIComponent(selectedSubject)}`)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        const classDropdown = document.getElementById("classDropdown");
+                                        classDropdown.innerHTML = '<option value="">-- Select Class --</option>';
+                                        data.forEach(classItem => {
+                                            const option = document.createElement("option");
+                                            option.value = classItem;
+                                            option.text = classItem;
+                                            classDropdown.appendChild(option);
                                         });
                                     });
                             });
                         </script>
-                    }
 
+                        <script>
+                            // Load sections based on course in Performance tab
+                            document.getElementById("CourseDropdownPerformance").addEventListener("change", function () {
+                                const course = this.value;
+                                const sectionDropdown = document.getElementById("SectionDropdownPerformance");
+
+                                fetch(`/Teacher/CreateStudent?handler=Sections&course=${encodeURIComponent(course)}`)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        sectionDropdown.innerHTML = '<option value="">-- Select Section --</option>';
+                                        data.forEach(section => {
+                                            sectionDropdown.innerHTML += `<option value="${section}">${section}</option>`;
+                                        });
+                                    });
+                            });
+                        </script>
+
+                        <script>
+                            // Calculate total average when Midterm or Finals is updated
+                            function calculateTotalAverage() {
+                                const midterm = parseFloat(document.getElementById("Midterm").value) || 0;
+                                const finals = parseFloat(document.getElementById("Finals").value) || 0;
+                                const totalAverage = (midterm + finals) / 2;
+                                document.getElementById("TotalAverage").value = totalAverage.toFixed(2);
+                            }
+
+                            // Attach event listeners to update Total Average when Midterm or Finals changes
+                            document.getElementById("Midterm").addEventListener("input", calculateTotalAverage);
+                            document.getElementById("Finals").addEventListener("input", calculateTotalAverage);
+                        </script>
+
+                    }
 
                 </div>
 

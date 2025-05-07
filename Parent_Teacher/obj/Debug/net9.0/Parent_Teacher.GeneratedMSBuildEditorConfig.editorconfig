@@ -92,10 +92,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxEZWxldGVTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/EditStudent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxFZGl0U3R1ZGVudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/ManageLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxNYW5hZ2VMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/Teacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxUZWFjaGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/ViewGrade.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxWaWV3R3JhZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TONY/source/repos/3CCS_G1/Parent_Teacher/Pages/Teacher/ViewStudent.cshtml]

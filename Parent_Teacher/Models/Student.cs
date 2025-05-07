@@ -24,10 +24,22 @@ namespace Parent_Teacher.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-
         public string? ImagePath { get; set; }
 
-        public string? ParentImagePath { get; set; }
+        // Add this property
+        [Required]
+        public string Subject { get; set; } = string.Empty;
+
+        [Required]
+        public string Class { get; set; } = string.Empty;
+
+        // Change to nullable decimal
+        public decimal? Midterm { get; set; }
+        public decimal? Finals { get; set; }
+
+        // Calculate Total Average
+        public decimal? TotalAverage { get; set; }
+
 
     }
 }

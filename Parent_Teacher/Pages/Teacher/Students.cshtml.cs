@@ -57,7 +57,7 @@ namespace Parent_Teacher.Pages.Teacher
                 "Course" => Ascending ? studentsQuery.OrderBy(s => s.Course) : studentsQuery.OrderByDescending(s => s.Course),
                 "Section" => Ascending ? studentsQuery.OrderBy(s => s.Section) : studentsQuery.OrderByDescending(s => s.Section),
                 "CreatedAt" => Ascending ? studentsQuery.OrderBy(s => s.CreatedAt) : studentsQuery.OrderByDescending(s => s.CreatedAt),
-                _ => studentsQuery.OrderBy(s => s.LastName).ThenBy(s => s.FirstName)
+                _ => studentsQuery.OrderByDescending(s => s.CreatedAt)
             };
 
             Students = await studentsQuery.ToListAsync();

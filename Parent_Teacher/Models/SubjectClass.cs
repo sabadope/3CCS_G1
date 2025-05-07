@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Parent_Teacher.Models
 {
@@ -10,6 +11,8 @@ namespace Parent_Teacher.Models
         public string SubjectCode { get; set; }
 
         [Required]
-        public string SubjectName { get; set; }  // e.g., Software Engineering 1
+        public string SubjectName { get; set; }
+
+        
     }
 }

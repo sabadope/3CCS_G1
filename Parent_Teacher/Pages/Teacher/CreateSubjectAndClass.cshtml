@@ -62,7 +62,7 @@
         }
 
     html {
-        overflow-x: hidden;
+        
     }
 
     body.dark {
@@ -73,7 +73,7 @@
 
     body {
         background: var(--grey);
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* ========== SIDEBAR BASE ========== */
@@ -1063,12 +1063,12 @@
 
                     <form method="post">
                         <div class="form-group">
-                            <label asp-for="SubjectClass.SubjectCode"></label>
-                            <input asp-for="SubjectClass.SubjectCode" class="form-control" />
-                        </div>
-                        <div class="form-group">
                             <label asp-for="SubjectClass.SubjectName"></label>
                             <input asp-for="SubjectClass.SubjectName" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SubjectClass.SubjectCode"></label>
+                            <input asp-for="SubjectClass.SubjectCode" class="form-control" />
                         </div>
                         <button type="submit" class="btn btn-success">Save</button>
                         <a asp-page="/Teacher/SubjectClassLayout" class="btn btn-secondary">Back</a>

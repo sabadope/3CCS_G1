@@ -5,50 +5,91 @@ using Microsoft.EntityFrameworkCore;
 using Parent_Teacher.Data;
 using Parent_Teacher.Models;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace Parent_Teacher.Pages.Teacher
 {
     public class CreateStudentModel : PageModel
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public CreateStudentModel(AppDbContext context)
+        public CreateStudentModel(AppDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [BindProperty]
         public Student Student { get; set; }
 
         public List<SelectListItem> CourseList { get; set; }
+        public List<SelectListItem> SubjectList { get; set; }
 
         public void PopulateCourseList()
         {
             CourseList = _context.CourseSections
                 .Select(cs => cs.CourseName)
                 .Distinct()
-                .Select(c => new SelectListItem
-                {
-                    Value = c,
-                    Text = c
-                }).ToList();
+                .Select(c => new SelectListItem { Value = c, Text = c })
+                .ToList();
+        }
+
+        public void PopulateSubjectList()
+        {
+            SubjectList = _context.SubjectClasses
+                .Select(sc => sc.SubjectName)
+                .Distinct()
+                .Select(s => new SelectListItem { Value = s, Text = s })
+                .ToList();
         }
 
         public IActionResult OnGet()
         {
             PopulateCourseList();
+            PopulateSubjectList();
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(List<IFormFile> ProfileImage)
         {
             PopulateCourseList();
+            PopulateSubjectList();
 
             if (!ModelState.IsValid)
                 return Page();
 
+            // Handling the profile image upload
+            if (ProfileImage != null && ProfileImage.Count > 0)
+            {
+                var file = ProfileImage.First();
+                var fileName = Path.GetFileNameWithoutExtension(file.FileName) + "_" + Path.GetRandomFileName().Substring(0, 8) + Path.GetExtension(file.FileName);
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                Student.ImagePath = "/uploads/" + fileName;
+
+            }
+
+            // Calculate Total Average based on Midterm and Finals if they are set
+            if (Student.Midterm.HasValue && Student.Finals.HasValue)
+            {
+                Student.TotalAverage = (Student.Midterm.Value + Student.Finals.Value) / 2;
+            }
+
+            // Save the student record
             _context.Students.Add(Student);
             await _context.SaveChangesAsync();
 
@@ -56,15 +97,28 @@ namespace Parent_Teacher.Pages.Teacher
         }
 
 
-        public async Task<JsonResult> OnGetSectionsAsync(string course)
+
+        public JsonResult OnGetSections(string course)
         {
-            var sections = await _context.CourseSections
+            var sections = _context.CourseSections
                 .Where(cs => cs.CourseName == course)
                 .Select(cs => cs.SectionName)
                 .Distinct()
-                .ToListAsync();
+                .ToList();
 
             return new JsonResult(sections);
         }
+
+        public JsonResult OnGetClasses(string subject)
+        {
+            var classes = _context.SubjectClasses
+                .Where(sc => sc.SubjectName == subject)
+                .Select(sc => sc.SubjectCode)
+                .Distinct()
+                .ToList();
+
+            return new JsonResult(classes);
+        }
     }
+
 }

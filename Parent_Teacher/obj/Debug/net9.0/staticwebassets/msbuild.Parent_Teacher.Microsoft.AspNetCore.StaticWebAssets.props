@@ -2394,12 +2394,30 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\4ec908d5-39d0-48e8-97a7-e2b325ac7ee4.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b43a868f-199c-42a3-b5a2-ca229fc19357.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5c2757fd-9865-4e2f-884f-c03c87408097.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Parent_Teacher</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Parent_Teacher</BasePath>
-      <RelativePath>uploads/b43a868f-199c-42a3-b5a2-ca229fc19357.png</RelativePath>
+      <RelativePath>uploads/5c2757fd-9865-4e2f-884f-c03c87408097.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qv53vm9x3b</Fingerprint>
+      <Integrity>hqdzhDfIfq1kOwXOkERjHklWfUlOF5xgMBt0NU/9r78=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\5c2757fd-9865-4e2f-884f-c03c87408097.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\sabado.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Parent_Teacher</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Parent_Teacher</BasePath>
+      <RelativePath>uploads/sabado.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -2410,7 +2428,7 @@
       <Integrity>HKhNN7FjIeeuma0401k2OxjmhZa3vA47+HE9g2+CUJ0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\b43a868f-199c-42a3-b5a2-ca229fc19357.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\sabado.png'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
