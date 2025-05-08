@@ -37,6 +37,7 @@ CREATE TABLE SubjectClasses (
 -- ------------------------------------------
 -- 4. STUDENTS TABLE
 -- ------------------------------------------
+-- Create the Students table with all necessary columns
 CREATE TABLE Students (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     StudentID NVARCHAR(50),
@@ -71,6 +72,49 @@ CREATE TABLE Students (
 
 -- Add index to StudentID for fast lookup
 CREATE INDEX IX_Students_StudentID ON Students(StudentID);
+
+-- Insert sample data
+INSERT INTO Students (StudentID, FirstName, LastName, Course, Section, Subject, Class, Midterm, Finals, TotalAverage,
+                     Subject2, Class2, Midterm2, Finals2, TotalAverage2,
+                     Subject3, Class3, Midterm3, Finals3, TotalAverage3)
+VALUES 
+('2023-001', 'John', 'Doe', 'BSIT', 'A1', 'Programming', 'IT101', 85.50, 90.00, 87.75,
+ 'Database', 'IT102', 88.00, 92.00, 90.00,
+ 'Networking', 'IT103', 82.00, 88.00, 85.00),
+
+('2023-002', 'Jane', 'Smith', 'BSCS', 'B1', 'Programming', 'CS101', 92.00, 95.00, 93.50,
+ 'Database', 'CS102', 90.00, 94.00, 92.00,
+ 'Networking', 'CS103', 88.00, 91.00, 89.50),
+
+('2023-003', 'Mike', 'Johnson', 'BSIT', 'A1', 'Programming', 'IT101', 78.00, 85.00, 81.50,
+ 'Database', 'IT102', 80.00, 82.00, 81.00,
+ 'Networking', 'IT103', 75.00, 80.00, 77.50),
+
+('2023-004', 'Sarah', 'Williams', 'BSCS', 'B1', 'Programming', 'CS101', 95.00, 98.00, 96.50,
+ 'Database', 'CS102', 94.00, 97.00, 95.50,
+ 'Networking', 'CS103', 93.00, 96.00, 94.50),
+
+('2023-005', 'David', 'Brown', 'BSIT', 'A1', 'Programming', 'IT101', 88.00, 92.00, 90.00,
+ 'Database', 'IT102', 85.00, 90.00, 87.50,
+ 'Networking', 'IT103', 87.00, 89.00, 88.00);
+
+-- Create CourseSections table if it doesn't exist
+IF OBJECT_ID('CourseSections', 'U') IS NULL
+BEGIN
+    CREATE TABLE CourseSections (
+        Id INT IDENTITY(1,1) PRIMARY KEY,
+        CourseName NVARCHAR(50) NOT NULL,
+        SectionName NVARCHAR(50) NOT NULL
+    );
+
+    -- Insert sample course sections
+    INSERT INTO CourseSections (CourseName, SectionName)
+    VALUES 
+    ('BSIT', 'A1'),
+    ('BSIT', 'A2'),
+    ('BSCS', 'B1'),
+    ('BSCS', 'B2');
+END
 
 -- ------------------------------------------
 -- 5. GRADES TABLE

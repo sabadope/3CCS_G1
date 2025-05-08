@@ -58,5 +58,8 @@ namespace Parent_Teacher.Models
         public decimal? Midterm3 { get; set; }
         public decimal? Finals3 { get; set; }
         public decimal? TotalAverage3 { get; set; }
+
+        [NotMapped]
+        public decimal OverallAverage { get; set; }
     }
 }

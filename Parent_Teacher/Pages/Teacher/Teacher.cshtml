@@ -692,12 +692,7 @@
                         padding: 16px 0;
                     }
 
-                    #content main .table-data .order table tr td:first-child {
-                        display: flex;
-                        align-items: center;
-                        grid-gap: 12px;
-                        padding-left: 6px;
-                    }
+                    
 
                     #content main .table-data .order table td img {
                         width: 36px;
@@ -964,43 +959,126 @@
 
             <div class="table-data">
                 <div class="order">
-                    <div class="head">
-                        <h3 id="section-title">Recent Students</h3>
-                        <i class='bx bx-filter'></i>
-                        <i class='bx bxs-pie-chart-alt-2 chart-toggle'></i>
-                    </div>
+                    <!-- Top Performers Section -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">Top Performers</h5>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-primary active" data-view="chart">Chart View</button>
+                                    <button type="button" class="btn btn-outline-primary" data-view="table">Table View</button>
+                                </div>
+                            </div>
 
-                    <div class="recent-accounts">
+                            <!-- Chart View -->
+                            <div id="chartView" class="view-section">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <canvas id="topPerformersChart"></canvas>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Performance Summary</h6>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <span>Average Grade:</span>
+                                                    <span class="badge bg-primary" id="overallAverage">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <span>Top Student:</span>
+                                                    <span id="topStudent">-</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span>Highest Grade:</span>
+                                                    <span class="badge bg-success" id="highestGrade">-</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="table-view">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Student ID</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Course</th>
-                                        <th>Section</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var student in Model.RecentStudents)
-                                    {
-                                        <tr>
-                                            <td>@student.StudentID</td>
-                                            <td>@student.FirstName</td>
-                                            <td>@student.LastName</td>
-                                            <td>@student.Course</td>
-                                            <td>@student.Section</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
+                            <!-- Table View -->
+                            <div id="tableView" class="view-section" style="display: none;">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Student ID</th>
+                                                <th>Name</th>
+                                                <th>Course</th>
+                                                <th>Average Grade</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var student in Model.TopPerformers)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <span class="badge bg-primary">#@(Model.TopPerformers.IndexOf(student) + 1)</span>
+                                                    </td>
+                                                    <td>@student.StudentID</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="@(string.IsNullOrEmpty(student.ImagePath) ? "/images/default.png" : student.ImagePath)"
+                                                                 class="rounded-circle me-2"
+                                                                 style="width: 32px; height: 32px; object-fit: cover;"
+                                                                 alt="Student Photo" />
+                                                            @student.FirstName @student.LastName
+                                                        </div>
+                                                    </td>
+                                                    <td>@student.Course</td>
+                                                    <td>
+                                                        <span class="badge bg-primary">@student.OverallAverage</span>
+                                                    </td>
+                                                    <td id="status-@student.Id">-</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
 
+                    <!-- Recent Students Section -->
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Students</h5>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Student ID</th>
+                                            <th>Name</th>
+                                            <th>Course</th>
+                                            <th>Section</th>
+                                            <th>Date Added</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var student in Model.RecentStudents)
+                                        {
+                                            <tr>
+                                                <td>@student.StudentID</td>
+                                                <td>@student.FirstName @student.LastName</td>
+                                                <td>@student.Course</td>
+                                                <td>@student.Section</td>
+                                                <td>@student.CreatedAt.ToString("MMM dd, yyyy")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="table-data">
+                
 
                 <div class="todo">
                     <div class="head">
@@ -1015,6 +1093,96 @@
                 </div>
             </div>
 
+            
+
+            @section Scripts {
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // View switching
+                        const viewButtons = document.querySelectorAll('[data-view]');
+                        const viewSections = document.querySelectorAll('.view-section');
+
+                        viewButtons.forEach(button => {
+                            button.addEventListener('click', function() {
+                                const view = this.dataset.view;
+
+                                // Update button states
+                                viewButtons.forEach(btn => btn.classList.remove('active'));
+                                this.classList.add('active');
+
+                                // Show/hide sections
+                                viewSections.forEach(section => {
+                                    section.style.display = section.id === view + 'View' ? 'block' : 'none';
+                                });
+                            });
+                        });
+
+                        // Initialize top performers chart
+                        const ctx = document.getElementById('topPerformersChart').getContext('2d');
+
+                        const data = {
+                            labels: @Html.Raw(Json.Serialize(Model.TopPerformers.Select(s => s.FirstName + " " + s.LastName))),
+                            datasets: [{
+                                label: 'Average Grade',
+                                data: @Html.Raw(Json.Serialize(Model.TopPerformers.Select(s => s.OverallAverage))),
+                                backgroundColor: [
+                                    '#28a745', // Green
+                                    '#17a2b8', // Blue
+                                    '#ffc107', // Yellow
+                                    '#dc3545', // Red
+                                    '#6f42c1'  // Purple
+                                ],
+                                borderWidth: 1
+                            }]
+                        };
+
+                        new Chart(ctx, {
+                            type: 'bar',
+                            data: data,
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Top 5 Performers'
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        max: 100
+                                    }
+                                }
+                            }
+                        });
+
+                        // Update status badges
+                    @foreach (var student in Model.TopPerformers)
+                    {
+                        <text>
+                                document.getElementById('status-@student.Id').innerHTML = getStatus(@student.OverallAverage);
+                        </text>
+                    }
+
+                        // Update summary information
+                        const overallAverage = @Model.TopPerformers.Average(s => s.OverallAverage);
+                        document.getElementById('overallAverage').textContent = overallAverage.toFixed(2);
+                        document.getElementById('topStudent').textContent = '@Model.TopPerformers.FirstOrDefault()?.FirstName @Model.TopPerformers.FirstOrDefault()?.LastName';
+                        document.getElementById('highestGrade').textContent = '@Model.TopPerformers.Max(s => s.OverallAverage)';
+                    });
+
+                    function getStatus(grade) {
+                        if (grade >= 90) return '<span class="badge bg-success">Excellent</span>';
+                        if (grade >= 80) return '<span class="badge bg-info">Good</span>';
+                        if (grade >= 75) return '<span class="badge bg-warning">Passed</span>';
+                        return '<span class="badge bg-danger">Failed</span>';
+                    }
+                </script>
+            }
 
         </main>
         <!-- MAIN -->
@@ -1097,7 +1265,7 @@
             data: {
                 labels: months,
                 datasets: [{
-                    label: 'Students Added',
+                    
                     data: counts,
                     backgroundColor: '#4e73df',
                     borderColor: '#4e73df',
