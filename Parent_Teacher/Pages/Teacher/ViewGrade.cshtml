@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model Parent_Teacher.Pages.Teacher.ViewGradeModel
 @{
     ViewData["Title"] = "View Grade";
@@ -1027,160 +1027,279 @@
 
             <div class="table-data">
                 <div class="order">
-
-
                     <div class="row gy-4">
-                        <!-- IMAGE CARD -->
+                        <!-- IMAGE PREVIEW -->
                         <div class="col-md-4">
                             <div class="card shadow-sm rounded">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Student Profile</h5>
-                                    <img src="@Model.StudentImageUrl"
+                                    <img src="@(string.IsNullOrEmpty(Model.Student.ImagePath) ? "/images/default.png" : Model.Student.ImagePath)"
                                          class="img-fluid mb-3 rounded-2"
                                          style="max-width:150px; height:150px; object-fit:cover;"
                                          alt="Student Photo" />
-
-                                    <form method="post"
-                                          enctype="multipart/form-data"
-                                          asp-page-handler="UploadStudentPhoto"
-                                          asp-route-id="@Model.Student.Id">
-                                        <div class="mb-2">
-                                            <input type="file"
-                                                   name="StudentPhoto"
-                                                   accept="image/*"
-                                                   class="form-control form-control-sm" />
-                                        </div>
-                                        <button type="submit"
-                                                class="btn btn-primary btn-sm w-100">
-                                            Change Photo
-                                        </button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- CONTENT CARD with Browser‑Style Tabs -->
+                        <!-- STUDENT INFORMATION AS TABS -->
                         <div class="col-md-8">
                             <div class="tabs-wrapper">
+                                <!-- TABS -->
                                 <ul class="nav nav-tabs" id="studentTabs" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active"
-                                                id="profile-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#profile"
-                                                type="button"
-                                                role="tab">
+                                        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">
                                             Profile
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link"
-                                                id="grades-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#grades"
-                                                type="button"
-                                                role="tab">
-                                            Performances
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link"
-                                                id="schedules-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#schedules"
-                                                type="button"
-                                                role="tab">
-                                            Schedules
+                                        <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab">
+                                            Performance
                                         </button>
                                     </li>
                                 </ul>
 
+                                <!-- TAB CONTENT -->
                                 <div class="tab-content" id="studentTabContent">
                                     <!-- PROFILE TAB -->
-                                    <div class="tab-pane fade" id="grades" role="tabpanel">
-                                        <a href="/Teacher/ViewStudent?id=@Model.Student.Id" class="btn btn-primary btn-sm">
-                                            Performance
-                                        </a>
-                                    </div>
-
-                                    <!-- GRADES TAB -->
-                                    <div class="tab-pane fade show active" id="grades" role="tabpanel">
-                                        <h2>Student Grades for @Model.Student.FirstName @Model.Student.LastName</h2>
-
-                                        <!-- Add Grade Form -->
-                                        <form id="gradeForm" method="post">
-                                            <div class="row mb-2">
-                                                <div class="col-md-6">
-                                                    <input type="text" class="form-control" name="SubjectName" placeholder="Subject" required />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="number" class="form-control" name="GradeValue" placeholder="Grade" required />
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <button type="submit" class="btn btn-success w-100">Add Grade</button>
-                                                </div>
+                                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Student ID</label>
+                                            <div class="col-sm-8">
+                                                <input value="@Model.Student.StudentID" class="form-control" readonly />
                                             </div>
-                                        </form>
-
-                                        <!-- Displaying Grades -->
-                                        <div class="mt-4">
-                                            <h3>Grades List</h3>
-                                            <table class="table table-sm table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Subject</th>
-                                                        <th>Grade</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    @foreach (var grade in Model.Grades)
-                                                    {
-                                                        <tr>
-                                                            <td>@grade.SubjectName</td>
-                                                            <td>@grade.GradeValue</td>
-                                                        </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
                                         </div>
 
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">First Name</label>
+                                            <div class="col-sm-8">
+                                                <input value="@Model.Student.FirstName" class="form-control" readonly />
+                                            </div>
+                                        </div>
 
-                                        @section Scripts {
-                                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                            <script>
-                                                // AJAX submission for the grade form
-                                                $("#gradeForm").on("submit", function (e) {
-                                                    e.preventDefault();
-                                                    var formData = $(this).serialize();
-                                                    $.post("/Teacher/ViewGrade?id=@Model.Student.Id", formData, function () {
-                                                        location.reload(); // Reload to show updated grades
-                                                    });
-                                                });
-                                            </script>
-                                        }
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Last Name</label>
+                                            <div class="col-sm-8">
+                                                <input value="@Model.Student.LastName" class="form-control" readonly />
+                                            </div>
+                                        </div>
 
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Course</label>
+                                            <div class="col-sm-8">
+                                                <input value="@Model.Student.Course" class="form-control" readonly />
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label">Section</label>
+                                            <div class="col-sm-8">
+                                                <input value="@Model.Student.Section" class="form-control" readonly />
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end mt-4">
+                                            <button type="button" class="btn btn-primary" id="toPerformance">Next</button>
+                                        </div>
                                     </div>
 
-                                    <!-- SCHEDULES TAB -->
-                                    <div class="tab-pane fade"
-                                         id="schedules"
-                                         role="tabpanel">
-                                        <p class="text-muted mb-0">
-                                            Schedules content will go here…
-                                        </p>
+                                    <!-- PERFORMANCE TAB -->
+                                    <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+                                        <!-- Nested Tabs for Performance -->
+                                        <ul class="nav nav-tabs" id="performanceSubTabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="subject1-tab" data-bs-toggle="tab" data-bs-target="#subject1" type="button" role="tab">
+                                                    Subject 1
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="subject2-tab" data-bs-toggle="tab" data-bs-target="#subject2" type="button" role="tab">
+                                                    Subject 2
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="subject3-tab" data-bs-toggle="tab" data-bs-target="#subject3" type="button" role="tab">
+                                                    Subject 3
+                                                </button>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Nested Tab Content -->
+                                        <div class="tab-content" id="performanceSubTabContent">
+                                            <!-- Subject 1 Tab -->
+                                            <div class="tab-pane fade show active" id="subject1" role="tabpanel" aria-labelledby="subject1-tab">
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Subject</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Subject" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Class</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Class" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Midterm</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Midterm" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Finals</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Finals" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Total Average</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.TotalAverage" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-end mt-4">
+                                                    <button type="button" class="btn btn-primary" id="toSubject2">Next</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Subject 2 Tab -->
+                                            <div class="tab-pane fade" id="subject2" role="tabpanel" aria-labelledby="subject2-tab">
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Subject</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Subject2" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Class</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Class2" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Midterm</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Midterm2" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Finals</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Finals2" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Total Average</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.TotalAverage2" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-end mt-4">
+                                                    <button type="button" class="btn btn-secondary me-2" id="toSubject1">Previous</button>
+                                                    <button type="button" class="btn btn-primary" id="toSubject3">Next</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Subject 3 Tab -->
+                                            <div class="tab-pane fade" id="subject3" role="tabpanel" aria-labelledby="subject3-tab">
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Subject</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Subject3" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Class</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Class3" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Midterm</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Midterm3" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Finals</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.Finals3" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-4 col-form-label">Total Average</label>
+                                                    <div class="col-sm-8">
+                                                        <input value="@Model.Student.TotalAverage3" class="form-control" readonly />
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-end mt-4">
+                                                    <button type="button" class="btn btn-secondary me-2" id="toSubject2">Previous</button>
+                                                    <a asp-page="/Teacher/Students" class="btn btn-secondary">
+                                                        <i class='bx bx-arrow-back'></i> Go Back
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
 
+            @section Scripts {
+                <script>
+                    // Initialize Bootstrap tabs
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Initialize all tabs
+                        var triggerTabList = [].slice.call(document.querySelectorAll('#studentTabs button, #performanceSubTabs button'))
+                        triggerTabList.forEach(function(triggerEl) {
+                            var tabTrigger = new bootstrap.Tab(triggerEl)
+                            triggerEl.addEventListener('click', function(event) {
+                                event.preventDefault()
+                                tabTrigger.show()
+                            })
+                        })
+                    });
 
+                    // Navigation between tabs
+                    document.getElementById('toPerformance').addEventListener('click', function() {
+                        const perfTab = new bootstrap.Tab(document.getElementById('performance-tab'));
+                        perfTab.show();
+                    });
+
+                    document.getElementById('toSubject2').addEventListener('click', function() {
+                        const subject2Tab = new bootstrap.Tab(document.getElementById('subject2-tab'));
+                        subject2Tab.show();
+                    });
+
+                    document.getElementById('toSubject1').addEventListener('click', function() {
+                        const subject1Tab = new bootstrap.Tab(document.getElementById('subject1-tab'));
+                        subject1Tab.show();
+                    });
+
+                    document.getElementById('toSubject3').addEventListener('click', function() {
+                        const subject3Tab = new bootstrap.Tab(document.getElementById('subject3-tab'));
+                        subject3Tab.show();
+                    });
+                </script>
+            }
         </main>
         <!-- MAIN -->
     </section>

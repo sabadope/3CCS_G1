@@ -4,89 +4,175 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Parent_Teacher.Data;
 using Parent_Teacher.Models;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace Parent_Teacher.Pages.Teacher
 {
     public class EditStudentModel : PageModel
     {
         private readonly AppDbContext _context;
-        private readonly IWebHostEnvironment _environment;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public EditStudentModel(AppDbContext context, IWebHostEnvironment environment)
+        public EditStudentModel(AppDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
-            _environment = environment;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [BindProperty]
-        public Student Student { get; set; } = new();
+        public Student Student { get; set; }
 
-        [BindProperty]
-        [Display(Name = "Profile Image")]
-        public IFormFile? ProfileImage { get; set; }
+        public List<SelectListItem> CourseList { get; set; }
+        public List<SelectListItem> SubjectList { get; set; }
 
-        public List<SelectListItem> CourseList { get; set; } = new();
-        public List<SelectListItem> SubjectList { get; set; } = new();
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public void PopulateCourseList()
         {
-            if (id == null) return NotFound();
+            CourseList = _context.CourseSections
+                .Select(cs => cs.CourseName)
+                .Distinct()
+                .Select(c => new SelectListItem { Value = c, Text = c })
+                .ToList();
+        }
 
-            Student? student = await _context.Students.FindAsync(id);
-            if (student == null) return NotFound();
+        public void PopulateSubjectList()
+        {
+            SubjectList = _context.SubjectClasses
+                .Select(sc => sc.SubjectName)
+                .Distinct()
+                .Select(s => new SelectListItem { Value = s, Text = s })
+                .ToList();
+        }
 
-            Student = student;
+        public async Task<IActionResult> OnGetAsync(int id)
+        {
+            Student = await _context.Students.FindAsync(id);
 
-            LoadSelectLists();
+            if (Student == null)
+            {
+                return NotFound();
+            }
+
+            PopulateCourseList();
+            PopulateSubjectList();
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(List<IFormFile> ProfileImage)
         {
-            if (!ModelState.IsValid)
+            PopulateCourseList();
+            PopulateSubjectList();
+
+            var existingStudent = await _context.Students.FindAsync(Student.Id);
+            if (existingStudent == null)
             {
-                LoadSelectLists();
-                return Page();
+                return NotFound();
             }
 
-            var studentInDb = await _context.Students.FindAsync(Student.Id);
-            if (studentInDb == null) return NotFound();
+            // Update basic information
+            existingStudent.StudentID = Student.StudentID;
+            existingStudent.FirstName = Student.FirstName;
+            existingStudent.LastName = Student.LastName;
+            existingStudent.Course = Student.Course;
+            existingStudent.Section = Student.Section;
 
-            // Update properties
-            studentInDb.StudentID = Student.StudentID;
-            studentInDb.FirstName = Student.FirstName;
-            studentInDb.LastName = Student.LastName;
-            studentInDb.Course = Student.Course;
-            studentInDb.Section = Student.Section;
-            studentInDb.Subject = Student.Subject;
-            studentInDb.Class = Student.Class;
-            studentInDb.Midterm = Student.Midterm;
-            studentInDb.Finals = Student.Finals;
-            studentInDb.TotalAverage = (Student.Midterm + Student.Finals) / 2;
+            // Update Subject 1
+            existingStudent.Subject = Student.Subject;
+            existingStudent.Class = Student.Class;
+            existingStudent.Midterm = Student.Midterm;
+            existingStudent.Finals = Student.Finals;
+            existingStudent.TotalAverage = Student.TotalAverage;
 
-            // Handle Profile Image upload
-            if (ProfileImage != null)
+            // Update Subject 2
+            existingStudent.Subject2 = Student.Subject2;
+            existingStudent.Class2 = Student.Class2;
+            existingStudent.Midterm2 = Student.Midterm2;
+            existingStudent.Finals2 = Student.Finals2;
+            existingStudent.TotalAverage2 = Student.TotalAverage2;
+
+            // Update Subject 3
+            existingStudent.Subject3 = Student.Subject3;
+            existingStudent.Class3 = Student.Class3;
+            existingStudent.Midterm3 = Student.Midterm3;
+            existingStudent.Finals3 = Student.Finals3;
+            existingStudent.TotalAverage3 = Student.TotalAverage3;
+
+            // Handle profile image upload
+            if (ProfileImage != null && ProfileImage.Count > 0)
             {
-                var uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
-                Directory.CreateDirectory(uploadsFolder);
+                var file = ProfileImage.First();
+                var fileName = Path.GetFileNameWithoutExtension(file.FileName) + "_" + Path.GetRandomFileName().Substring(0, 8) + Path.GetExtension(file.FileName);
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
 
-                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(ProfileImage.FileName);
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var filePath = Path.Combine(uploadsFolder, fileName);
 
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    await ProfileImage.CopyToAsync(stream);
+                    await file.CopyToAsync(stream);
                 }
 
-                studentInDb.ImagePath = "/uploads/" + uniqueFileName; // FIX: Match DB column
+                // Delete old image if it exists
+                if (!string.IsNullOrEmpty(existingStudent.ImagePath))
+                {
+                    var oldImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", existingStudent.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                existingStudent.ImagePath = "/uploads/" + fileName;
             }
 
-            await _context.SaveChangesAsync();
-            return RedirectToPage("/Teacher/Students");
+            // Calculate Total Averages for all three subjects
+            // Subject 1
+            if (existingStudent.Midterm != 0 && existingStudent.Finals != 0)
+            {
+                existingStudent.TotalAverage = (existingStudent.Midterm + existingStudent.Finals) / 2;
+            }
+
+            // Subject 2
+            if (existingStudent.Midterm2 != 0 && existingStudent.Finals2 != 0)
+            {
+                existingStudent.TotalAverage2 = (existingStudent.Midterm2 + existingStudent.Finals2) / 2;
+            }
+
+            // Subject 3
+            if (existingStudent.Midterm3 != 0 && existingStudent.Finals3 != 0)
+            {
+                existingStudent.TotalAverage3 = (existingStudent.Midterm3 + existingStudent.Finals3) / 2;
+            }
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return RedirectToPage("/Teacher/Students");
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!StudentExists(Student.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
         }
 
-        public IActionResult OnGetSections(string course)
+        private bool StudentExists(int id)
+        {
+            return _context.Students.Any(e => e.Id == id);
+        }
+
+        public JsonResult OnGetSections(string course)
         {
             var sections = _context.CourseSections
                 .Where(cs => cs.CourseName == course)
@@ -97,7 +183,7 @@ namespace Parent_Teacher.Pages.Teacher
             return new JsonResult(sections);
         }
 
-        public IActionResult OnGetClasses(string subject)
+        public JsonResult OnGetClasses(string subject)
         {
             var classes = _context.SubjectClasses
                 .Where(sc => sc.SubjectName == subject)
@@ -106,27 +192,6 @@ namespace Parent_Teacher.Pages.Teacher
                 .ToList();
 
             return new JsonResult(classes);
-        }
-
-        private void LoadSelectLists()
-        {
-            CourseList = _context.CourseSections
-                .Select(c => new SelectListItem
-                {
-                    Value = c.CourseName,
-                    Text = c.CourseName
-                })
-                .Distinct()
-                .ToList();
-
-            SubjectList = _context.SubjectClasses
-                .Select(s => new SelectListItem
-                {
-                    Value = s.SubjectName,
-                    Text = s.SubjectName
-                })
-                .Distinct()
-                .ToList();
         }
     }
 }

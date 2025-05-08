@@ -46,11 +46,27 @@ CREATE TABLE Students (
     Section NVARCHAR(50),
     ImagePath NVARCHAR(255) NULL,
     CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+    
+    -- Subject 1
+    Subject NVARCHAR(100) NOT NULL DEFAULT '',
+    Class NVARCHAR(100) NOT NULL DEFAULT '',
     Midterm DECIMAL(5,2) NOT NULL DEFAULT 0,
     Finals DECIMAL(5,2) NOT NULL DEFAULT 0,
     TotalAverage DECIMAL(5,2) NOT NULL DEFAULT 0,
-    Subject NVARCHAR(100) NOT NULL DEFAULT '',
-    Class NVARCHAR(100) NOT NULL DEFAULT ''
+    
+    -- Subject 2
+    Subject2 NVARCHAR(100) NOT NULL DEFAULT '',
+    Class2 NVARCHAR(100) NOT NULL DEFAULT '',
+    Midterm2 DECIMAL(5,2) NOT NULL DEFAULT 0,
+    Finals2 DECIMAL(5,2) NOT NULL DEFAULT 0,
+    TotalAverage2 DECIMAL(5,2) NOT NULL DEFAULT 0,
+    
+    -- Subject 3
+    Subject3 NVARCHAR(100) NOT NULL DEFAULT '',
+    Class3 NVARCHAR(100) NOT NULL DEFAULT '',
+    Midterm3 DECIMAL(5,2) NOT NULL DEFAULT 0,
+    Finals3 DECIMAL(5,2) NOT NULL DEFAULT 0,
+    TotalAverage3 DECIMAL(5,2) NOT NULL DEFAULT 0
 );
 
 -- Add index to StudentID for fast lookup

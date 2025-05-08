@@ -1112,55 +1112,183 @@
                                             </div>
                                         </div>
 
-                                        <!-- PERFORMANCE TAB -->
                                         <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
-                                            <div class="row mb-3">
-                                                <div class="form-group">
-                                                    <label asp-for="Student.Subject">Subject</label>
-                                                    <select asp-for="Student.Subject" class="form-control" id="subjectDropdown">
-                                                        <option value="">-- Select Subject --</option>
-                                                        @foreach (var subject in Model.SubjectList)
-                                                        {
-                                                            <option value="@subject.Value">@subject.Text</option>
-                                                        }
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            <!-- Nested Tabs for Performance -->
+                                            <ul class="nav nav-tabs" id="performanceSubTabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="subject1-tab" data-bs-toggle="tab" data-bs-target="#subject1" type="button" role="tab">
+                                                        Subject 1
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="subject2-tab" data-bs-toggle="tab" data-bs-target="#subject2" type="button" role="tab">
+                                                        Subject 2
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="subject3-tab" data-bs-toggle="tab" data-bs-target="#subject3" type="button" role="tab">
+                                                        Subject 3
+                                                    </button>
+                                                </li>
+                                            </ul>
 
-                                            <div class="row mb-3">
-                                                <div class="form-group">
-                                                    <label asp-for="Student.Class">Class</label>
-                                                    <select asp-for="Student.Class" class="form-control" id="classDropdown">
-                                                        <option value="">-- Select Class --</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            <!-- Nested Tab Content -->
+                                            <div class="tab-content" id="performanceSubTabContent">
+                                                <!-- Subject 1 Tab -->
+                                                <div class="tab-pane fade show active" id="subject1" role="tabpanel" aria-labelledby="subject1-tab">
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Subject">Subject</label>
+                                                            <select asp-for="Student.Subject" class="form-control subject-dropdown" data-subject="1">
+                                                                <option value="">-- Select Subject --</option>
+                                                                @foreach (var subject in Model.SubjectList)
+                                                                {
+                                                                    <option value="@subject.Value">@subject.Text</option>
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Midterm, Finals, Total Average -->
-                                            <div class="row mb-3">
-                                                <label class="col-sm-4 col-form-label" asp-for="Student.Midterm"></label>
-                                                <div class="col-sm-8">
-                                                    <input asp-for="Student.Midterm" class="form-control" id="Midterm" type="number" step="0.01" min="0" max="100" />
-                                                </div>
-                                            </div>
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Class">Class</label>
+                                                            <select asp-for="Student.Class" class="form-control class-dropdown" data-subject="1">
+                                                                <option value="">-- Select Class --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
-                                            <div class="row mb-3">
-                                                <label class="col-sm-4 col-form-label" asp-for="Student.Finals"></label>
-                                                <div class="col-sm-8">
-                                                    <input asp-for="Student.Finals" class="form-control" id="Finals" type="number" step="0.01" min="0" max="100" />
-                                                </div>
-                                            </div>
+                                                    <!-- Midterm, Finals, Total Average -->
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Midterm</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Midterm" class="form-control midterm-input" data-subject="1" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
 
-                                            <div class="row mb-3">
-                                                <label class="col-sm-4 col-form-label" asp-for="Student.TotalAverage"></label>
-                                                <div class="col-sm-8">
-                                                    <input asp-for="Student.TotalAverage" class="form-control" id="TotalAverage" type="text" readonly />
-                                                </div>
-                                            </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Finals</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Finals" class="form-control finals-input" data-subject="1" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
 
-                                            <div class="text-end mt-4">
-                                                <button type="submit" class="btn btn-success me-2" id="finalSubmit">Create</button>
-                                                <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Total Average</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.TotalAverage" class="form-control total-average" data-subject="1" type="text" readonly />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-end mt-4">
+                                                        <button type="button" class="btn btn-primary" id="toSubject2">Next</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Subject 2 Tab -->
+                                                <div class="tab-pane fade" id="subject2" role="tabpanel" aria-labelledby="subject2-tab">
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Subject">Subject</label>
+                                                            <select asp-for="Student.Subject" class="form-control subject-dropdown" data-subject="2">
+                                                                <option value="">-- Select Subject --</option>
+                                                                @foreach (var subject in Model.SubjectList)
+                                                                {
+                                                                    <option value="@subject.Value">@subject.Text</option>
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Class">Class</label>
+                                                            <select asp-for="Student.Class" class="form-control class-dropdown" data-subject="2">
+                                                                <option value="">-- Select Class --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Midterm, Finals, Total Average -->
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Midterm</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Midterm2" class="form-control midterm-input" data-subject="2" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Finals</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Finals2" class="form-control finals-input" data-subject="2" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Total Average</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.TotalAverage2" class="form-control total-average" data-subject="2" type="text" readonly />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-end mt-4">
+                                                        <button type="button" class="btn btn-secondary me-2" id="toSubject1">Previous</button>
+                                                        <button type="button" class="btn btn-primary" id="toSubject3">Next</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Subject 3 Tab -->
+                                                <div class="tab-pane fade" id="subject3" role="tabpanel" aria-labelledby="subject3-tab">
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Subject">Subject</label>
+                                                            <select asp-for="Student.Subject" class="form-control subject-dropdown" data-subject="3">
+                                                                <option value="">-- Select Subject --</option>
+                                                                @foreach (var subject in Model.SubjectList)
+                                                                {
+                                                                    <option value="@subject.Value">@subject.Text</option>
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <div class="form-group">
+                                                            <label asp-for="Student.Class">Class</label>
+                                                            <select asp-for="Student.Class" class="form-control class-dropdown" data-subject="3">
+                                                                <option value="">-- Select Class --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Midterm, Finals, Total Average -->
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Midterm</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Midterm3" class="form-control midterm-input" data-subject="3" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Finals</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.Finals3" class="form-control finals-input" data-subject="3" type="number" step="0.01" min="0" max="100" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-4 col-form-label">Total Average</label>
+                                                        <div class="col-sm-8">
+                                                            <input asp-for="Student.TotalAverage3" class="form-control total-average" data-subject="3" type="text" readonly />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="text-end mt-4">
+                                                        <button type="button" class="btn btn-secondary me-2" id="toSubject2">Previous</button>
+                                                        <button type="submit" class="btn btn-success me-2" id="finalSubmit">Submit All</button>
+                                                        <a asp-page="/Teacher/Students" class="btn btn-secondary">Cancel</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1279,6 +1407,206 @@
                             // Attach event listeners to update Total Average when Midterm or Finals changes
                             document.getElementById("Midterm").addEventListener("input", calculateTotalAverage);
                             document.getElementById("Finals").addEventListener("input", calculateTotalAverage);
+                        </script>
+
+                        <script>
+                            // Initialize Bootstrap tabs
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Initialize all tabs
+                                var triggerTabList = [].slice.call(document.querySelectorAll('#performanceSubTabs button'))
+                                triggerTabList.forEach(function(triggerEl) {
+                                    var tabTrigger = new bootstrap.Tab(triggerEl)
+                                    triggerEl.addEventListener('click', function(event) {
+                                        event.preventDefault()
+                                        tabTrigger.show()
+                                    })
+                                })
+                            });
+
+                            // Image preview
+                            document.getElementById("profileImageInput").addEventListener("change", function (event) {
+                                const reader = new FileReader();
+                                reader.onload = function () {
+                                    document.getElementById("profileImagePreview").src = reader.result;
+                                };
+                                reader.readAsDataURL(event.target.files[0]);
+                            });
+
+                            // Load sections based on course
+                            document.getElementById("CourseDropdown").addEventListener("change", function () {
+                                const course = this.value;
+                                const sectionDropdown = document.getElementById("SectionDropdown");
+
+                                fetch(`/Teacher/CreateStudent?handler=Sections&course=${encodeURIComponent(course)}`)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        sectionDropdown.innerHTML = '<option value="">-- Select Section --</option>';
+                                        data.forEach(section => {
+                                            sectionDropdown.innerHTML += `<option value="${section}">${section}</option>`;
+                                        });
+                                    });
+                            });
+
+                            // Move to performance tab with validation
+                            document.getElementById("toPerformance").addEventListener("click", function () {
+                                const requiredIds = ["Student_StudentID", "Student_FirstName", "Student_LastName", "CourseDropdown", "SectionDropdown"];
+                                let isValid = true;
+
+                                requiredIds.forEach(id => {
+                                    const field = document.getElementById(id);
+                                    if (!field.value.trim()) {
+                                        field.classList.add("is-invalid");
+                                        isValid = false;
+                                    } else {
+                                        field.classList.remove("is-invalid");
+                                    }
+                                });
+
+                                if (isValid) {
+                                    const perfTab = new bootstrap.Tab(document.getElementById("performance-tab"));
+                                    perfTab.show();
+                                } else {
+                                    alert("Please complete all required fields first.");
+                                }
+                            });
+
+                            // Handle subject dropdowns for all three subjects
+                            document.querySelectorAll('.subject-dropdown').forEach(dropdown => {
+                                dropdown.addEventListener('change', function() {
+                                    const subjectNumber = this.getAttribute('data-subject');
+                                    const selectedSubject = this.value;
+                                    const classDropdown = document.querySelector(`.class-dropdown[data-subject="${subjectNumber}"]`);
+
+                                    fetch(`/Teacher/CreateStudent?handler=Classes&subject=${encodeURIComponent(selectedSubject)}`)
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            classDropdown.innerHTML = '<option value="">-- Select Class --</option>';
+                                            data.forEach(classItem => {
+                                                const option = document.createElement("option");
+                                                option.value = classItem;
+                                                option.text = classItem;
+                                                classDropdown.appendChild(option);
+                                            });
+                                        });
+                                });
+                            });
+
+                            // Calculate total average for each subject
+                            function calculateTotalAverage(subjectNumber) {
+                                let midterm, finals, totalAverage;
+
+                                switch(subjectNumber) {
+                                    case 1:
+                                        midterm = parseFloat(document.querySelector(`.midterm-input[data-subject="1"]`).value) || 0;
+                                        finals = parseFloat(document.querySelector(`.finals-input[data-subject="1"]`).value) || 0;
+                                        totalAverage = (midterm + finals) / 2;
+                                        document.querySelector(`.total-average[data-subject="1"]`).value = totalAverage.toFixed(2);
+                                        break;
+                                    case 2:
+                                        midterm = parseFloat(document.querySelector(`.midterm-input[data-subject="2"]`).value) || 0;
+                                        finals = parseFloat(document.querySelector(`.finals-input[data-subject="2"]`).value) || 0;
+                                        totalAverage = (midterm + finals) / 2;
+                                        document.querySelector(`.total-average[data-subject="2"]`).value = totalAverage.toFixed(2);
+                                        break;
+                                    case 3:
+                                        midterm = parseFloat(document.querySelector(`.midterm-input[data-subject="3"]`).value) || 0;
+                                        finals = parseFloat(document.querySelector(`.finals-input[data-subject="3"]`).value) || 0;
+                                        totalAverage = (midterm + finals) / 2;
+                                        document.querySelector(`.total-average[data-subject="3"]`).value = totalAverage.toFixed(2);
+                                        break;
+                                }
+                            }
+
+                            // Add event listeners for midterm and finals inputs for all subjects
+                            [1, 2, 3].forEach(subjectNumber => {
+                                const midtermInput = document.querySelector(`.midterm-input[data-subject="${subjectNumber}"]`);
+                                const finalsInput = document.querySelector(`.finals-input[data-subject="${subjectNumber}"]`);
+
+                                midtermInput.addEventListener('input', () => calculateTotalAverage(subjectNumber));
+                                finalsInput.addEventListener('input', () => calculateTotalAverage(subjectNumber));
+                            });
+
+                            // Function to validate subject fields
+                            function validateSubject(subjectNumber) {
+                                let subject, classValue, midterm, finals;
+
+                                switch(subjectNumber) {
+                                    case 1:
+                                        subject = document.querySelector(`.subject-dropdown[data-subject="1"]`).value;
+                                        classValue = document.querySelector(`.class-dropdown[data-subject="1"]`).value;
+                                        midterm = document.querySelector(`.midterm-input[data-subject="1"]`).value;
+                                        finals = document.querySelector(`.finals-input[data-subject="1"]`).value;
+                                        break;
+                                    case 2:
+                                        subject = document.querySelector(`.subject-dropdown[data-subject="2"]`).value;
+                                        classValue = document.querySelector(`.class-dropdown[data-subject="2"]`).value;
+                                        midterm = document.querySelector(`.midterm-input[data-subject="2"]`).value;
+                                        finals = document.querySelector(`.finals-input[data-subject="2"]`).value;
+                                        break;
+                                    case 3:
+                                        subject = document.querySelector(`.subject-dropdown[data-subject="3"]`).value;
+                                        classValue = document.querySelector(`.class-dropdown[data-subject="3"]`).value;
+                                        midterm = document.querySelector(`.midterm-input[data-subject="3"]`).value;
+                                        finals = document.querySelector(`.finals-input[data-subject="3"]`).value;
+                                        break;
+                                }
+
+                                if (!subject || !classValue || !midterm || !finals) {
+                                    alert(`Please complete all fields for Subject ${subjectNumber}`);
+                                    return false;
+                                }
+                                return true;
+                            }
+
+                            // Handle navigation between subject tabs
+                            document.getElementById('toSubject2').addEventListener('click', function() {
+                                if (validateSubject(1)) {
+                                    const subject2Tab = new bootstrap.Tab(document.getElementById('subject2-tab'));
+                                    subject2Tab.show();
+                                }
+                            });
+
+                            document.getElementById('toSubject1').addEventListener('click', function() {
+                                const subject1Tab = new bootstrap.Tab(document.getElementById('subject1-tab'));
+                                subject1Tab.show();
+                            });
+
+                            document.getElementById('toSubject3').addEventListener('click', function() {
+                                if (validateSubject(2)) {
+                                    const subject3Tab = new bootstrap.Tab(document.getElementById('subject3-tab'));
+                                    subject3Tab.show();
+                                }
+                            });
+
+                            // Modify final submit validation
+                            document.getElementById("finalSubmit").addEventListener("click", function(e) {
+                                e.preventDefault();
+                                let isValid = true;
+                                let emptyFields = [];
+
+                                // Check each subject tab
+                                [1, 2, 3].forEach(subjectNumber => {
+                                    const subject = document.querySelector(`.subject-dropdown[data-subject="${subjectNumber}"]`).value;
+                                    const classValue = document.querySelector(`.class-dropdown[data-subject="${subjectNumber}"]`).value;
+                                    const midterm = document.querySelector(`.midterm-input[data-subject="${subjectNumber}"]`).value;
+                                    const finals = document.querySelector(`.finals-input[data-subject="${subjectNumber}"]`).value;
+
+                                    if (!subject || !classValue || !midterm || !finals) {
+                                        isValid = false;
+                                        emptyFields.push(`Subject ${subjectNumber}`);
+                                    }
+                                });
+
+                                if (!isValid) {
+                                    alert(`Please complete all fields for: ${emptyFields.join(', ')}`);
+                                } else {
+                                    // Calculate final averages before submitting
+                                    [1, 2, 3].forEach(subjectNumber => {
+                                        calculateTotalAverage(subjectNumber);
+                                    });
+                                    document.querySelector('form').submit();
+                                }
+                            });
                         </script>
 
                     }

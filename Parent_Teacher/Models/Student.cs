@@ -26,20 +26,37 @@ namespace Parent_Teacher.Models
 
         public string? ImagePath { get; set; }
 
-        // Add this property
+        // Subject 1
         [Required]
         public string Subject { get; set; } = string.Empty;
 
         [Required]
         public string Class { get; set; } = string.Empty;
 
-        // Change to nullable decimal
         public decimal? Midterm { get; set; }
         public decimal? Finals { get; set; }
-
-        // Calculate Total Average
         public decimal? TotalAverage { get; set; }
 
+        // Subject 2
+        [Required]
+        public string Subject2 { get; set; } = string.Empty;
 
+        [Required]
+        public string Class2 { get; set; } = string.Empty;
+
+        public decimal? Midterm2 { get; set; }
+        public decimal? Finals2 { get; set; }
+        public decimal? TotalAverage2 { get; set; }
+
+        // Subject 3
+        [Required]
+        public string Subject3 { get; set; } = string.Empty;
+
+        [Required]
+        public string Class3 { get; set; } = string.Empty;
+
+        public decimal? Midterm3 { get; set; }
+        public decimal? Finals3 { get; set; }
+        public decimal? TotalAverage3 { get; set; }
     }
 }

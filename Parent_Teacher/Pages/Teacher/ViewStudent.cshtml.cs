@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Parent_Teacher.Data;
 using Parent_Teacher.Models;
-using System.Threading.Tasks;
 
 namespace Parent_Teacher.Pages.Teacher
 {
@@ -15,12 +15,11 @@ namespace Parent_Teacher.Pages.Teacher
             _context = context;
         }
 
-        [BindProperty]
         public Student Student { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            Student = await _context.Students.FindAsync(id);
+            Student = await _context.Students.FirstOrDefaultAsync(s => s.Id == id);
 
             if (Student == null)
             {

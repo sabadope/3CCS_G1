@@ -59,8 +59,7 @@ namespace Parent_Teacher.Pages.Teacher
             PopulateCourseList();
             PopulateSubjectList();
 
-            if (!ModelState.IsValid)
-                return Page();
+            
 
             // Handling the profile image upload
             if (ProfileImage != null && ProfileImage.Count > 0)
@@ -80,13 +79,25 @@ namespace Parent_Teacher.Pages.Teacher
                 }
 
                 Student.ImagePath = "/uploads/" + fileName;
-
             }
 
-            // Calculate Total Average based on Midterm and Finals if they are set
-            if (Student.Midterm.HasValue && Student.Finals.HasValue)
+            // Calculate Total Averages for all three subjects
+            // Subject 1
+            if (Student.Midterm != 0 && Student.Finals != 0)
             {
-                Student.TotalAverage = (Student.Midterm.Value + Student.Finals.Value) / 2;
+                Student.TotalAverage = (Student.Midterm + Student.Finals) / 2;
+            }
+
+            // Subject 2
+            if (Student.Midterm2 != 0 && Student.Finals2 != 0)
+            {
+                Student.TotalAverage2 = (Student.Midterm2 + Student.Finals2) / 2;
+            }
+
+            // Subject 3
+            if (Student.Midterm3 != 0 && Student.Finals3 != 0)
+            {
+                Student.TotalAverage3 = (Student.Midterm3 + Student.Finals3) / 2;
             }
 
             // Save the student record
@@ -95,8 +106,6 @@ namespace Parent_Teacher.Pages.Teacher
 
             return RedirectToPage("/Teacher/Students");
         }
-
-
 
         public JsonResult OnGetSections(string course)
         {
@@ -120,5 +129,4 @@ namespace Parent_Teacher.Pages.Teacher
             return new JsonResult(classes);
         }
     }
-
 }
