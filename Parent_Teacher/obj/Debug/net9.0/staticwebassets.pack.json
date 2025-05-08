@@ -53,6 +53,14 @@
       "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff2"
     },
     {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\book.svg",
+      "PackagePath": "staticwebassets\\icons\\book.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\bookmark.svg",
+      "PackagePath": "staticwebassets\\icons\\bookmark.svg"
+    },
+    {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\dashboard.png",
       "PackagePath": "staticwebassets\\icons\\dashboard.png"
     },
@@ -63,6 +71,14 @@
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\driven-data.png",
       "PackagePath": "staticwebassets\\icons\\driven-data.png"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\label.svg",
+      "PackagePath": "staticwebassets\\icons\\label.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\menu.svg",
+      "PackagePath": "staticwebassets\\icons\\menu.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\icons\\parent.svg",
@@ -95,6 +111,14 @@
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\article.svg",
       "PackagePath": "staticwebassets\\images\\article.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\book.svg",
+      "PackagePath": "staticwebassets\\images\\book.svg"
+    },
+    {
+      "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\bookmark.svg",
+      "PackagePath": "staticwebassets\\images\\bookmark.svg"
     },
     {
       "Id": "C:\\Users\\TONY\\source\\repos\\3CCS_G1\\Parent_Teacher\\wwwroot\\images\\businesswoman-using-tablet-analysis.jpg",

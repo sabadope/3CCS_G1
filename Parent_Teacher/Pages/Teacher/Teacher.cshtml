@@ -887,19 +887,7 @@
                         <span class="text">Message</span>
                     </a>
                 </li>
-                <li>
-                    <a href="student-activities.php" style="display: flex; align-items: center;">
-                        <i class='bx bxs-folder-open'></i>
-                        <span class="text">Activities</span>
-                        <i class='bx bx-chevron-down arrow' style="margin-left: auto;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="student-settings.php">
-                        <i class='bx bxs-cog'></i>
-                        <span class="text">Settings</span>
-                    </a>
-                </li>
+
                 <li>
                     <a href="/Account/Logout" class="logout">
                         <i class='bx bxs-log-out-circle'></i>
@@ -910,7 +898,6 @@
 
         </div>
     </section>
-
 
 
     <!-- CONTENT -->
@@ -935,21 +922,21 @@
 
             <ul class="box-info">
                 <li>
-                    <img src="~/icons/student.svg" class="svg-blue" alt="Student Icon" width="36" height="36" />
+                    <img src="@Url.Content("~/icons/teacher.svg")" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
                     <div class="text">
                         <h3>@Model.DashboardData.StudentCount</h3>
                         <p>Students</p>
                     </div>
                 </li>
                 <li>
-                    <img src="~/icons/course.svg" class="svg-blue" alt="Course Icon" width="36" height="36" />
+                    <img src="@Url.Content("~/icons/book.svg")" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
                     <div class="text">
                         <h3>@Model.DashboardData.CourseCount</h3>
                         <p>Courses</p>
                     </div>
                 </li>
                 <li>
-                    <img src="~/icons/section.svg" class="svg-blue" alt="Section Icon" width="36" height="36" />
+                    <img src="@Url.Content("~/icons/bookmark.svg")" class="svg-blue" alt="Teacher Icon" width="36" height="36" />
                     <div class="text">
                         <h3>@Model.DashboardData.SectionCount</h3>
                         <p>Sections</p>
@@ -1265,7 +1252,7 @@
             data: {
                 labels: months,
                 datasets: [{
-                    
+                    label: 'Student',
                     data: counts,
                     backgroundColor: '#4e73df',
                     borderColor: '#4e73df',

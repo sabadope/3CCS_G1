@@ -14,6 +14,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\css\templatemo-topic-l
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\css\admindashboard.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.slim.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\icons\bookmark.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation\LICENSE.md
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
@@ -28,6 +29,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\js\bootstrap.bundle.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\js\custom.js
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\icons\menu.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\favicon.ico
@@ -42,6 +44,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\images\delete.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\images\bookmark.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation\dist\additional-methods.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
@@ -50,6 +53,7 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\icons\parent.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\images\book.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.slim.min.map
@@ -58,7 +62,9 @@ C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\css\site.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\icons\book.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\icons\label.svg
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\TONY\source\repos\3CCS_G1\Parent_Teacher\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
@@ -95,9 +101,13 @@ wwwroot\css\templatemo-topic-listing.css
 wwwroot\favicon.ico
 wwwroot\fonts\bootstrap-icons.woff
 wwwroot\fonts\bootstrap-icons.woff2
+wwwroot\icons\book.svg
+wwwroot\icons\bookmark.svg
 wwwroot\icons\dashboard.png
 wwwroot\icons\data-driven.png
 wwwroot\icons\driven-data.png
+wwwroot\icons\label.svg
+wwwroot\icons\menu.svg
 wwwroot\icons\parent.svg
 wwwroot\icons\teacher.svg
 wwwroot\images\admin-dashboard.jpeg
@@ -106,6 +116,8 @@ wwwroot\images\admin-messages.jpeg
 wwwroot\images\admin-messages-2.jpeg
 wwwroot\images\arrow.svg
 wwwroot\images\article.svg
+wwwroot\images\book.svg
+wwwroot\images\bookmark.svg
 wwwroot\images\businesswoman-using-tablet-analysis.jpg
 wwwroot\images\colleagues-working-cozy-office-medium-shot.jpg
 wwwroot\images\default.png

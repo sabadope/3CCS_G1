@@ -1,8 +1,9 @@
 ﻿@page "{id:int}"
-@model Parent_Teacher.Pages.Teacher.ViewGradeModel
+@model Parent_Teacher.Pages.Parent.ViewChildModel
 @{
-    ViewData["Title"] = "View Grade";
+    ViewData["Title"] = "View Student";
 }
+
 
 <!-- CSS STYLE FOR ADMIN DASHBOARD -->
 <style>
@@ -27,7 +28,6 @@
         --light: #F9F9F9;
         --blue: #3C91E6;
         --light-blue: #CFE8FF;
-        --red: #dc3545;
         --grey: #eee;
         --dark-grey: #AAAAAA;
         --dark: #342E37;
@@ -62,6 +62,7 @@
         }
 
     html {
+        overflow-x: hidden;
     }
 
     body.dark {
@@ -530,7 +531,6 @@
                 font-weight: 600;
                 margin-bottom: 10px;
                 color: var(--dark);
-                text-align: left;
             }
 
             #content main .head-title .left .breadcrumb {
@@ -683,7 +683,7 @@
                     #content main .table-data .order table th {
                         padding-bottom: 12px;
                         font-size: 13px;
-                        text-align: center;
+                        text-align: left;
                         border-bottom: 1px solid var(--grey);
                     }
 
@@ -691,16 +691,16 @@
                         padding: 16px 0;
                     }
 
+                    #content main .table-data .order table td img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
 
-
-                        #content main .table-data .order table td img {
-                            width: 36px;
-                            height: 36px;
-                            border-radius: 50%;
-                            object-fit: cover;
-                        }
-
-
+                    #content main .table-data .order table tbody tr:hover {
+                        background: var(--grey);
+                    }
 
                     #content main .table-data .order table tr td .status {
                         font-size: 10px;
@@ -850,10 +850,10 @@
         max-width: 100% !important;
         max-height: 100% !important;
     }
+</style>
 
 
-
-
+<style>
     h1 {
         color: #343a40;
         margin-bottom: 20px;
@@ -878,8 +878,8 @@
         }
 
     .btn {
-        padding: 6px 12px;
-        margin: 0 5px;
+        padding: 4px 8px;
+        margin: 0 1.5px;
         font-weight: bold;
         border-radius: 4px;
         text-decoration: none;
@@ -905,31 +905,14 @@
             background-color: #c82333;
         }
 
-</style>
 
-<!-- Custom Tab Styling -->
-<style>
-    .tabs-wrapper {
-        background: transparent;
-        border: none;
+    th a {
+        text-decoration: none;
+        color: inherit;
     }
 
-        .tabs-wrapper .nav-tabs .nav-link.active {
-            background-color: #0d6efd; /* Bootstrap primary */
-            color: #fff;
-            border-color: #0d6efd #0d6efd #fff;
-        }
-
-        .tabs-wrapper .nav-tabs .nav-link {
-            background-color: #e9ecef;
-            color: #495057;
-            /* hover styling removed */
-        }
-
-        .tabs-wrapper .tab-content {
-            background: transparent;
-            border-top: none;
-            padding-top: 1rem;
+        th a:hover {
+            text-decoration: underline;
         }
 </style>
 
@@ -940,28 +923,28 @@
     <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="#" class="brand">
-            <i class="bx bxs-graduation"></i>
-            <span class="text">Teacher Panel</span>
+            <i class="bx bxs-user"></i>
+            <span class="text">Parent Panel</span>
         </a>
 
         <!-- NEW FLEX WRAPPER -->
         <div class="sidebar-content">
             <!-- TOP ITEMS -->
             <ul class="side-menu top">
-                <li>
-                    <a href="/Teacher/Teacher">
+                <li class="active">
+                    <a href="student-dashboard.php">
                         <i class='bx bxs-dashboard'></i>
                         <span class="text">Dashboard</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="/Teacher/ManageLayout">
+                <li>
+                    <a href="student-attendance.php">
                         <i class='bx bxs-calendar-check'></i>
-                        <span class="text">Manage</span>
+                        <span class="text">Attendance</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/Teacher/Chat">
+                    <a href="/Parent/Chat">
                         <i class='bx bxs-message-dots'></i>
                         <span class="text">Message</span>
                     </a>
@@ -1007,20 +990,20 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Manage</h1>
+                    <h1>Dashboard</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/Teacher/ManageLayout">Home</a>
+                            <a href="/Parent/Parent">Home</a>
                         </li>
-                        <img src="~/images/arrow.svg" style="height: 22px; width: 22px;" />
+                        <li><i class='bx bx-chevron-right'></i></li>
                         <li>
-                            <a class="active">View Student</a>
+                            <a class="active">Dashboard</a>
                         </li>
                     </ul>
                 </div>
-                <a href="/Teacher/Students" class="btn-download">
+                <a href="#" class="btn-download">
                     <i class='bx bxs-cloud-download'></i>
-                    <span class="text">Student List</span>
+                    <span class="text">Download PDF</span>
                 </a>
             </div>
 
@@ -1054,6 +1037,11 @@
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab">
                                             Performance
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="remarks-tab" data-bs-toggle="tab" data-bs-target="#remarks" type="button" role="tab">
+                                            Remarks
                                         </button>
                                     </li>
                                 </ul>
@@ -1256,6 +1244,165 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- REMARKS TAB -->
+                                    <div class="tab-pane fade" id="remarks" role="tabpanel" aria-labelledby="remarks-tab">
+                                        <!-- Performance Overview Chart -->
+                                        <div class="card shadow-sm mb-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Performance Overview</h5>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-8">
+                                                        <canvas id="performanceChart"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Performance Summary Table -->
+                                        <div class="card shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-4">Performance Summary</h5>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>Subject & Class</th>
+                                                                <th>Midterm</th>
+                                                                <th>Finals</th>
+                                                                <th>Total Average</th>
+                                                                <th>Status</th>
+                                                                <th>Remarks</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex flex-column">
+                                                                        <div class="d-flex align-items-center mb-1">
+                                                                            <i class='bx bxs-book me-2 text-primary'></i>
+                                                                            <strong>@Model.Student.Subject</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                        <small class="text-muted ms-4">Class: @Model.Student.Class</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Midterm</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Finals</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-primary">@Model.Student.TotalAverage</span>
+                                                                </td>
+                                                                <td id="status1">-</td>
+                                                                <td id="remarks1">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex flex-column">
+                                                                        <div class="d-flex align-items-center mb-1">
+                                                                            <i class='bx bxs-book me-2 text-primary'></i>
+                                                                            <strong>@Model.Student.Subject2</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                        <small class="text-muted ms-4">Class: @Model.Student.Class2</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Midterm2</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Finals2</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-primary">@Model.Student.TotalAverage2</span>
+                                                                </td>
+                                                                <td id="status2">-</td>
+                                                                <td id="remarks2">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex flex-column">
+                                                                        <div class="d-flex align-items-center mb-1">
+                                                                            <i class='bx bxs-book me-2 text-primary'></i>
+                                                                            <strong>@Model.Student.Subject3</strong>
+                                                                        </div>
+                                                                        <br>
+                                                                        <small class="text-muted ms-4">Class: @Model.Student.Class3</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Midterm3</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-info">@Model.Student.Finals3</span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-primary">@Model.Student.TotalAverage3</span>
+                                                                </td>
+                                                                <td id="status3">-</td>
+                                                                <td id="remarks3">-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Overall Performance Summary -->
+                                                <div class="row mt-4">
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-light">
+                                                            <div class="card-body">
+                                                                <h6 class="card-title">Overall Performance</h6>
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <span>Average Grade:</span>
+                                                                    <span class="badge bg-primary" id="overallAverage">-</span>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <span>Overall Status:</span>
+                                                                    <span id="overallStatus">-</span>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <span>Overall Remarks:</span>
+                                                                    <span id="overallRemarks">-</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-light">
+                                                            <div class="card-body">
+                                                                <h6 class="card-title">Grade Distribution</h6>
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <span>Excellent (90-100):</span>
+                                                                    <span class="badge bg-success" id="excellentCount">-</span>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <span>Good (80-89):</span>
+                                                                    <span class="badge bg-info" id="goodCount">-</span>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <span>Passed (75-79):</span>
+                                                                    <span class="badge bg-warning" id="passedCount">-</span>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <span>Failed (below 75):</span>
+                                                                    <span class="badge bg-danger" id="failedCount">-</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end mt-4">
+                                            <a asp-page="/Teacher/Students" class="btn btn-secondary">
+                                                <i class='bx bx-arrow-back'></i> Go Back
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1264,6 +1411,7 @@
             </div>
 
             @section Scripts {
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script>
                     // Initialize Bootstrap tabs
                     document.addEventListener('DOMContentLoaded', function() {
@@ -1276,7 +1424,91 @@
                                 tabTrigger.show()
                             })
                         })
+
+                        // Initialize performance chart
+                        const ctx = document.getElementById('performanceChart').getContext('2d');
+
+                        // Calculate performance status for each subject
+                        const grades = [
+                    @Model.Student.TotalAverage,
+                    @Model.Student.TotalAverage2,
+                    @Model.Student.TotalAverage3
+                        ];
+
+                        let excellent = 0, good = 0, passed = 0, failed = 0;
+
+                        grades.forEach(grade => {
+                            if (grade >= 90) excellent++;
+                            else if (grade >= 80) good++;
+                            else if (grade >= 75) passed++;
+                            else failed++;
+                        });
+
+                        // Update status and remarks in the table
+                        document.getElementById('status1').innerHTML = getStatus(@Model.Student.TotalAverage);
+                        document.getElementById('status2').innerHTML = getStatus(@Model.Student.TotalAverage2);
+                        document.getElementById('status3').innerHTML = getStatus(@Model.Student.TotalAverage3);
+
+                        document.getElementById('remarks1').innerHTML = getRemarks(@Model.Student.TotalAverage);
+                        document.getElementById('remarks2').innerHTML = getRemarks(@Model.Student.TotalAverage2);
+                        document.getElementById('remarks3').innerHTML = getRemarks(@Model.Student.TotalAverage3);
+
+                        // Update overall performance summary
+                        const overallAverage = (grades.reduce((a, b) => a + b, 0) / grades.length).toFixed(2);
+                        document.getElementById('overallAverage').textContent = overallAverage;
+                        document.getElementById('overallStatus').innerHTML = getStatus(overallAverage);
+                        document.getElementById('overallRemarks').innerHTML = getRemarks(overallAverage);
+
+                        // Update grade distribution counts
+                        document.getElementById('excellentCount').textContent = excellent;
+                        document.getElementById('goodCount').textContent = good;
+                        document.getElementById('passedCount').textContent = passed;
+                        document.getElementById('failedCount').textContent = failed;
+
+                        // Create the donut chart
+                        new Chart(ctx, {
+                            type: 'doughnut',
+                            data: {
+                                labels: ['Excellent', 'Good', 'Passed', 'Failed'],
+                                datasets: [{
+                                    data: [excellent, good, passed, failed],
+                                    backgroundColor: [
+                                        '#28a745', // Green for Excellent
+                                        '#17a2b8', // Blue for Good
+                                        '#ffc107', // Yellow for Passed
+                                        '#dc3545'  // Red for Failed
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        position: 'bottom'
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Overall Performance Distribution'
+                                    }
+                                }
+                            }
+                        });
                     });
+
+                    function getStatus(grade) {
+                        if (grade >= 90) return '<span class="badge bg-success">Excellent</span>';
+                        if (grade >= 80) return '<span class="badge bg-info">Good</span>';
+                        if (grade >= 75) return '<span class="badge bg-warning">Passed</span>';
+                        return '<span class="badge bg-danger">Failed</span>';
+                    }
+
+                    function getRemarks(grade) {
+                        if (grade >= 90) return '<span class="text-success">Outstanding performance! Keep up the excellent work!</span>';
+                        if (grade >= 80) return '<span class="text-info">Good performance. Continue to maintain your standards!</span>';
+                        if (grade >= 75) return '<span class="text-warning">Passing grade. Consider seeking additional help.</span>';
+                        return '<span class="text-danger">Needs improvement. Please consult with your teacher.</span>';
+                    }
 
                     // Navigation between tabs
                     document.getElementById('toPerformance').addEventListener('click', function() {
@@ -1300,6 +1532,8 @@
                     });
                 </script>
             }
+
+
         </main>
         <!-- MAIN -->
     </section>
@@ -1364,8 +1598,9 @@
 
 
 
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
 </body>
-
-
-
